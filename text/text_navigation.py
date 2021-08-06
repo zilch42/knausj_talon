@@ -43,7 +43,7 @@ ctx.lists["self.before_or_after"] = {
 navigation_target_names = {
     "word": r"\w+",
     "small": r"[A-Z]?[a-z0-9]+",
-    "big": r"[\S]+",
+    "capital": r"[\S]+",
     "parens": r'\((.*?)\)',
     "squares": r'\[(.*?)\]',
     "braces": r'\{(.*?)\}',

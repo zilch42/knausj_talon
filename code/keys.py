@@ -3,7 +3,8 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+#default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "arch brov char delta echo foxy goof hotel india julia kilo lima mike novakeen oscar prime quebec romeo sierra tango uniform victor whiskey x-ray yankee zulu".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -116,6 +117,7 @@ modifier_keys = {
     "alt": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
+    "big": "shift",
     "super": "super",
 }
 if app.platform  == "mac":
@@ -134,19 +136,18 @@ punctuation_words = {
     "`": "`",
     ",": ",",  # <== these things
     "back tick": "`",
-    "grave": "`",
+    "ticky": "`",
     "comma": ",",
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
     "colon": ":",
-    "forward slash": "/",
+    "[forward] slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
-    "exclamation point": "!",
     "dollar sign": "$",
     "asterisk": "*",
-    "hash sign": "#",
+    "hashtag": "#",
     "number sign": "#",
     "percent sign": "%",
     "at sign": "@",
@@ -155,34 +156,32 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "point": ".",
-    "quote": "'",
+    "chicky": "'",
     "apostrophe": "'",
     "L square": "[",
     "left square": "[",
     "square": "[",
     "R square": "]",
     "right square": "]",
-    "slash": "/",
     "backslash": "\\",
     "minus": "-",
     "dash": "-",
     "equals": "=",
     "plus": "+",
     "tilde": "~",
-    "bang": "!",
-    "dollar": "$",
-    "down score": "_",
+    "clamour": "!",
+    "dolly": "$",
     "under score": "_",
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
-    "brace": "{",
-    "left brace": "{",
-    "R brace": "}",
-    "right brace": "}",
+    "curly": "{",
+    "left curly": "{",
+    "L curly": "{",
+    "R curly": "}",
+    "right curly": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
@@ -190,15 +189,19 @@ symbol_key_words = {
     "R angle": ">",
     "right angle": ">",
     "greater than": ">",
-    "star": "*",
+    "deckle": ":",
+    "semper": ";",
+    "atty": "@",
+    "questo": "?",
+    "starling": "*",
     "pound": "#",
     "hash": "#",
     "percent": "%",
+    "modulo": "%",
     "caret": "^",
-    "amper": "&",
     "pipe": "|",
-    "dubquote": '"',
-    "double quote": '"',
+    "quote": '"',
+    "choccy": '"',
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -207,10 +210,10 @@ ctx.lists["self.punctuation"] = punctuation_words
 ctx.lists["self.symbol_key"] = symbol_key_words
 ctx.lists["self.number_key"] = dict(zip(default_digits, numbers))
 ctx.lists["self.arrow_key"] = {
-    "down": "down",
-    "left": "left",
-    "right": "right",
-    "up": "up",
+    "dunce": "down",
+    "lease": "left",
+    "ross": "right",
+    "sauce": "up",
 }
 
 simple_keys = [
@@ -223,14 +226,20 @@ simple_keys = [
     "pageup",
     "space",
     "tab",
+    "capslock",
 ]
 
 alternate_keys = {
-    "delete": "backspace",
-    "forward delete": "delete",
+    "clear": "backspace",
+    "delete": "delete",
+    "delhi": "delete",
+    "cancel": "escape",
     #'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
+    "ace": "space", 
+    "shock": "enter",
+    
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
