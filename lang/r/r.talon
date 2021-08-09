@@ -11,9 +11,9 @@ settings():
     user.code_private_function_formatter = "SNAKE_CASE"
     user.code_protected_function_formatter = "SNAKE_CASE"
     user.code_public_function_formatter = "SNAKE_CASE"
-    user.code_private_variable_formatter = "SNAKE_CASE"
-    user.code_protected_variable_formatter = "SNAKE_CASE"
-    user.code_public_variable_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
 toggle library: user.code_toggle_libraries()
 library <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
