@@ -4,49 +4,43 @@ find it:
 next one:
     edit.find_next()
 
-go word left:
+fly lease:
     edit.word_left()
 
-go word right:
+fly ross:
     edit.word_right()
 
-go left:
+lease:
     edit.left()
 
-go right:
+ross:
     edit.right()
 
-go up:
+source:
     edit.up()
 
-go down:
+dunce:
     edit.down()
 
-go line start:
+go home:
     edit.line_start()
 
-go line end:
+go end:
     edit.line_end()
 
-go way left:
+go way home:
     edit.line_start()
     edit.line_start()
 
-go way right:
+go way end:
     edit.line_end()
 
-go way down:
+go to bottom:
     edit.file_end()
 
-go way up:
+go to top:
     edit.file_start()
     
-go bottom:
-    edit.file_end()
-    
-go top:
-    edit.file_start()
-
 go page down:
     edit.page_down()
 
@@ -54,7 +48,7 @@ go page up:
     edit.page_up()
 
 # selecting
-select line:
+(select line | shackle):
     edit.select_line()
 
 select all:
@@ -72,25 +66,25 @@ select up:
 select down:
     edit.extend_line_down()
 
-select word:
+(grab | select) word:
     edit.select_word()
 
-select word left:
+(grab | select word) lease:
     edit.extend_word_left()
-
-select word right:
+    
+(grab | select word) ross:
     edit.extend_word_right()
 
-select way left:
+select home:
     edit.extend_line_start()
 
-select way right:
+select end:
     edit.extend_line_end()
 
-select way up:
+select top:
     edit.extend_file_start()
 
-select way down:
+select bottom:
     edit.extend_file_end()
 
 # editing

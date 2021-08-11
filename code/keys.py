@@ -143,7 +143,6 @@ punctuation_words = {
     "semicolon": ";",
     "colon": ":",
     "[forward] slash": "/",
-    "question mark": "?",
     "exclamation mark": "!",
     "dollar sign": "$",
     "asterisk": "*",

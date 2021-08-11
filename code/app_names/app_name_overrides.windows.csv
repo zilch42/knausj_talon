@@ -1,8 +1,10 @@
 grip, DataGrip 
 term, iTerm2
-one note, ONENOTE
+journal, ONENOTE.EXE
 lock, slack.exe
 app, slack.exe
 lockapp, slack.exe
 pycharm, pycharm64.exe
 webstorm, webstorm64.exe
+visual, Code.exe
+excel, Microsoft Excel
