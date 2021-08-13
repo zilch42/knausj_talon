@@ -209,3 +209,7 @@ cell run above: user.vscode("jupyter.runallcellsabove.palette")
 cell run: user.vscode("jupyter.runcurrentcell")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
+
+# tadro
+comment (line | lines | selected | block): key(ctrl-/)
+find in files: key(ctrl-shift-f)

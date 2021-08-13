@@ -20,4 +20,3 @@ class Actions:
         actions.insert(pattern.replace("{text}", text))
         actions.key("enter ctrl-1")
 
-        

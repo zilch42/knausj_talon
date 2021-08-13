@@ -236,7 +236,7 @@ alternate_keys = {
     #'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
-    "ace": "space", 
+    # "ace": "space", 
     "shock": "enter",
     
 }

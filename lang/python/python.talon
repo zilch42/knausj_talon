@@ -3,7 +3,7 @@ mode: user.auto_lang
 and code.language: python
 -
 tag(): user.code_operators
-tag(): user.code_comment
+# tag(): user.code_comment
 tag(): user.code_generic
 settings():
     user.code_private_function_formatter = "SNAKE_CASE"
@@ -51,3 +51,5 @@ toggle imports: user.code_toggle_libraries()
 import <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(end enter)
+
+comment: user.code_comment()

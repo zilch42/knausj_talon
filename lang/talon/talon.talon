@@ -3,7 +3,7 @@ mode: user.auto_lang
 and code.language: talon
 -
 tag(): user.code_operators
-tag(): user.code_comment
+# tag(): user.code_comment
 
 dot talon: insert(".talon")
 #defintion blocks for the context
@@ -53,3 +53,5 @@ funk wrap <user.code_functions>:
     user.code_insert_function(code_functions, edit.selected_text())
 funk wrap <number>:
     user.code_select_function(number - 1, edit.selected_text())
+
+comment: user.code_comment()

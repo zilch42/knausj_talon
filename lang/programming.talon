@@ -39,14 +39,16 @@ state next: user.code_next()
 state true: user.code_true()
 state false: user.code_false()
 
-# show and print functions and libraries
-toggle funk: user.code_toggle_functions()
-funk <user.code_functions>:
+# function generator
+^<user.code_functions>:
     user.code_insert_function(code_functions, "")
-funk cell <number>:
-    user.code_select_function(number - 1, "")
-funk wrap <user.code_functions>:
-    user.code_insert_function(code_functions, edit.selected_text())
-funk wrap <number>:
-    user.code_select_function(number - 1, edit.selected_text())
-dock string: user.code_document_string()
+
+# show and print functions and libraries
+# toggle funk: user.code_toggle_functions()
+# funk cell <number>:
+#     user.code_select_function(number - 1, "")
+# funk wrap <user.code_functions>:
+#     user.code_insert_function(code_functions, edit.selected_text())
+# funk wrap <number>:
+#     user.code_select_function(number - 1, edit.selected_text())
+# dock string: user.code_document_string()
