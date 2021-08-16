@@ -3,7 +3,7 @@ tag: user.file_manager
 title force: user.file_manager_refresh_title()
 manager show: user.file_manager_toggle_pickers()
 manager refresh: user.file_manager_update_lists()
-go desk: user.file_manager_open_user_directory("Desktop")
+go (desk | desktop): user.file_manager_open_user_directory("Desktop")
 go docks: user.file_manager_open_user_directory("Documents")
 go downloads: user.file_manager_open_user_directory("Downloads")
 go pictures: user.file_manager_open_user_directory("Pictures")

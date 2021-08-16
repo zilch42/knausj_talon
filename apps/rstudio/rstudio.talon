@@ -68,4 +68,4 @@ show source: key(f2)
 # --------------CONSOLE----------------------------------
 see that: user.r_paste_into_console("View({{text}})")
 head that: user.r_paste_into_console("head({{text}})")
-skim that: user.r_paste_into_console("skimr::skim({{text}}))
+skim that: user.r_paste_into_console("skimr::skim({{text}})")

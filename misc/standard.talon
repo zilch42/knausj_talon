@@ -10,9 +10,6 @@
 #word cmd: "cmd"
 #word dup: "dup"
 #word shell: "shell".
-value true: "TRUE"
-value false: "FALSE"
-value not: "NULL"
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
 scroll up: edit.page_up()
@@ -32,3 +29,4 @@ save: edit.save()
 slap:
 	edit.line_end()
 	key(enter)
+long minus: " - "

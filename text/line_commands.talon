@@ -3,8 +3,8 @@ tag: user.line_commands
 #this defines some common line commands. More may be defined that are ide-specific.
 lend: edit.line_end()
 bend: edit.line_start()
-go <number>: edit.jump_line(number)
-go <number> end: 
+go [line] <number>: edit.jump_line(number)
+go [line] <number> end: 
     edit.jump_line(number)
     edit.line_end()
 comment line <number>:
@@ -44,11 +44,11 @@ tab line <number>:
 tab <number> until <number>:
     user.select_range(number_1, number_2)
     edit.indent_more()
-retab that: edit.indent_less()
-retab line <number>:
+(shin tab | retab) that: edit.indent_less()
+(shin tab | retab) line <number>:
     user.select_range(number, number)
     edit.indent_less()
-retab <number> until <number>:
+(shin tab | retab) <number> until <number>:
     user.select_range(number_1, number_2)
     edit.indent_less()
 drag [line] down: edit.line_swap_down()

@@ -14,5 +14,5 @@ snap <user.running_applications> <user.window_snap_position>:
     user.snap_app(running_applications, window_snap_position)
 snap <user.running_applications> [screen] <number>:
     user.move_app_to_screen(running_applications, number)
-dredge: user.window_tab()
 show windows : key(ctrl-alt-tab)
+dredge [<number_small>]: user.window_tab(number_small or 1)

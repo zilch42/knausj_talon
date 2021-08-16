@@ -13,7 +13,7 @@ class UserActions:
     def password_fill():
         actions.key('ctrl-\\\\')
     def password_show():
-        actions.key('alt-ctrl-\\\\')
+        actions.key('ctrl-shift-.')
     def password_new():
         actions.key('ctrl-n')
     def password_duplicate():

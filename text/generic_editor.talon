@@ -1,13 +1,13 @@
-find it:
+(find it | hunt word):
     edit.find()
 
-next one:
+(next one | hunt next):
     edit.find_next()
 
-fly lease:
+(bird | fly lease):
     edit.word_left()
 
-fly ross:
+(firch | fly ross):
     edit.word_right()
 
 lease:
@@ -35,10 +35,10 @@ go way home:
 go way end:
     edit.line_end()
 
-go to bottom:
+go [to] bottom:
     edit.file_end()
 
-go to top:
+go [to] top:
     edit.file_start()
     
 go page down:
@@ -54,37 +54,37 @@ go page up:
 select all:
     edit.select_all()
 
-select left:
+(shin | select) (left | lease):
     edit.extend_left()
 
-select right:
+(shin | select) (right | ross):
     edit.extend_right()
 
-select up:
+(shin | select) (up | sauce):
     edit.extend_line_up()
 
-select down:
+(shin | select) (down | dunce):
     edit.extend_line_down()
 
 (grab | select) word:
     edit.select_word()
 
-(grab | select word) lease:
+(grab | select word) (left | lease):
     edit.extend_word_left()
     
-(grab | select word) ross:
+(grab | select word) (right | ross):
     edit.extend_word_right()
 
-select home:
+(grab | select) home:
     edit.extend_line_start()
 
-select end:
+(grab | select) end:
     edit.extend_line_end()
 
-select top:
+(grab | select) top:
     edit.extend_file_start()
 
-select bottom:
+(grab | select) bottom:
     edit.extend_file_end()
 
 # editing
@@ -98,44 +98,44 @@ indent [more]:
 clear line:
     edit.delete_line()
 
-clear left:
+clear (left | lease):
     key(backspace)
 
-clear right:
+clear (right | ross):
     key(delete)
 
-clear up:
+clear (up | sauce):
     edit.extend_line_up()
     edit.delete()
 
-clear down:
+clear (down | dunce):
     edit.extend_line_down()
     edit.delete()
 
-clear word:
+(splat | clear word):
     edit.delete_word()
 
-clear word left:
+(splat | clear word) (left | lease):
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
+(splat | clear word) (right | ross):
     edit.extend_word_right()
     edit.delete()
 
-clear way left:
+clear way (left | lease):
     edit.extend_line_start()
     edit.delete()
 
-clear way right:
+clear way (right | ross):
     edit.extend_line_end()
     edit.delete()
 
-clear way up:
+clear way (up | sauce):
     edit.extend_file_start()
     edit.delete()
 
-clear way down:
+clear way (down | dunce):
     edit.extend_file_end()
     edit.delete()
 
@@ -165,11 +165,11 @@ copy word:
     edit.select_word()
     edit.copy()
 
-copy word left:
+copy word (left | lease):
     edit.extend_word_left()
     edit.copy()
 
-copy word right:
+copy word (right | ross):
     edit.extend_word_right()
     edit.copy()
 
@@ -199,11 +199,11 @@ cut word:
     edit.select_word()
     edit.cut()
 
-cut word left:
+cut word (left | lease):
     edit.extend_word_left()
     edit.cut()
 
-cut word right:
+cut word (right | ross):
     edit.extend_word_right()
     edit.cut()
 

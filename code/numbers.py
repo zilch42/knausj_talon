@@ -184,3 +184,12 @@ def number_signed(m):
     "number_small", rule=f"({alt_digits} | {alt_teens} | {alt_tens} [{alt_digits}])"
 )
 def number_small(m): return int(parse_number(list(m)))
+
+@mod.action_class
+class Actions:
+    def count_numbers(num1: int, num2: int):
+        """return a counted series of numbers"""
+        s = ""
+        for n in range(num1, num2 + 1):
+            s += f"{n} "
+        actions.insert(s)
