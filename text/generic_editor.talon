@@ -10,6 +10,12 @@
 (firch | fly ross):
     edit.word_right()
 
+fly (source | up):
+    user.word_up()
+
+fly (dunce | down):
+    user.word_down()
+
 lease:
     edit.left()
 
@@ -210,3 +216,14 @@ cut word (right | ross):
 cut line:
     edit.select_line()
     edit.cut()
+
+# mouse copy paste command
+garb:
+    mouse_click(0)
+    edit.select_word()
+    edit.copy()
+
+drop:
+    mouse_click(0)
+    edit.select_word()
+    edit.paste()

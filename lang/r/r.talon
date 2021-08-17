@@ -29,17 +29,19 @@ library <user.code_libraries>:
 # R specific commands
 chain:
     key(end)
-    " %>%"
+    " %>% "
+inner chain: " %>% "
 chine: 
     key(end)
-    " %<>%"
+    " %<>% "
 tee pipe:
     key(end)
-    " %T>%"
+    " %T>% "
 
 state NA: insert("NA")
 boom: ", "
 dot R: ".R"
+long equals: " = "
 page break: "<br>"
 fill csiro: "scale_fill_manual(values = pal)"
 colour csiro: "scale_colour_manual(values = pal)"
@@ -47,6 +49,7 @@ scales percent: "labels = scales::label_percent(accuracy = 1)"
 fix UTF-8: "fileEncoding = 'UTF-8-BOM'" 
 remove wos: "mutate(UT = sub('WOS:', '', UT))"
 add wos: "mutate(UT = paste0('WOS:', UT))"
+keep all: ".keep_all = TRUE"
 
 pivot wider:
     "pivot_wider(names_from = , values_from = )"

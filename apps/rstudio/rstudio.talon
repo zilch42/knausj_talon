@@ -3,6 +3,7 @@ app: RStudio
 -
 
 tag(): user.line_commands
+# tag(): user.find_and_replace
 
 # ---------------FILES---------------------------------
 new (file | tab): key(ctrl-shift-n)
@@ -63,7 +64,7 @@ add cursor down: key(ctrl-alt-down)
 insert oxygen: key(ctrl-alt-shift-r)
 help that: key(f1)
 show source: key(f2)
-(echo | complete): key(ctrl-space)
+complete: key(ctrl-space)
 
 # --------------CONSOLE----------------------------------
 see that: user.r_paste_into_console("View({{text}})")
