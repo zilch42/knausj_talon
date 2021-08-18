@@ -18,7 +18,7 @@ setting_protected_variable_formatter = mod.setting(
 setting_public_variable_formatter = mod.setting("code_public_variable_formatter", str)
 
 mod.tag("code_comment", desc="Tag for enabling generic comment commands")
-mod.tag("code_block_comment", desc="Tag for enabling generic block comment commands")
+# mod.tag("code_block_comment", desc="Tag for enabling generic block comment commands")
 mod.tag("code_operators", desc="Tag for enabling generic operator commands")
 mod.tag(
     "code_generic",
@@ -365,14 +365,14 @@ class Actions:
     def code_comment():
         """Inserts comment at current cursor location"""
 
-    def code_block_comment():
-        """Block comment"""
+    # def code_block_comment():
+    #     """Block comment"""
 
-    def code_block_comment_prefix():
-        """Block comment start syntax"""
+    # def code_block_comment_prefix():
+    #     """Block comment start syntax"""
 
-    def code_block_comment_suffix():
-        """Block comment end syntax"""
+    # def code_block_comment_suffix():
+    #     """Block comment end syntax"""
 
     def code_type_definition():
         """code_type_definition (typedef)"""

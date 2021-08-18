@@ -29,4 +29,4 @@ save: edit.save()
 slap:
 	edit.line_end()
 	key(enter)
-long minus: " - "
+

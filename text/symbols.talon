@@ -1,41 +1,44 @@
-question [mark]: "?"
+question mark: "?"
 (downscore | underscore): "_"
 double dash: "--"
-(bracket | brack | left bracket): "{"
-(rbrack | are bracket | right bracket): "}"
+# (bracket | brack | left bracket): "{"
+# (rbrack | are bracket | right bracket): "}"
 triple quote: "'''"
 (triple grave | triple back tick | gravy):
     insert("```")
-(dot dot | dotdot): ".."
-ellipses: "..."
+(dot dot | dotdot | double dot): ".."
+(ellipses | three dots): "..."
 (comma and | spamma): ", "
 plus: "+"
+long plus: " + "
+long minus: " - "
+long pipe: " | "
 arrow: "->"
 dub arrow: "=>"
 new line: "\\n"
-carriage return: "\\r"
-line feed: "\\r\\n"
-empty dubstring:
-    '""'
-    key(left)
-empty escaped (dubstring|dub quotes):
-    '\\"\\"'
-    key(left)
-    key(left)
-empty string:
-    "''"
-    key(left)
-empty escaped string:
-    "\\'\\'"
-    key(left)
-    key(left)
+# carriage return: "\\r"
+# line feed: "\\r\\n"
+# empty dubstring:
+#     '""'
+#     key(left)
+# empty escaped (dubstring|dub quotes):
+#     '\\"\\"'
+#     key(left)
+#     key(left)
+# empty string:
+#     "''"
+#     key(left)
+# empty escaped string:
+#     "\\'\\'"
+#     key(left)
+#     key(left)
 (inside parens | args):
 	insert("()")
 	key(left)
-inside (squares | square brackets | list):
+inside (squares | square brackets):
 	insert("[]")
 	key(left)
-inside (bracket | braces):
+inside curly:
 	insert("{}")
 	key(left)
 inside percent:
@@ -44,19 +47,23 @@ inside percent:
 inside quotes:
 	insert('""')
 	key(left)
-inside (graves | back ticks):
+inside ticks:
 	insert("``")
 	key(left)
+inside (angle | angles):
+        insert("<>")
+        key(left)
+# these might not copy paste properly
 angle that:
     text = edit.selected_text()
     user.paste("<{text}>")
 (square | square bracket) that:
     text = edit.selected_text()
     user.paste("[{text}]")
-(bracket | brace) that:
+curly that:
     text = edit.selected_text()
     user.paste("{{{text}}}")
-(parens | args) that:
+(paren | args) that:
     text = edit.selected_text()
     user.paste("({text})")
 percent that:
@@ -65,6 +72,6 @@ percent that:
 quote that:
     text = edit.selected_text()
     user.paste('"{text}"')
-(grave | back tick) that:
+tick that:
     text = edit.selected_text()
     user.paste('`{text}`')

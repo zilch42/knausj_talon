@@ -4,10 +4,10 @@ app: vscode
 tag(): user.find_and_replace
 tag(): user.line_commands
 tag(): user.multiple_cursors
-tag(): user.snippets
+# tag(): user.snippets
 tag(): user.splits
 tag(): user.tabs
-window reload: user.vscode("workbench.action.reloadWindow")
+reload window: user.vscode("workbench.action.reloadWindow")
 close window: user.vscode("workbench.action.closeWindow")
 #multiple_cursor.py support end
 
@@ -16,13 +16,13 @@ please [<user.text>]:
     insert(user.text or "")
     
 # Sidebar
-bar explore: user.vscode("workbench.view.explorer")
+bar files: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
 bar outline: user.vscode("outline.focus")
 bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
-bar source: user.vscode("workbench.view.scm")
-bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
+bar git: user.vscode("workbench.view.scm")
+bar toggle: user.vscode("workbench.action.toggleSidebarVisibility")
 
 symbol hunt [<user.text>]:
     user.vscode("workbench.action.gotoSymbol")
@@ -30,12 +30,12 @@ symbol hunt [<user.text>]:
     insert(text or "")
     
 # Panels
-panel control: user.vscode("workbench.panel.repl.view.focus")
+panel console: user.vscode("workbench.panel.repl.view.focus")
 panel output: user.vscode("workbench.panel.output.focus")
 panel problems: user.vscode("workbench.panel.markers.view.focus")
-panel switch: user.vscode("workbench.action.togglePanel")
+panel toggle: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
-focus editor: user.vscode("workbench.action.focusActiveEditorGroup")
+focus main: user.vscode("workbench.action.focusActiveEditorGroup")
 
 # Settings
 show settings: user.vscode("workbench.action.openGlobalSettings")
@@ -210,6 +210,6 @@ cell run: user.vscode("jupyter.runcurrentcell")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
 
-# tadro
+# tadro TO DO propper for mac
 comment (line | lines | selected | block): key(ctrl-/)
 find in files: key(ctrl-shift-f)

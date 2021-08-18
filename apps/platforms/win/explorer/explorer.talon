@@ -5,6 +5,7 @@ tag(): user.file_manager
 ^go <user.letter>$: user.file_manager_open_volume("{letter}:")
 go app data: user.file_manager_open_directory("%AppData%")
 go program files: user.file_manager_open_directory("%programfiles%")
+new window: key(ctrl-n)
 
 go talon home: user.file_manager_open_directory("C:/Users/ABB064/AppData/Roaming/talon")
 go onedrive: user.file_manager_open_directory("C:/Users/ABB064/OneDrive - CSIRO")
