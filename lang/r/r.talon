@@ -57,6 +57,9 @@ pivot wider:
 pivot longer:
     "pivot_longer(cols = , names_to = , values_to = )"
     key(left:28) 
+join by:
+    "by = ''"
+    key(left)
 write csv:
     "write.csv(, row.names = FALSE, na = '')"
     key(left:29)
@@ -86,8 +89,8 @@ figure width:
     "fig.width="
     key(left)
 table reference:
-    "\@ref(tab:)"
+    "\\@ref(tab:)"
     key(left)
 figure reference:
-    "Figure \@ref(fig:)"
+    "Figure \\@ref(fig:)"
     key(left)
