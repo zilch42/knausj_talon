@@ -15,13 +15,17 @@ class Actions:
         actions.key("alt:up")
 
     def word_up():
-        """press control down"""
-        actions.key('ctrl-up')
-        
-    def word_down():
         """press control up"""
+        actions.key('ctrl-up')
+    def word_down():
+        """press control down"""
         actions.key('ctrl-down')
-
+    def grab_up():
+        """press control shift up"""
+        actions.key('ctrl-shift-up')
+    def grab_down():
+        """press control shift down"""
+        actions.key('ctrl-shift-down')
 ctx_mac = Context()
 ctx_mac.matches = r"""
 os: mac

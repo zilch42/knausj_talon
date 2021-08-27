@@ -230,9 +230,10 @@ class UserActions:
     def code_operator_less_than():                actions.auto_insert(' < ')
     def code_operator_less_than_or_equal_to():    actions.auto_insert(' <= ')
     def code_operator_in():                       actions.auto_insert(' %in% ')
-    def code_operator_and():                      actions.auto_insert(' & ')
-    def code_operator_or():                       actions.auto_insert(' | ')
+    def code_operator_and():                      actions.auto_insert(' && ')
+    def code_operator_or():                       actions.auto_insert(' || ')
     def code_operator_bitwise_and():              actions.auto_insert(' & ')
+    def code_operator_bitwise_or():               actions.auto_insert(' | ')
     def code_null():                              actions.auto_insert('NULL')
     def code_state_if():
         actions.insert('if () {}')

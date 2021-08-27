@@ -92,6 +92,12 @@ select all:
 
 (grab | select) bottom:
     edit.extend_file_end()
+    
+(grab | select) (up | source):
+    user.grab_up()
+
+(grab | select) (down | dunce):
+    user.grab_down()
 
 # editing
 indent [more]:

@@ -4,7 +4,6 @@ ctx = Context()
 mod = Module()
 apps = mod.apps
 apps.firefox = "app.name: Firefox"
-apps.firefox = "app.name: firefox"
 apps.firefox = """
 os: windows
 and app.name: Firefox
