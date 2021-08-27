@@ -257,6 +257,10 @@ class UserActions:
     def code_state_return():
         actions.insert('return()')
         actions.key('left')
+    def code_is_null():
+        actions.auto_insert("is.null()")
+    def code_is_not_null():
+        actions.auto_insert("!is.null()")
     def code_break(): actions.auto_insert('break')
     def code_next():  actions.auto_insert('next')
     def code_true():  actions.auto_insert('TRUE')
