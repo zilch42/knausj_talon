@@ -1,4 +1,5 @@
 app: ms_word
+os: windows
 -
 
 settings():

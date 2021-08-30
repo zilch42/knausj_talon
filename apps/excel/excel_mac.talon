@@ -1,20 +1,21 @@
+os: mac
 app: excel
 -
 
 settings():
     key_wait = 10
 
-zoom in: key("ctrl-alt-+")
-zoom out: key("ctrl-alt--")
+zoom in: key("cmd-alt-+")
+zoom out: key("cmd-alt--")
 
 new tab: key(shift-f11)
-left tab: key("ctrl-pgup")
-right tab: key("ctrl-pgdown")
+left tab: key("cmd-pgup")
+right tab: key("cmd-pgdown")
 
 new window: key(alt-w n)
-close window: key(ctrl-w)
-new file: key(ctrl-n)
-open file: key(ctrl-o)
+close window: key(cmd-w)
+new file: key(cmd-n)
+open file: key(cmd-o)
 save as: key(f12)
 
 [leave | exit | close] ribbon: key(esc:4)
@@ -35,7 +36,7 @@ duplicate tab:
     sleep(200ms)
     key(end tab space enter)
 
-paste special: key(ctrl-alt-v)
+paste special: key(cmd-alt-v)
 paste values:
     key(alt-h)
     sleep(200ms)
@@ -43,7 +44,7 @@ paste values:
 paste visible: 
     key(alt-h f d s y enter)
     sleep(200ms)
-    key(ctrl-v)
+    key(cmd-v)
 paste widths:
     key(alt-h)
     sleep(200ms)
@@ -52,30 +53,30 @@ paste widths:
 go to special: key(alt-h f d s)
 go to visible: key(alt-h f d s y enter)
 
-find: key(ctrl-f)
-replace: key(ctrl-h)
+find: key(cmd-f)
+replace: key(cmd-h)
 
 
 freeze pains: key(alt-w f f)
 
 insert cells:
-    key(ctrl-shift-+)
+    key(cmd-shift-+)
 insert row:
-    key(ctrl-shift-+)
+    key(cmd-shift-+)
     sleep(200ms)
     key(down enter)
 insert column:
-    key(ctrl-shift-+)
+    key(cmd-shift-+)
     sleep(200ms)
     key(down:2 enter)
 delete cells:
-    key(ctrl--)
+    key(cmd--)
 delete row:
-    key(ctrl--)
+    key(cmd--)
     sleep(200ms)
     key(down:2 enter)
 delete column:
-    key(ctrl--)
+    key(cmd--)
     sleep(200ms)
     key(down:3 enter)
 
@@ -83,14 +84,14 @@ select row:
     key(shift-space)
     sleep(200ms)
 select column:
-    key(ctrl-space)
+    key(cmd-space)
     sleep(200ms)
 clear row:
     key(shift-space)
     sleep(200ms)
     key(delete)
 clear column:
-    key(ctrl-space)
+    key(cmd-space)
     sleep(200ms)
     key(delete)
 
@@ -106,20 +107,20 @@ developer tab: key(alt-l)
 pivot analyse tab: key(alt j t)
 pivot design tab: key(alt j y)
 
-fill down: key(ctrl-d)
-fill down left: key(left ctrl-down right ctrl-shift-up ctrl-d)
-fill down right: key(right ctrl-down left ctrl-shift-up ctrl-d)
+fill down: key(cmd-d)
+fill down left: key(left cmd-down right cmd-shift-up cmd-d)
+fill down right: key(right cmd-down left cmd-shift-up cmd-d)
 auto some: key(alt-=)
 fix that: key("f4")
 
 add filter: key(alt-h s f)
-open filter: key(ctrl-up alt-down tab:8)
-clear filter: key(alt-h s c ctrl-up down ctrl-up alt-down tab:8)
-clear left filter: key(left up alt-h s c ctrl-up down ctrl-up alt-down tab:8)
+open filter: key(cmd-up alt-down tab:8)
+clear filter: key(alt-h s c cmd-up down cmd-up alt-down tab:8)
+clear left filter: key(left up alt-h s c cmd-up down cmd-up alt-down tab:8)
 sort by largest: key(alt-h s o)
 sort by smallest: key(alt-h s s)
 
-refresh all: key(ctrl-alt-f5)
+refresh all: key(cmd-alt-f5)
 insert pivot table: 
     key(alt-n v)
     sleep(200ms)
@@ -130,11 +131,11 @@ refresh pivot:
     key(tab right up tab down:2 space)
 
 edit cell: key(f2)
-press control: key(ctrl)
+press control: key(cmd)
 
-cell bold: key(ctrl-b)
-cell italic: key(ctrl-i)
-cell underline: key(ctrl-u)
+cell bold: key(cmd-b)
+cell italic: key(cmd-i)
+cell underline: key(cmd-u)
 
 font size up: key(alt-h f g)
 font size down: key(alt-h f k)
@@ -159,13 +160,13 @@ cell align left: key(alt-h a l)
 cell align centre: key(alt-h a c)
 cell align right: key(alt-h a r)
 
-general style: key(ctrl-shift-~)
-currency style: key(ctrl-shift-$)
-percent style: key(ctrl-shift-%)
-scientific style: key(ctrl-shift-^)
-date style: key(ctrl-shift-#)
-time style: key(ctrl-shift-@)
-number style: key(ctrl-shift-!)
+general style: key(cmd-shift-~)
+currency style: key(cmd-shift-$)
+percent style: key(cmd-shift-%)
+scientific style: key(cmd-shift-^)
+date style: key(cmd-shift-#)
+time style: key(cmd-shift-@)
+number style: key(cmd-shift-!)
 comma style: key(alt-h k)
 text style: key(alt-h n t e x t enter)
 increase decimal: key(alt-h 0)
@@ -186,7 +187,7 @@ cell border outside: key(alt-h b s)
 cell border thick outside: key(alt-h b t)
 cell border thick bottom: key(alt-h b h)
 cell border parallel: key(alt-h b d)
-cell [clear | no] border: key(ctrl-shift-h b n)
+cell [clear | no] border: key(cmd-shift-h b n)
 
 merge cells: key(alt-h m c)
 

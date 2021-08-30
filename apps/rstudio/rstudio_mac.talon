@@ -1,0 +1,72 @@
+os: mac
+app: RStudio
+-
+
+tag(): user.line_commands
+# tag(): user.find_and_replace
+
+# ---------------FILES---------------------------------
+new (file | tab): key(cmd-shift-n)
+open file: key(cmd-o)
+go to file: key(cmd-.)
+save all: key(cmd-alt-s)
+select all: key(cmd-a)
+find: key(cmd-f)
+find that: key(cmd-f3)
+align that: key(cmd-i)
+find in files: key(cmd-shift-f)
+
+# ---------------TABS---------------------------------
+(right | next) tab [<number_small>]: key(cmd-f12)
+(left | previous) tab [<number_small>]: key(cmd-f11)
+first tab: key(cmd-shift-f11)
+last tab: key(cmd-shift-f12)
+close tab: key(cmd-w)
+close other tabs: key(cmd-shift-alt-w)
+add column: key(cmd-f7)
+# --------------FOCUS----------------------------------
+focus (main | editor): key(cmd-1)
+focus console: key(cmd-2)
+focus terminal: key(alt-shift-t)
+focus help: key(cmd-3)
+focus history: key(cmd-4)
+focus files: key(cmd-5)
+focus plots: key(cmd-6)
+focus packages: key(cmd-7)
+focus environment: key(cmd-8)
+focus viewer: key(cmd-9)
+focus git: key(cmd-f1)
+focus build: key(cmd-f2)
+focus connections: key(cmd-f5)
+# --------------RUNNING----------------------------------
+dip: key(cmd-enter)
+(dips day | dip stay): key(alt-enter)
+run chunk: key(cmd-shift-enter)
+(run document | build it): key(cmd-alt-r)
+run all previous: key(cmd-alt-b)
+run all after: key(cmd-alt-e)
+run next chunk: key(cmd-alt-n)
+knit (document | file): key(cmd-shift-k)
+insert chunk: key(cmd-alt-i)
+stop running: key(esc)
+restart (are | our): key(cmd-shift-f10)
+# ---------------CODE---------------------------------
+comment (line | lines | selected | block): key(cmd-shift-c)
+fold that: key(alt-l)
+unfold that: key(alt-shift-l)
+fold all: key(alt-o)
+unfold all: key(shift-alt-o)
+go to line: key(shift-alt-g)
+move up: key(alt-up)
+move down: key(alt-down)
+add cursor up: key(cmd-alt-up)
+add cursor down: key(cmd-alt-down)
+insert oxygen: key(cmd-alt-shift-r)
+help that: key(f1)
+show source: key(f2)
+complete: key(cmd-space)
+
+# --------------CONSOLE----------------------------------
+see that: user.r_paste_into_console("View({{text}})")
+head that: user.r_paste_into_console("head({{text}})")
+skim that: user.r_paste_into_console("skimr::skim({{text}})")

@@ -16,7 +16,7 @@ select all: key(ctrl-a)
 find: key(ctrl-f)
 find that: key(ctrl-f3)
 align that: key(ctrl-i)
-find in files: key(ctrl-shift-f)
+[find in files | RS find]: key(ctrl-shift-f)
 
 # ---------------TABS---------------------------------
 (right | next) tab [<number_small>]: key(ctrl-f12)
