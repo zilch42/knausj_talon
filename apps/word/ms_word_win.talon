@@ -94,7 +94,12 @@ reject change: key(alt-r j)
 track changes: key(alt-r g)
 
 # paste
-paste metafile: key(alt-h v down enter up:4 enter)
+paste metafile: 
+    key(alt-h)
+    sleep(50ms)
+    key(v down enter)
+    sleep(50ms)
+    key(up:4 enter)
 paste without formatting: key(alt-h v t)
 
 # view options

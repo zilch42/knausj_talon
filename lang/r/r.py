@@ -60,7 +60,7 @@ ctx.lists["user.code_functions"] = {
     "NA omit": "na.omit", 
     "names": "names",
     "nest": "nest",
-    "N row": "nrow",
+    "nrow": "nrow",
     "paste": "paste0",
     "print": "print",
     "reorder": "reorder",
