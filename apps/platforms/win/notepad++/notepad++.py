@@ -60,6 +60,8 @@ class win_actions:
             return result.split("\\")[-1]
         return ""
 
+# find_and_replace.py support begin
+
 @ctx.action_class("user")
 class UserActions:
     def select_next_occurrence(text: str):
@@ -82,8 +84,6 @@ class UserActions:
         """Jumps to the final tab"""
         print("Notepad doesn't support this...")
         # actions.key("ctrl-numpad_0")
-
-    # find_and_replace.py support begin
 
     def find(text: str):
         """Triggers find in current editor"""
