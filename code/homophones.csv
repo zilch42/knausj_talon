@@ -305,6 +305,7 @@ impassable,impassible
 in,inn
 innocence,innocents
 insight,incite
+InCites,insights
 instance,instants
 intense,intents
 I'll,aisle,isle
@@ -480,7 +481,7 @@ wretch,retch
 review,revue
 rigor,rigger
 ring,wring
-right,write,rite
+right,write,rite,wright
 roads,rhodes
 Rome,roam
 row,roe
@@ -519,7 +520,8 @@ shown,shone
 sick,sic
 side,sighed
 size,sighs
-site,sight,cite
+cite,site,sight
+citing,sighting
 sink,sync
 slay,sleigh
 slight,sleight
