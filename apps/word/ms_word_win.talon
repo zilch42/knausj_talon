@@ -95,7 +95,7 @@ track changes: key(alt-r g)
 
 # paste
 paste metafile: 
-    key(alt-h)
+    key(alt-h esc:4 alt-h)
     sleep(50ms)
     key(v down enter)
     sleep(50ms)
