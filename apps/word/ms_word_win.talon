@@ -107,3 +107,11 @@ scroll vertical: key(alt-w c)
 scroll side to side: key(alt-w h)
 navigation pane: key(alt-w k)
 
+# options
+disable dragon add-in: 
+    key(alt-f t)
+    sleep(200ms)
+    key(a a alt-g)
+    sleep(200ms)
+    key(space enter)
+

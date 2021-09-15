@@ -16,7 +16,7 @@ select all: key(ctrl-a)
 find: key(ctrl-f)
 find that: key(ctrl-f3)
 align that: key(ctrl-i)
-[find in files | RS find]: key(ctrl-shift-f)
+(find in files | RS find): key(ctrl-shift-f)
 
 # ---------------TABS---------------------------------
 (right | next) tab [<number_small>]: key(ctrl-f12)
@@ -72,3 +72,16 @@ complete: key(ctrl-space)
 see that: user.r_paste_into_console("View({{text}})")
 head that: user.r_paste_into_console("head({{text}})")
 skim that: user.r_paste_into_console("skimr::skim({{text}})")
+run shiny: 
+    key("ctrl-2")
+    "source('dev/run_dev.R', echo=TRUE)"
+    key("enter ctrl-1")
+dev tools check:
+    key("ctrl-2")
+    "devtools::check()"
+    key("enter ctrl-1")
+run tests:
+    key("ctrl-2")
+    "testthat::test_local()"
+    key("enter ctrl-1")
+    
