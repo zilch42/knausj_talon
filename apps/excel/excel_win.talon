@@ -196,3 +196,4 @@ delete comment: key(alt-r d)
 
 select <user.xl_cell>: user.xl_select_cells(xl_cell)
 select <user.xl_cell> [through | by] <user.xl_cell>: user.xl_select_cells(xl_cell_1, xl_cell_2)
+

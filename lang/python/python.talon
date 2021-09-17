@@ -22,6 +22,7 @@ state raise: "raise "
 self taught: "self."
 pie test: "pytest"
 state past: "pass"
+boom: ", "
 
 ^funky <user.text>$: user.code_default_function(text)
 #^pro funky <user.text>$: user.code_protected_function(text)
