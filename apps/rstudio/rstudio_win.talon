@@ -73,6 +73,8 @@ see that: user.r_paste_into_console("View({{text}})")
 head that: user.r_paste_into_console("head({{text}})")
 skim that: user.r_paste_into_console("skimr::skim({{text}})")
 run shiny: 
+    key(esc)
+    sleep(1000ms)
     key("ctrl-2")
     "source('dev/run_dev.R', echo=TRUE)"
     key("enter ctrl-1")
@@ -83,5 +85,9 @@ dev tools check:
 run tests:
     key("ctrl-2")
     "testthat::test_local()"
+    key("enter ctrl-1")
+dev tools document:
+    key("ctrl-2")
+    "devtools::document()"
     key("enter ctrl-1")
     
