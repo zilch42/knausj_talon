@@ -1,5 +1,5 @@
 os: windows
-and app: Outlook
+and app: outlook
 -
 archive: key(alt h o 1)
 new e-mail: key(ctrl-n)
@@ -9,3 +9,4 @@ Reply: key(ctrl-r)
 Reply all: key(ctrl-shift-r)
 Forward: key(ctrl-f)
 accept: key(shift-f10 c c enter)
+mark all as read: key(alt-o m a)
