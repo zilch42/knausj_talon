@@ -1,7 +1,12 @@
 #provide both anchored and unachored commands via 'over'
 phrase <user.text>$: user.insert_formatted(text, "NOOP")
 phrase <user.text> over: user.insert_formatted(text, "NOOP")
-{user.prose_formatter} <user.prose>$: user.insert_formatted(prose, prose_formatter)
+# insert space after [singsay]
+{user.prose_formatter} <user.prose>$: 
+    user.insert_formatted(prose, prose_formatter)
+    key(space)
+full stop: 
+    key(backspace . space)
 {user.prose_formatter} <user.prose> over: user.insert_formatted(prose, prose_formatter)
 <user.format_text>+$: user.insert_many(format_text_list)
 <user.format_text>+ over: user.insert_many(format_text_list)

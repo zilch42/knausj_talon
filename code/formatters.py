@@ -157,7 +157,7 @@ formatters_words = {
     "packed": formatters_dict["DOUBLE_COLON_SEPARATED"],
     "padded": formatters_dict["SPACE_SURROUNDED_STRING"],
     # "say": formatters_dict["NOOP"],
-    "sing": formatters_dict["CAPITALIZE_FIRST_WORD"],
+    # "sing": formatters_dict["CAPITALIZE_FIRST_WORD"],
     "slasher": formatters_dict["SLASH_SEPARATED"],
     "smash": formatters_dict["NO_SPACES"],
     "snake": formatters_dict["SNAKE_CASE"],
@@ -299,6 +299,7 @@ ctx.lists["self.prose_formatter"] = {
     "say": "NOOP",
     "speak": "NOOP",
     "sentence": "CAPITALIZE_FIRST_WORD",
+    "sing": "CAPITALIZE_FIRST_WORD",
 }
 
 
