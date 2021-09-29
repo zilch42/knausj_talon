@@ -4,6 +4,7 @@ app: vscode
 tag(): user.find_and_replace
 tag(): user.line_commands
 tag(): user.multiple_cursors
+# tag(): user.comment
 # tag(): user.snippets
 tag(): user.splits
 tag(): user.tabs
@@ -211,5 +212,5 @@ cell run: user.vscode("jupyter.runcurrentcell")
 install local: user.vscode("workbench.extensions.action.installVSIX")
 
 # tadro TO DO propper for mac
-comment (line | lines | selected | block): key(ctrl-/)
-find in files: key(ctrl-shift-f)
+comment (line | lines | selected | block): user.toggle_comment()
+# find in files: key(ctrl-shift-f)  use hunt all

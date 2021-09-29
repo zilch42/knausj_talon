@@ -5,17 +5,17 @@ run calibration: user.mouse_calibrate()
 (touch | kick): 
 	mouse_click(0)
 	# close the mouse grid if open
-	user.grid_close()
+	# user.grid_close()
 
 (righty | psychic): 
 	mouse_click(1)
 	# close the mouse grid if open
-	user.grid_close()
+	# user.grid_close()
 
 (midclick | mid kick): 
 	mouse_click(2)
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 
 #see keys.py for modifiers.
 #defaults
@@ -29,28 +29,28 @@ run calibration: user.mouse_calibrate()
 	mouse_click(0)
 	key("{modifiers}:up")
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 <user.modifiers> (righty | psychic): 
 	key("{modifiers}:down")
 	mouse_click(1)
 	key("{modifiers}:up")
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 (dubclick | duke | double kick): 
 	mouse_click()
 	mouse_click()
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 (tripclick | triplick): 
 	mouse_click()
 	mouse_click()
 	mouse_click()
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 drag: 
 	user.mouse_drag()
 	# close the mouse grid
-	user.grid_close()
+	# user.grid_close()
 wheel down: user.mouse_scroll_down()
 wheel down here:
     user.mouse_move_center_active_window()
