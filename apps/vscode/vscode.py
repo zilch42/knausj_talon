@@ -64,11 +64,14 @@ class AppActions:
         actions.user.vscode("workbench.action.newWindow")
 
 
-@ctx.action_class("code")
-class CodeActions:
-    # talon code actions
+@mod.action_class
+class Actions:
     def toggle_comment():
-        actions.user.vscode("editor.action.commentLine")
+        """Toggle Comment"""     
+        if is_mac:
+            actions.key("cmd-/")
+        else:
+            actions.key("ctrl-/")
 
 
 @ctx.action_class("edit")

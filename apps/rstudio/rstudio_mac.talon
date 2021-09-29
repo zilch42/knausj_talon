@@ -5,20 +5,21 @@ app: RStudio
 tag(): user.line_commands
 # tag(): user.find_and_replace
 
-# ---------------FILES---------------------------------
+# ---------------FILESctrl
+
 new (file | tab): key(cmd-shift-n)
 open file: key(cmd-o)
-go to file: key(cmd-.)
+go to file: key(ctrl-.)
 save all: key(cmd-alt-s)
 select all: key(cmd-a)
 find: key(cmd-f)
 find that: key(cmd-f3)
 align that: key(cmd-i)
-find in files: key(cmd-shift-f)
+hunt all: key(cmd-shift-f)
 
 # ---------------TABS---------------------------------
-(right | next) tab [<number_small>]: key(cmd-f12)
-(left | previous) tab [<number_small>]: key(cmd-f11)
+(right | next) tab [<number_small>]: key(ctrl-shift-f12)
+(left | previous) tab [<number_small>]: key(ctrl-shift-f11)
 first tab: key(cmd-shift-f11)
 last tab: key(cmd-shift-f12)
 close tab: key(cmd-w)
@@ -70,3 +71,21 @@ complete: key(cmd-space)
 see that: user.r_paste_into_console("View({{text}})")
 head that: user.r_paste_into_console("head({{text}})")
 skim that: user.r_paste_into_console("skimr::skim({{text}})")
+run shiny: 
+    key(esc)
+    sleep(1000ms)
+    key("cmd-2")
+    "source('dev/run_dev.R', echo=TRUE)"
+    key("enter cmd-1")
+dev tools check:
+    key("cmd-2")
+    "devtools::check()"
+    key("enter cmd-1")
+run tests:
+    key("cmd-2")
+    "testthat::test_local()"
+    key("enter cmd-1")
+dev tools document:
+    key("cmd-2")
+    "devtools::document()"
+    key("enter cmd-1")
