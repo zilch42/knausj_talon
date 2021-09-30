@@ -67,6 +67,7 @@ insert oxygen: key(ctrl-alt-shift-r)
 help that: key(f1)
 show source: key(f2)
 complete: key(ctrl-space)
+redo: key(ctrl-shift-z)
 
 # --------------CONSOLE----------------------------------
 see that: user.r_paste_into_console("View({{text}})")
