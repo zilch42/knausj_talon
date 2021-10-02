@@ -91,4 +91,17 @@ dev tools document:
     key("ctrl-2")
     "devtools::document()"
     key("enter ctrl-1")
-    
+
+# ----------------GIT CONSOLE--------------------
+identify CSIRO:
+    "git config --global user.name 'Abbott, Tadro (Science Impact & Policy, Waite Campus)'"
+    key("enter")
+    "git config --global user.email 'tadro.abbott@csiro.au'"
+    key("enter")
+identify github :
+    "git config --global user.name 'Tadro Abbott'"
+    key("enter")
+    "git config --global user.email 'zilch42@hotmail.com'"
+    key("enter")
+new SSH key:
+    "ssh-keygen -t rsa -C 'zilch42@hotmail.com' -b 4096"

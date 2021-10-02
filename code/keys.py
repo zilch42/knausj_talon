@@ -139,7 +139,7 @@ punctuation_words = {
     "ticky": "`",
     "comma": ",",
     "period": ".",
-    "full stop": ".",
+    # "full stop": ".",
     "semicolon": ";",
     "colon": ":",
     "[forward] slash": "/",
