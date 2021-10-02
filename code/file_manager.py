@@ -124,6 +124,10 @@ class Actions:
         """file_manager_open_parent"""
         return
 
+    def file_manager_open_item():
+        """file_manager_open_item"""
+        return
+
     def file_manager_go_forward():
         """file_manager_go_forward_directory"""
 
