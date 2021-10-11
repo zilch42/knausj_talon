@@ -15,6 +15,8 @@ directories_to_exclude = {}
 class UserActions:
     def file_manager_open_parent():
         actions.key('cmd-up')
+    def file_manager_open_item():
+        actions.key('cmd-down')
     def file_manager_go_forward():
         actions.key('cmd-]')
     def file_manager_go_back():

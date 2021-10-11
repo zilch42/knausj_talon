@@ -171,7 +171,7 @@ symbol_key_words = {
     "plus": "+",
     "tilde": "~",
     "clamour": "!",
-    "dolly": "$",
+    "dollar": "$",
     "under score": "_",
     "paren": "(",
     "L paren": "(",
