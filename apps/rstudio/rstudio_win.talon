@@ -91,7 +91,10 @@ dev tools document:
     key("ctrl-2")
     "devtools::document()"
     key("enter ctrl-1")
-
+dev tools load all:
+    key("ctrl-2")
+    "devtools::load_all()"
+    key("enter ctrl-1")
 # ----------------GIT CONSOLE--------------------
 identify CSIRO:
     "git config --global user.name 'Abbott, Tadro (Science Impact & Policy, Waite Campus)'"

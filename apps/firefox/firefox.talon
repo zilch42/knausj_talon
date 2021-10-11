@@ -23,3 +23,8 @@ copy address: key(y y)
 duplicate tab: key(y t)
 find: key(ctrl-f)
 
+# wos shortcuts
+long and: " and "
+long or: " or "
+long not: " not "
+
