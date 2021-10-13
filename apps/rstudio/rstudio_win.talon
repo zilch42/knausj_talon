@@ -75,8 +75,9 @@ head that: user.r_paste_into_console("head({{text}})")
 skim that: user.r_paste_into_console("skimr::skim({{text}})")
 run shiny: 
     key(esc esc)
-    sleep(1000ms)
     key("ctrl-2")
+    sleep(1000ms)
+    key(esc esc)
     "source('dev/run_dev.R', echo=TRUE)"
     key("enter ctrl-1")
 dev tools check:
