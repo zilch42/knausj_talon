@@ -43,6 +43,7 @@ boom: ", "
 dot R: ".R"
 long equals: " = "
 page break: "<br>"
+NA remove: "na.rm = TRUE"
 fill csiro: "scale_fill_manual(values = pal)"
 colour csiro: "scale_colour_manual(values = pal)"
 scales percent: "labels = scales::label_percent(accuracy = 1)"
@@ -95,4 +96,8 @@ table reference:
 figure reference:
     "Figure \\@ref(fig:)"
     key(left)
+
+# Shiny
+import from: "@importFrom "
+are lang: "rlang"
 

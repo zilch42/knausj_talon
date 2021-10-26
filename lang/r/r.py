@@ -175,11 +175,15 @@ ctx.lists["user.code_functions"] = {
 # Shiny
     "giraffe output":"girafeOutput",
     "render giraffe":"renderGirafe",
+    "render react":"renderReact",
+    "render ui":"renderUI",
     "plot output":"plotOutput",
     "render plot":"renderPlot",
     "module server":"moduleServer",
     "reactive":"reactive",
+    "reactive value":"reactiveVal",
     "observe":"observe",
+    "observe event":"observeEvent",
     "giraffe":"girafe", 
 # Base
 }
@@ -188,10 +192,12 @@ ctx.lists["user.code_libraries"] = {
     "bibliotecr": "bibliotecR",
     "cable": "kable",
     "csiro pallets": "CSIROpalettes",
+    "D plier": "dpylr", 
     "dev tools": "devtools",
     "lex table": "flextable",
     "gee gee animate": "gganimate",
     "grid extra": "gridExtra",
+    "g giraffe": "ggiraph", 
     "i graph": "igraph",
     "knitter": "knitr",
     "lens data": "LensData",
@@ -200,10 +206,19 @@ ctx.lists["user.code_libraries"] = {
     "office down": "officedown",
     "office R": "officer",
     "open excel": "openxlsx",
+    "per": "purrr", 
+    "are laying": "rlang", 
     "R markdown": "rmarkdown",
+    "shiny": "shiny", 
+    "shiny fluent": "shiny.fluent", 
+    "shiny js": "shinyjs", 
+    "tibble": "tibble", 
     "tidy verse": "tidyverse",
     "wos concordance": "WoSConcordance",
     "wos data": "WoSdata2021",
+    "use this": "usethis", 
+    "you till": "utils", 
+
 }
 
 
