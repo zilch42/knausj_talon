@@ -52,6 +52,7 @@ remove wos: "mutate(UT = sub('WOS:', '', UT))"
 add wos: "mutate(UT = paste0('WOS:', UT))"
 keep all: ".keep_all = TRUE"
 shiny JS: "shinyjs"
+long else: " else "
 
 pivot wider:
     "pivot_wider(names_from = , values_from = )"
