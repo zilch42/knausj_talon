@@ -49,7 +49,7 @@ run all previous: key(ctrl-alt-b)
 run all after: key(ctrl-alt-e)
 run next chunk: key(ctrl-alt-n)
 knit (document | file): key(ctrl-shift-k)
-insert chunk: key(ctrl-alt-i)source('dev/run_dev.R', echo=TRUE)
+insert chunk: key(ctrl-alt-i)
 
 stop: key(alt-s i)
 restart (are | our): key(ctrl-shift-f10)
