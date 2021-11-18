@@ -113,6 +113,7 @@ ctx.lists["user.code_functions"] = {
     # "semi join": "semi_join",
     "starts with": "starts_with",
     "summarise": "summarise",
+    "symbol": "!!sym", 
     "tally": "tally",
     "tibble": "tibble",
     "ungroup": "ungroup",
