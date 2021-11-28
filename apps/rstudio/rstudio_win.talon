@@ -110,3 +110,5 @@ identify github :
     key("enter")
 new SSH key:
     "ssh-keygen -t rsa -C 'zilch42@hotmail.com' -b 4096"
+SSH run agent: "eval '$(ssh-agent -s)'"
+SSH add key: "ssh-add ~/.ssh/id_rsa"
