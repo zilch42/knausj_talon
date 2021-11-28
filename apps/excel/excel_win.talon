@@ -204,3 +204,7 @@ disable dragon add-in:
     key(a a alt-a down enter alt-g)
     sleep(200ms)
     key(space enter)
+
+# custom commands
+yes: key(ctrl-v down)
+no: key(down)
