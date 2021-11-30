@@ -115,3 +115,15 @@ disable dragon add-in:
     sleep(200ms)
     key(space enter)
 
+# prose formatters
+full stop: 
+    key(backspace . space)
+full comma:
+    key(backspace , space)
+full questo:
+    key(backspace ? space)
+full clamour:
+    key(backspace ! space)
+full semper:
+    key(backspace ; space)
+
