@@ -99,7 +99,7 @@ dev tools load all:
     key("enter ctrl-1")
 # ----------------GIT CONSOLE--------------------
 identify CSIRO:
-    "git config --global user.name 'Abbott, Tadro (Science Impact & Policy, Waite Campus)'"
+    "git config --global user.name 'Abbott, Tadro (Science Impact & Policy)'"
     key("enter")
     "git config --global user.email 'tadro.abbott@csiro.au'"
     key("enter")
@@ -109,6 +109,6 @@ identify github :
     "git config --global user.email 'zilch42@hotmail.com'"
     key("enter")
 new SSH key:
-    "ssh-keygen -t rsa -C 'zilch42@hotmail.com' -b 4096"
+    "ssh-keygen -t rsa -C 'tadro.abbott@csiro.au' -b 4096"
 SSH run agent: "eval '$(ssh-agent -s)'"
 SSH add key: "ssh-add ~/.ssh/id_rsa"
