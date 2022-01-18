@@ -67,6 +67,7 @@ ctx.lists["user.code_functions"] = {
     "read CSV": "read.csv",
     "read excel": "read.xlsx", 
     "repeat": "rep",
+    "return": "return", 
     "RM chunk": "rm.chunk",
     "scale": "scale",
     "sequence along": "seq_along",
@@ -176,6 +177,8 @@ ctx.lists["user.code_functions"] = {
     "string to title": "str_to_title",
     "sub string": "substr",
 # Shiny
+    "bind event": "bindEvent", 
+    "isolate": "isolate", 
     "giraffe output":"girafeOutput",
     "render giraffe":"renderGirafe",
     "render react":"renderReact",
