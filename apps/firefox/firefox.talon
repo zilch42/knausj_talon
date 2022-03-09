@@ -28,3 +28,6 @@ long and: " and "
 long or: " or "
 long not: " not "
 
+# shiny stuff
+react log: key(ctrl-f3)
+react marker: key(ctrl-shift-f3)
