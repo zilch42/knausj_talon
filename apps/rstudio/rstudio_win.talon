@@ -81,6 +81,13 @@ run shiny:
     key(esc esc)
     "source('dev/run_dev.R', echo=TRUE)"
     key("enter ctrl-1")
+load publications:
+    key(esc esc)
+    key("ctrl-2")
+    sleep(1000ms)
+    key(esc esc)
+    "load('C:/Users/abb064/OneDrive - CSIRO/R/budashboard/data/publications.rda')"
+    key("enter ctrl-1")
 dev tools check:
     key("ctrl-2")
     "devtools::check()"
