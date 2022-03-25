@@ -31,3 +31,8 @@ slap:
 	key(enter)
 hmmm: ""
 
+# wos shortcuts
+long and: " and "
+long or: " or "
+long not: " not "
+
