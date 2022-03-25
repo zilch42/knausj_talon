@@ -101,4 +101,4 @@ figure reference:
 # Shiny
 import from: "@importFrom "
 are lang: "rlang"
-
+update version: "golem::set_golem_version()"
