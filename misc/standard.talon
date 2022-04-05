@@ -32,7 +32,7 @@ slap:
 hmmm: ""
 
 # wos shortcuts
-long and: " and "
-long or: " or "
-long not: " not "
+long and: " AND "
+long or: " OR "
+long not: " NOT "
 
