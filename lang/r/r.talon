@@ -102,3 +102,19 @@ figure reference:
 import from: "@importFrom "
 are lang: "rlang"
 update version: "golem::set_golem_version()"
+
+# openxlsx
+create workbook:
+    "wb <- createWorkbook()"
+add sheet:
+    "addWorksheet(wb, sheetName = '')"
+    key(left:2)
+right data:
+    "writeData(wb, sheet = '', x = , xy = c())"
+    key(left:18)
+add style:
+    "addStyle(wb, sheet = '', style = , rows = , cols = )"
+    key(left:30)
+save work book:
+    "saveWorkbook(wb, '', overwrite = TRUE)"
+    key(left:20)
