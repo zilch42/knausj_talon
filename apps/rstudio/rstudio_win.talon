@@ -1,7 +1,7 @@
 os: windows
 app: RStudio
 app: firefox
-and win.title: /RStudio Server Pro - Mozilla Firefox$/
+and win.title: /RStudio Server Pro/
 -
 
 tag(): user.line_commands

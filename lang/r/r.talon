@@ -1,6 +1,8 @@
 mode: user.r
 mode: user.auto_lang
 and code.language: r
+app: firefox
+and win.title: /RStudio Server Pro/
 -
 # TODO: functions
 
