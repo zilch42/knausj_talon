@@ -221,7 +221,7 @@ ctx.lists["user.code_libraries"] = {
     "tibble": "tibble", 
     "tidy verse": "tidyverse",
     "wos concordance": "WoSConcordance",
-    "wos data": "WoSdata2021",
+    "wos data": "WoSdata2022",
     "use this": "usethis", 
     "you till": "utils", 
 
