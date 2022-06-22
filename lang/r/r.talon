@@ -32,16 +32,31 @@ library <user.code_libraries>:
 
 
 # R specific commands
+# chain:
+#     key(end)
+#     " %>% "
+# inner chain: " %>% "
 chain:
     key(end)
+    " |> "
+inner chain: " |> "
+old chain:
+    key(end)
     " %>% "
-inner chain: " %>% "
+old inner chain: " %>% "
+
+# about the new pipes 
+# https://r4ds.hadley.nz/workflow-pipes.html
+
 chine: 
     key(end)
     " %<>% "
 tee pipe:
     key(end)
     " %T>% "
+anonymous function:
+    "\() "
+    key(left:2)
 
 state NA: insert("NA")
 boom: ", "
@@ -58,6 +73,8 @@ add wos: "mutate(UT = paste0('WOS:', UT))"
 keep all: ".keep_all = TRUE"
 shiny JS: "shinyjs"
 long else: " else "
+right assign: " -> "
+placeholder: "_"
 
 pivot wider:
     "pivot_wider(names_from = , values_from = )"
