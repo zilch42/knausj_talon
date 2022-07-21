@@ -91,6 +91,7 @@ ctx.lists["user.code_functions"] = {
     "look": "View",
 # dplyr
     # "anti join": "anti_join",
+    "add count": "add_count", 
     "arrange": "arrange",
     "as tibble": "as_tibble",
     "bind rows": "bind_rows",
@@ -195,6 +196,7 @@ ctx.lists["user.code_functions"] = {
 }
 
 ctx.lists["user.code_libraries"] = {
+    "altmetric data": "AltmetricData", 
     "bibliotecr": "bibliotecR",
     "cable": "kable",
     "csiro pallets": "CSIROpalettes",

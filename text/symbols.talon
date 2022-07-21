@@ -15,7 +15,9 @@ long minus: " - "
 long pipe: " | "
 long equals: " = "
 arrow: "->"
+ampersand: "&"
 dub arrow: "=>"
+slash: "/"
 new line: "\\n"
 # carriage return: "\\r"
 # line feed: "\\r\\n"
@@ -33,25 +35,25 @@ new line: "\\n"
 #     "\\'\\'"
 #     key(left)
 #     key(left)
-(inside parens | args):
+hug paren:
 	insert("()")
 	key(left)
-inside (squares | square brackets):
+hug (square | square brackets):
 	insert("[]")
 	key(left)
-inside curly:
+hug curly:
 	insert("{}")
 	key(left)
-inside percent:
+hug percent:
 	insert("%%")
 	key(left)
-inside quotes:
+hug quote:
 	insert('""')
 	key(left)
-inside ticks:
+hug tick:
 	insert("``")
 	key(left)
-inside (angle | angles):
+hug (angle | angles):
         insert("<>")
         key(left)
 # these might not copy paste properly

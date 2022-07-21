@@ -63,12 +63,12 @@ make title case: key(alt-h 7 c)
 show paragraph marks: key(alt-h 8)
 
 # insert
-insert page break: key(alt-n b)
-insert section break: key(alt-p b n)
-insert text box: key(alt-n x)
-insert symbol: key(alt-n u)
-insert footnote: key(alt-s f)
-insert caption: key(alt-s p)
+make page break: key(alt n b)
+make section break: key(alt-p b n)
+new text box: key(alt-n x)
+show symbols: key(alt-n u)
+make footnote: key(alt-s f)
+make caption: key(alt-s p)
 
 # references
 insert figure reference:

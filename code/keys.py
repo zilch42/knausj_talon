@@ -138,7 +138,7 @@ punctuation_words = {
     "back tick": "`",
     "ticky": "`",
     "comma": ",",
-    "period": ".",
+    "dot": ".",
     # "full stop": ".",
     "semicolon": ";",
     "colon": ":",
@@ -154,7 +154,6 @@ punctuation_words = {
     "ampersand": "&",
 }
 symbol_key_words = {
-    "dot": ".",
     "choccy": '"',
     "chocky": '"',
     "chicky": "'",

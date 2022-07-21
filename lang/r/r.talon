@@ -114,7 +114,7 @@ figure width:
     "fig.width="
     key(left)
 table reference:
-    "\\@ref(tab:)"
+    "Table \\@ref(tab:)"
     key(left)
 figure reference:
     "Figure \\@ref(fig:)"
