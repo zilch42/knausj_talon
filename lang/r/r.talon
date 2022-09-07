@@ -54,9 +54,6 @@ chine:
 tee pipe:
     key(end)
     " %T>% "
-anonymous function:
-    "\() "
-    key(left:2)
 
 state NA: insert("NA")
 boom: ", "

@@ -216,6 +216,7 @@ ctx.lists["user.code_libraries"] = {
     "open excel": "openxlsx",
     "per": "purrr", 
     "are laying": "rlang", 
+    "reticulate": "reticulate", 
     "R markdown": "rmarkdown",
     "shiny": "shiny", 
     "shiny fluent": "shiny.fluent", 

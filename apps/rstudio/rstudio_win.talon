@@ -31,7 +31,7 @@ add column: key(ctrl-f7)
 # --------------FOCUS----------------------------------
 focus (main | editor): key(ctrl-1)
 focus console: key(ctrl-2)
-focus terminal: key(alt-shift-t)
+focus terminal: key(alt-shift-m)
 focus help: key(ctrl-3)
 focus history: key(ctrl-4)
 focus files: key(ctrl-5)
@@ -106,6 +106,16 @@ dev tools load all:
     key("ctrl-2")
     "devtools::load_all()"
     key("enter ctrl-1")
+python console:
+    key("ctrl-2")
+    "repl_python()"
+    key("enter")
+(our | are) console:
+        key("ctrl-2")
+        "exit"
+        key("enter")
+
+
 # ----------------GIT CONSOLE--------------------
 identify CSIRO:
     "git config --global user.name 'Abbott, Tadro (Science Impact & Policy)'"
