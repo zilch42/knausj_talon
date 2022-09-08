@@ -9,7 +9,7 @@ tab search <user.text>$:
     browser.focus_address()
     insert("% {text}")
     key(down)
- 
+
 #surfing keys shortcut
 half down: key(d)
 half up: key(e)
@@ -19,7 +19,7 @@ follow multiple: key(c f)
 follow new tab: key(shift-c)
 google that: key(s g)
 copy link: key(y a)
-copy address: key(y y)
+# copy address: key(y y)
 duplicate tab: key(y t)
 find: key(ctrl-f)
 

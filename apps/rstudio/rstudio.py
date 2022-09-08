@@ -3,8 +3,8 @@ from talon import Module, actions, clip, Context
 mod = Module()
 ctx = Context()
 
-apps = mod.apps
-apps.RStudio = """
+mod.apps.r_studio = "app.name: RStudio"
+mod.apps.r_studio = """
 os: windows
 and app.name: RStudio
 os: windows
@@ -12,7 +12,7 @@ and app.exe: rstudio.exe
 """
 
 ctx.matches = r"""
-app: RStudio
+app: r_studio
 """
 
 @mod.action_class

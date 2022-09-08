@@ -1,9 +1,5 @@
-from typing import Set
+from talon import Context, Module, actions, app
 
-from talon import Module, Context, actions, app
-import sys
-
-#default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
 default_alphabet = "arch brov char delta echo foxy goof hotel india julia kilo lima mike novakeen oscar prime quebec romeo sierra tango uniform victor whiskey exray yank zulu".split(
     " "
 )
@@ -11,8 +7,8 @@ letters_string = "abcdefghijklmnopqrstuvwxyz"
 
 default_digits = "zero one two three four five six seven eight nine".split(" ")
 numbers = [str(i) for i in range(10)]
-default_f_digits = "one two three four five six seven eight nine ten eleven twelve".split(
-    " "
+default_f_digits = (
+    "one two three four five six seven eight nine ten eleven twelve".split(" ")
 )
 
 mod = Module()
@@ -120,16 +116,15 @@ modifier_keys = {
     "big": "shift",
     "super": "super",
 }
-if app.platform  == "mac":
+if app.platform == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
 ctx.lists["self.modifier_key"] = modifier_keys
 alphabet = dict(zip(default_alphabet, letters_string))
 ctx.lists["self.letter"] = alphabet
 
-# `punctuation_words` is for words you want available BOTH in dictation and as
-# key names in command mode. `symbol_key_words` is for key names that should be
-# available in command mode, but NOT during dictation.
+# `punctuation_words` is for words you want available BOTH in dictation and as key names in command mode.
+# `symbol_key_words` is for key names that should be available in command mode, but NOT during dictation.
 punctuation_words = {
     # TODO: I'm not sure why we need these, I think it has something to do with
     # Dragon. Possibly it has been fixed by later improvements to talon? -rntz
@@ -238,7 +233,6 @@ alternate_keys = {
     "page down": "pagedown",
     # "ace": "space", 
     "shock": "enter",
-    
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
@@ -255,7 +249,10 @@ ctx.lists["self.function_key"] = {
 
 @mod.action_class
 class Actions:
-    def get_alphabet() -> dict:
-        """Provides the alphabet dictionary"""
-        return alphabet
-
+    def move_cursor(s: str):
+        """Given a sequence of directions, eg. 'left left up', moves the cursor accordingly using edit.{left,right,up,down}."""
+        for d in s.split():
+            if d in ("left", "right", "up", "down"):
+                getattr(actions.edit, d)()
+            else:
+                raise RuntimeError(f"invalid arrow key: {d}")

@@ -1,18 +1,22 @@
-mode: user.r
-mode: user.auto_lang
-and code.language: r
-app: RStudio
+tag: user.r
+app: r_studio
 app: firefox
 and win.title: /RStudio Server Pro/
 app: chrome
 and win.title: /RStudio Server Pro/
 -
-# TODO: functions
+tag(): user.code_imperative
 
-tag(): user.code_operators
-tag(): user.code_generic
-# tag(): user.code_comment
-comment: user.code_comment()
+tag(): user.code_comment_line
+tag(): user.code_data_bool
+tag(): user.code_data_null
+tag(): user.code_functions
+tag(): user.code_functions_common
+tag(): user.code_libraries
+tag(): user.code_libraries_gui
+tag(): user.code_operators_assignment
+tag(): user.code_operators_bitwise
+tag(): user.code_operators_math
 
 settings():
     user.code_private_function_formatter = "SNAKE_CASE"
@@ -26,9 +30,11 @@ toggle library: user.code_toggle_libraries()
 library <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(end enter)
-    
-^function <user.text>$: user.code_private_function(text)
 
+# TODO: migrate to function tag
+^function define <user.text>$: user.code_private_function(text)
+
+named arg {user.code_parameter_name}: user.code_insert_named_argument(code_parameter_name)
 
 
 # R specific commands
@@ -55,10 +61,10 @@ tee pipe:
     key(end)
     " %T>% "
 
+contained in: " %in% "
+not contained in: " %not_in% "
 state NA: insert("NA")
 boom: ", "
-dot R: ".R"
-long equals: " = "
 page break: "<br>"
 NA remove: "na.rm = TRUE"
 fill CSIRO: "scale_fill_manual(values = pal)"
@@ -92,24 +98,12 @@ give praise:
     "praise::praise()"
     key(enter) 
 
-figure caption:
-    "fig.cap=''"
-    key(left)
-figure ID:
-    "fig.id=''"
-    key(left)
-table caption:
-    "tab.cap=''"
-    key(left)
-table ID:
-    "tab.id=''"
-    key(left)
-figure height:
-    "fig.height="
-    key(left)
-figure width:
-    "fig.width="
-    key(left)
+figure caption: "fig.cap='"
+figure ID: "fig.id='"
+table caption: "tab.cap='"
+table ID: "tab.id='"
+figure height: "fig.height="
+figure width: "fig.width="
 table reference:
     "Table \\@ref(tab:)"
     key(left)

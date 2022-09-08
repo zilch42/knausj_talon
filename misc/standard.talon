@@ -12,8 +12,10 @@
 #word shell: "shell".
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
+zoom reset: edit.zoom_reset()
 scroll up: edit.page_up()
 scroll down: edit.page_down()
+copy that: edit.copy()
 copy that: edit.copy()
 stoosh: edit.copy()
 cut: edit.cut()
@@ -23,16 +25,14 @@ undo: edit.undo()
 redo: edit.redo()
 paste match: edit.paste_match_style()
 save: edit.save()
-(pad | padding): 
-	insert("  ") 
+wipe: key(backspace)
+(pad | padding):
+	insert("  ")
 	key(left)
-slap:
-	edit.line_end()
-	key(enter)
+slap: edit.line_insert_down()
 hmmm: ""
 
 # wos shortcuts
 long and: " AND "
 long or: " OR "
 long not: " NOT "
-

@@ -1,4 +1,4 @@
-from talon import Context, actions, ui, Module, app, clip
+from talon import Context, Module, actions, app
 
 is_mac = app.platform == "mac"
 
@@ -8,12 +8,18 @@ mod = Module()
 mod.apps.vscode = """
 os: mac
 and app.bundle: com.microsoft.VSCode
+os: mac
+and app.bundle: com.microsoft.VSCodeInsiders
+os: mac
+and app.bundle: com.visualstudio.code.oss
 """
 mod.apps.vscode = """
 os: linux
 and app.name: Code
 os: linux
 and app.name: code-oss
+os: linux
+and app.name: code-insiders
 os: linux
 and app.name: VSCodium
 os: linux
@@ -23,7 +29,13 @@ mod.apps.vscode = """
 os: windows
 and app.name: Visual Studio Code
 os: windows
+and app.name: Visual Studio Code Insiders
+os: windows
+and app.name: Visual Studio Code - Insiders
+os: windows
 and app.exe: Code.exe
+os: windows
+and app.exe: Code-Insiders.exe
 os: windows
 and app.name: VSCodium
 os: windows
@@ -64,14 +76,11 @@ class AppActions:
         actions.user.vscode("workbench.action.newWindow")
 
 
-@mod.action_class
-class Actions:
+@ctx.action_class("code")
+class CodeActions:
+    # talon code actions
     def toggle_comment():
-        """Toggle Comment"""     
-        if is_mac:
-            actions.key("cmd-/")
-        else:
-            actions.key("ctrl-/")
+        actions.user.vscode("editor.action.commentLine")
 
 
 @ctx.action_class("edit")
@@ -158,6 +167,12 @@ class UserActions:
     def split_flip():
         actions.user.vscode("workbench.action.toggleEditorGroupLayout")
 
+    def split_maximize():
+        actions.user.vscode("workbench.action.maximizeEditor")
+
+    def split_reset():
+        actions.user.vscode("workbench.action.evenEditorWidths")
+
     def split_last():
         actions.user.vscode("workbench.action.focusLeftGroup")
 
@@ -213,7 +228,10 @@ class UserActions:
     def multi_cursor_select_more_occurrences():
         actions.user.vscode("editor.action.addSelectionToNextFindMatch")
 
-    # snippet.py support beginHelp close
+    def multi_cursor_skip_occurrence():
+        actions.user.vscode("editor.action.moveSelectionToNextFindMatch")
+
+    # snippet.py support begin
     def snippet_search(text: str):
         actions.user.vscode("editor.action.insertSnippet")
         actions.insert(text)
@@ -233,13 +251,15 @@ class UserActions:
     def tab_jump(number: int):
         if number < 10:
             if is_mac:
-                actions.key("ctrl-{}".format(number))
+                actions.user.vscode_with_plugin(
+                    f"workbench.action.openEditorAtIndex{number}"
+                )
             else:
-                actions.key("alt-{}".format(number))
+                actions.key(f"alt-{number}")
 
     def tab_final():
         if is_mac:
-            actions.key("ctrl-0")
+            actions.user.vscode("workbench.action.lastEditorInGroup")
         else:
             actions.key("alt-0")
 
@@ -248,9 +268,9 @@ class UserActions:
         """Navigates to a the specified split"""
         if index < 9:
             if is_mac:
-                actions.key("cmd-{}".format(index))
+                actions.key(f"cmd-{index}")
             else:
-                actions.key("ctrl-{}".format(index))
+                actions.key(f"ctrl-{index}")
 
     # splits.py support end
 
