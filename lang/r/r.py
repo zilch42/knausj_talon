@@ -187,6 +187,7 @@ ctx.lists["user.code_common_function"] = {
     # Shiny
     "action button": "actionButton",
     "bind event": "bindEvent", 
+    "bind cache": "bindCache", 
     "conditional panel": "conditionalPanel",
     "data table output": "dataTableOutput",
     "download button": "downloadButton",
