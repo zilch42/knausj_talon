@@ -116,14 +116,14 @@ disable dragon add-in:
     key(space enter)
 
 # prose formatters
-full stop: 
-    key(backspace . space)
-full comma:
-    key(backspace , space)
-full questo:
-    key(backspace ? space)
-full clamour:
-    key(backspace ! space)
-full semper:
-    key(backspace ; space)
+# full stop: 
+#     key(backspace . space)
+# full comma:
+#     key(backspace , space)
+# full questo:
+#     key(backspace ? space)
+# full clamour:
+#     key(backspace ! space)
+# full semper:
+#     key(backspace ; space)
 
