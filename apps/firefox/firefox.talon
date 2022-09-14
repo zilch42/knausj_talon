@@ -26,3 +26,5 @@ find: key(ctrl-f)
 # shiny stuff
 react log: key(ctrl-f3)
 react marker: key(ctrl-shift-f3)
+
+one pass: key(ctrl-shift-.)
