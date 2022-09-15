@@ -5,7 +5,7 @@ ctx.matches = r"""
 os: windows
 app: firefox
 """
-
+# ctx.tags = ["browser", "user.tabs"]
 
 @ctx.action_class("app")
 class AppActions:
@@ -14,6 +14,9 @@ class AppActions:
 
     def tab_previous():
         actions.key("ctrl-pageup")
+
+    def tab_close():
+        actions.key("ctrl-w")
 
 
 @ctx.action_class("browser")
@@ -76,6 +79,7 @@ class BrowserActions:
         actions.key("ctrl-shift-i")
 
 
+
 @ctx.action_class("user")
 class UserActions:
     def tab_jump(number: int):
@@ -84,3 +88,5 @@ class UserActions:
 
     def tab_final():
         actions.key("ctrl-9")
+
+

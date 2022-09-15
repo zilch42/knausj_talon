@@ -10,3 +10,5 @@ timestamp insert UTC:
     insert(user.time_format_utc("%Y-%m-%d %H:%M:%S"))
 timestamp insert UTC high resolution:
     insert(user.time_format_utc("%Y-%m-%d %H:%M:%S.%f"))
+insert today's date: 
+    insert(user.time_format("%d %B %Y"))

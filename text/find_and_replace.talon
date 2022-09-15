@@ -1,6 +1,6 @@
 tag: user.find_and_replace
 -
-hunt this: user.find("")
+hunt | find: user.find("")
 hunt this <user.text>: user.find(text)
 hunt all: user.find_everywhere("")
 hunt all <user.text>: user.find_everywhere(text)

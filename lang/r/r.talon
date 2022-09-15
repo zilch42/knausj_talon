@@ -67,9 +67,13 @@ state NA: insert("NA")
 boom: ", "
 page break: "<br>"
 NA remove: "na.rm = TRUE"
+
+# ggplot
 fill CSIRO: "scale_fill_manual(values = pal)"
 colour CSIRO: "scale_colour_manual(values = pal)"
 scales percent: "labels = scales::label_percent(accuracy = 1)"
+rotate axis labels: "theme(axis.text.x = element_text(angle = 90))"
+
 fix UTF-8: "fileEncoding = 'UTF-8-BOM'" 
 remove wos: "mutate(UT = sub('WOS:', '', UT))"
 add wos: "mutate(UT = paste0('WOS:', UT))"

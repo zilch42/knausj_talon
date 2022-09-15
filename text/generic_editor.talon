@@ -124,10 +124,10 @@ clear (down | dunce):
     edit.extend_line_down()
     edit.delete()
 
-(splat | clear word):
-    edit.delete_word()
+# (splat | clear word):
+#     edit.delete_word()
 
-(splat | clear word) (left | lease):
+(splat | clear word) [left | lease]:
     edit.extend_word_left()
     edit.delete()
 

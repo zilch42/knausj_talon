@@ -2,6 +2,7 @@ app: firefox
 -
 tag(): browser
 tag(): user.tabs
+
 tab search:
     browser.focus_address()
     insert("% ")
@@ -22,6 +23,7 @@ copy link: key(y a)
 # copy address: key(y y)
 duplicate tab: key(y t)
 find: key(ctrl-f)
+close tab: key(ctrl-w)
 
 # shiny stuff
 react log: key(ctrl-f3)
