@@ -9,9 +9,8 @@ tag(): user.splits
 tag(): user.tabs
 reload window: user.vscode("workbench.action.reloadWindow")
 close window: user.vscode("workbench.action.closeWindow")
-#multiple_cursor.py support end
 
-please [<user.text>]:
+(please | magic bar) [<user.text>]:
     user.vscode("workbench.action.showCommands")
     insert(user.text or "")
 

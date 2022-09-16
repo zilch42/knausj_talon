@@ -3,17 +3,17 @@ app: RStudio
 -
 
 tag(): user.line_commands
-# tag(): user.find_and_replace
+tag(): user.find_and_replace
 
-# ---------------FILESctrl
+# ---------------FILES------------------------------
 
 new (file | tab): key(cmd-shift-n)
 open file: key(cmd-o)
 go to file: key(ctrl-.)
 save all: key(cmd-alt-s)
 select all: key(cmd-a)
-(find | hunt): key(cmd-f)
-find that: key(cmd-f3)
+^hunt$: key(cmd-f)
+hunt that: key(cmd-f3)
 align that: key(cmd-i)
 hunt all: key(cmd-shift-f)
 

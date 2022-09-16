@@ -1,8 +1,8 @@
-(find it | hunt word):
-    edit.find()
+# hunt (word | that):
+#     edit.find()
 
-(next one | hunt next):
-    edit.find_next()
+# (next one | hunt next):
+#     edit.find_next()
 
 (bird | fly lease):
     edit.word_left()

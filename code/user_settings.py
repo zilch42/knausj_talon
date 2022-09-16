@@ -11,7 +11,7 @@ SETTINGS_DIR = Path(__file__).parents[1] / "settings"
 if not SETTINGS_DIR.is_dir():
     os.mkdir(SETTINGS_DIR)
 
-
+ 
 def get_list_from_csv(
     filename: str, headers: tuple[str, str], default: dict[str, str] = {}
 ):

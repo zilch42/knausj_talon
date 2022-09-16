@@ -26,6 +26,10 @@ class Actions:
         actions.insert(pattern.replace("{text}", text))
         actions.key("enter ctrl-1")
 
+@ctx.action_class("code")
+class CodeActions:
+    def toggle_comment():
+        actions.key("ctrl-shift-c")
 @ctx.action_class('edit')
 class EditActions:
     def line_clone():

@@ -13,7 +13,7 @@ close window: key(cmd-w)
 new file: key(cmd-n)
 open file: key(cmd-o)
 save as: key(f12)
-find: key(cmd-f)
+^hunt$: key(cmd-f)
 replace: key(cmd-h)
 
 # ribbon

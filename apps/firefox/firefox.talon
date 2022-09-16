@@ -22,7 +22,7 @@ google that: key(s g)
 copy link: key(y a)
 # copy address: key(y y)
 duplicate tab: key(y t)
-find: key(ctrl-f)
+^hunt$: key(ctrl-f)
 close tab: key(ctrl-w)
 
 # shiny stuff

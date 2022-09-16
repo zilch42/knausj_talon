@@ -1,7 +1,0 @@
-O and A: "O&A"
-H and B: "H&B"
-L and W: "L&W"
-A and F: "A&F"
-plant and animal science: "Plant & Animal Science"
-environment and ecology: "Environment/Ecology"
-health and biosecurity: "Health & Biosecurity"

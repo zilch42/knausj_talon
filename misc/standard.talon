@@ -16,7 +16,6 @@ zoom reset: edit.zoom_reset()
 scroll up: edit.page_up()
 scroll down: edit.page_down()
 copy that: edit.copy()
-copy that: edit.copy()
 stoosh: edit.copy()
 cut: edit.cut()
 paste that: edit.paste()
@@ -34,9 +33,4 @@ wipe: key(backspace)
 	insert("  ")
 	key(left)
 slap: edit.line_insert_down()
-hmmm: ""
 
-# wos shortcuts
-long and: " AND "
-long or: " OR "
-long not: " NOT "
