@@ -87,7 +87,6 @@ def first_vs_rest(first_func, rest_func=lambda w: w):
     first_func = first_func or (lambda w: w)
     return lambda i, word, _: first_func(word) if i == 0 else rest_func(word)
 
-
 def every_word(word_func):
     """Apply one function to every word."""
     return lambda i, word, _: word_func(word)
@@ -95,6 +94,7 @@ def every_word(word_func):
 
 formatters_dict = {
     "NOOP": (SEP, lambda i, word, _: word),
+    "SPACE_NOOP": (SEP, lambda i, word, is_end: word if not is_end else word + " "),
     "DOUBLE_UNDERSCORE": (NOSEP, first_vs_rest(lambda w: f"__{w}__")),
     "PRIVATE_CAMEL_CASE": (
         NOSEP,
@@ -120,11 +120,12 @@ formatters_dict = {
     "ALL_LOWERCASE": (SEP, every_word(lambda w: w.lower())),
     "DOUBLE_QUOTED_STRING": (SEP, surround('"')),
     "SINGLE_QUOTED_STRING": (SEP, surround("'")),
-    "SPACE_SURROUNDED_STRING": (SEP, surround(" ")),
+    "SPACE_SURROUNDED_STRING": (SEP, surround(" ")), 
     "DOT_SEPARATED": words_with_joiner("."),
     "DOT_SNAKE": (NOSEP, lambda i, word, _: "." + word if i == 0 else "_" + word),
     "SLASH_SEPARATED": (NOSEP, every_word(lambda w: "/" + w)),
-    "CAPITALIZE_FIRST_WORD": (SEP, first_vs_rest(lambda w: w.capitalize())),
+    "CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: word.capitalize() + " " if i == 0 else word + " "),
+    "SPACE_CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: " " + word.capitalize() + " " if i == 0 else word + " "),
     "CAPITALIZE_ALL_WORDS": (
         SEP,
         lambda i, word, _: word.capitalize()
@@ -292,8 +293,8 @@ def unformat_text(text: str) -> str:
 
 ctx.lists["self.formatters"] = formatters_words.keys()
 ctx.lists["self.prose_formatter"] = {
-    "say": "NOOP",
-    "speak": "NOOP",
-    "sentence": "CAPITALIZE_FIRST_WORD",
+    "say": "SPACE_NOOP",
+    "spray": "SPACE_SURROUNDED_STRING",
     "sing": "CAPITALIZE_FIRST_WORD",
+    "spring": "SPACE_CAPITALIZE_FIRST_WORD", 
 }
