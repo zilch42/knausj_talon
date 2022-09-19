@@ -8,6 +8,7 @@ triple quote: "'''"
 (dot dot | dotdot | double dot): ".."
 (ellipses | three dots): "..."
 (comma and | spamma | boom): ", "
+
 plus: "+"
 ampersand: "&"
 long plus: " + "
@@ -15,10 +16,23 @@ long minus: " - "
 long pipe: " | "
 long equals: " = "
 long ampersand: " & "
+
+full stop: 
+    key(backspace . space)
+full comma:
+    key(backspace , space)
+full questo:
+    key(backspace ? space)
+full clamour:
+    key(backspace ! space)
+full semper:
+    key(backspace ; space)
+
 arrow: "->"
 dub arrow: "=>"
 slash: "/"
 new line: "\\n"
+
 # carriage return: "\\r"
 # line feed: "\\r\\n"
 # empty dubstring:
