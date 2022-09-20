@@ -121,6 +121,7 @@ toggle mark: user.vscode("bookmarks.toggle")
 go next mark: user.vscode("bookmarks.jumpToNext")
 go last mark: user.vscode("bookmarks.jumpToPrevious")
 
+# close tab: actions.user.vscode("workbench.action.closeActiveEditor")
 close other tabs: user.vscode("workbench.action.closeOtherEditors")
 close all tabs: user.vscode("workbench.action.closeAllEditors")
 close tabs way right: user.vscode("workbench.action.closeEditorsToTheRight")
