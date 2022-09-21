@@ -16,3 +16,7 @@ paste match: edit.paste_match_style()
 save: edit.save()
 slap: edit.line_insert_down()
 
+# WoS operators
+long or: " OR "
+long and: " AND "
+long not: " NOT "
