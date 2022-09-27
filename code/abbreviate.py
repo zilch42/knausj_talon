@@ -28,6 +28,7 @@ abbreviations = {
     "environment": "env",
     "escape": "esc",
     "etcetera": "etc",
+    "evaluate": "eval", 
     "function": "func",
     "image": "img",
     "information": "info",

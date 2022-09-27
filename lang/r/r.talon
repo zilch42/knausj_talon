@@ -38,18 +38,18 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
 
 
 # R specific commands
-# chain:
-#     key(end)
-#     " %>% "
-# inner chain: " %>% "
 chain:
     key(end)
-    " |> "
-inner chain: " |> "
-old chain:
-    key(end)
     " %>% "
-old inner chain: " %>% "
+inner chain: " %>% "
+# chain:
+#     key(end)
+#     " |> "
+# inner chain: " |> "
+# old chain:
+#     key(end)
+#     " %>% "
+# old inner chain: " %>% "
 
 # about the new pipes 
 # https://r4ds.hadley.nz/workflow-pipes.html
