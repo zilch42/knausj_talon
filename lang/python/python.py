@@ -1,5 +1,5 @@
 import re
-
+from typing import Mapping, Union
 from talon import Context, Module, actions, settings
 
 mod = Module()
@@ -18,6 +18,15 @@ ctx.lists["user.code_common_function"] = {
     "split": "split",
     "string": "str",
     "update": "update",
+    "hitter items": "iteritems",
+    "iter items": "iteritems",
+    "append": "append",
+    "apply": "apply",
+    "lower": "lower",
+    "min": "min",
+    "minimum": "min",
+    "max": "max",
+    "maximum": "max",
 }
 
 """a set of fields used in python docstrings that will follow the
@@ -143,6 +152,21 @@ mod.list("python_exception", desc="python exceptions")
 ctx.lists["user.python_exception"] = {
     " ".join(re.findall("[A-Z][^A-Z]*", exception)).lower(): exception
     for exception in exception_list
+}
+
+ctx.lists["user.code_libraries"] = {
+    "jason": "json",
+    "logging": "logging",
+    "numb pie": "numpy as np",
+    "O S": "os",
+    "pandas": "pandas as pd",
+    "pie test": "pytest",
+    "regex": "re",
+    "requests": "requests",
+    "random": "random",
+    "sis": "sys",
+    "time": "time",
+    "tommel": "toml",
 }
 
 
@@ -337,3 +361,6 @@ class UserActions:
 
     def code_insert_return_type(type: str):
         actions.insert(f" -> {type}")
+
+    def code_insert_library(text: str, selection: str):
+        actions.user.paste(text)
