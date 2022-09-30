@@ -16,6 +16,7 @@ tag(): user.code_operators_array
 tag(): user.code_operators_assignment
 tag(): user.code_operators_bitwise
 tag(): user.code_operators_math
+tag(): user.common_variables
 
 settings():
     user.code_private_function_formatter = "SNAKE_CASE"
@@ -55,12 +56,14 @@ import <user.code_libraries>:
     key(end enter)
 from import: user.insert_between("from ", " import ")
 toggle imports: user.code_toggle_libraries()
+pip install: "pip install "
 
 # misc
 insert todo: "# TODO: "
 insert line break:
     "# ------------------------------------------------"
 boom: ", "
+contained in: " in "
 # date time now format: 'datetime.now().strftime("%Y-%m-%d %H:%M[|]")'
 
 # Libraries

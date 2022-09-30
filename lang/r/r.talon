@@ -17,6 +17,7 @@ tag(): user.code_libraries_gui
 tag(): user.code_operators_assignment
 tag(): user.code_operators_bitwise
 tag(): user.code_operators_math
+tag(): user.common_variables
 
 settings():
     user.code_private_function_formatter = "SNAKE_CASE"

@@ -110,10 +110,11 @@ python console:
     key("ctrl-2")
     "repl_python()"
     key("enter")
-(our | are) console:
+(are console | python quit):
         key("ctrl-2")
         "exit"
         key("enter")
+        
 
 
 # ----------------GIT CONSOLE--------------------
