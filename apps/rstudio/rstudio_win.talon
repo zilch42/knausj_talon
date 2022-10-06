@@ -8,6 +8,8 @@ and win.title: /RStudio Server Pro/
 
 tag(): user.line_commands
 # tag(): user.find_and_replace
+# TO DO
+# multiple cursors
 
 # ---------------FILES---------------------------------
 new (file | tab): key(ctrl-shift-n)
@@ -64,8 +66,8 @@ unfold all: key(shift-alt-o)
 go to line: key(shift-alt-g)
 move up: key(alt-up)
 move down: key(alt-down)
-add cursor up: key(ctrl-alt-up)
-add cursor down: key(ctrl-alt-down)
+curse up: key(ctrl-alt-up)
+curse down: key(ctrl-alt-down)
 insert oxygen: key(ctrl-alt-shift-r)
 help that: key(f1)
 show source: key(f2)

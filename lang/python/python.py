@@ -27,6 +27,7 @@ ctx.lists["user.code_common_function"] = {
     "minimum": "min",
     "max": "max",
     "maximum": "max",
+    "delete variable": "del", 
 }
 
 """a set of fields used in python docstrings that will follow the

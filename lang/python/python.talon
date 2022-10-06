@@ -68,6 +68,9 @@ contained in: " in "
 
 # Libraries
 pandas {user.py_lib_pandas}: user.code_insert_function(py_lib_pandas, "")
+dot pandas {user.py_lib_pandas}: 
+    "."
+    user.code_insert_function(py_lib_pandas, "")
 numb pie {user.py_lib_numpy}: user.code_insert_function(py_lib_numpy, "")
 regex {user.py_lib_re}: user.code_insert_function(py_lib_re, "")
 system {user.py_lib_sys}: user.code_insert_function(py_lib_sys, "")
@@ -86,83 +89,26 @@ logging basic config:
 # # OTHER PEOPLE S STUFF
 # # PANDAS
 # axis equal <number>$: "axis={number}"
-# in place equal true: "inplace=True"
-# in place equal false: "inplace=False"
+in place true: "inplace=True"
+in place false: "inplace=False"
 
-# d f: "df"
-# p d max rows: "pd.set_option('display.max_rows', 500)"
-# p d max columns: "pd.set_option('display.max_columns', 25)"
-# read c s v: "pd.read_csv("
-# read t s v: 
-#     insert('pd.read_csv( , sep="\\t")')
-#     key(left:12)
- 
-# save t s v: "to_csv(, sep='\\t', index=False)"
+d f: "df"
+lambda ex: "lambda x: "
 
-# d f people: "df_ppl"
-
-# p d categorical: "pd.Categorical("
-# dot assign: ".assign("
-
-# dot columns: ".columns"
-# dot head: ".head()"
-# dot head <number>$: ".head({number})"
-# dot tail: ".tail("
-# dot tail <number>$: ".tail({number})"
 # dot describe: ".describe()"
 # dot info: ".info()"
 
-# dot group by: ".groupby("
-
-# dot iter tuples: ".itertuples()"
-
-# dot to csv: ".to_csv("
-
-# equal gap: " = "
-
 # dot drop duplicates: ".drop_duplicates"
-
 # dot drop column in place: ".drop(columns='TO ADD', inplace=True)"
 # rename column: "df.rename({"colnm": "newcolnm"}, axis=1, inplace=True)
-# dot rename: ".rename("
 
-# dot i lock: ".iloc["
-# dot lock: ".loc["
+dot i lock: ".iloc["
+dot lock: ".loc[:, "
 
 # dot as type float: ".astype(float)"
 # dot as type int: ".astype(int)"
 
-
-# dot string split: ".str.split("
-
-# import data stuff: 
-#     insert("import numpy as np\n")
-#     insert("import pandas as pd\n")
-#     insert("import pickle\n")
-#     insert("from pathlib import Path\n")
-#     #insert("from fastcore.all import *\n")
-
-# import torch stuff:
-#     """import torch
-#     import torch.nn as nn
-#     import torch.nn.functional as F
-#     import torch.utils.data as data
-#     import torch.optim as optim"""
-
-# import mat plot lib:
-#     """import matplotlib.pyplot as plt
-#     plt.set_cmap('cividis')
-#     %matplotlib inline 
-#     from IPython.display import set_matplotlib_formats
-#     set_matplotlib_formats('svg', 'pdf') # For export
-#     from matplotlib.colors import to_rgb
-#     import matplotlib
-#     matplotlib.rcParams['lines.linewidth'] = 2.0"""
-
-# import sea born:
-#     """import seaborn as sns
-#     sns.reset_orig()"""
-
+dot string split: ".str.split("
 
 # dot value counts: ".value_counts()"
 # dot value counts show missing: ".value_counts(dropna=False)"

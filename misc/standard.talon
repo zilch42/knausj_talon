@@ -14,7 +14,7 @@ undo: edit.undo()
 redo: edit.redo()
 paste match: edit.paste_match_style()
 save: edit.save()
-slap: edit.line_insert_down()
+sink: edit.line_insert_down()
 
 # WoS operators
 long or: " OR "
