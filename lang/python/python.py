@@ -162,6 +162,7 @@ ctx.lists["user.code_libraries"] = {
     "O S": "os",
     "pandas": "pandas as pd",
     "pie test": "pytest",
+    "pickle": "pickle", 
     "regex": "re",
     "requests": "requests",
     "random": "random",
