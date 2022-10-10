@@ -64,6 +64,9 @@ insert line break:
     "# ------------------------------------------------"
 boom: ", "
 contained in: " in "
+collect garbage: 
+    "gc.collect()"
+    key(enter)
 # date time now format: 'datetime.now().strftime("%Y-%m-%d %H:%M[|]")'
 
 # Libraries

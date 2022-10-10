@@ -239,9 +239,20 @@ select word: user.vscode("editor.action.addSelectionToNextFindMatch")
 skip word: user.vscode("editor.action.moveSelectionToNextFindMatch")
 
 # jupyter
-cell next: user.vscode("notebook.focusNextEditor")
-cell last: user.vscode("notebook.focusPreviousEditor")
-cell run above: user.vscode("notebook.cell.executeCellsAbove")
-cell run: user.vscode("notebook.cell.execute")
+run next chunk: user.vscode("notebook.focusNextEditor")
+run previous chunk: user.vscode("notebook.focusPreviousEditor")
+run all above: user.vscode("notebook.cell.executeCellsAbove")
+run chunk: user.vscode("notebook.cell.execute")
+change to markdown: user.vscode("notebook.cell.changeToMarkdown")
+change to code: user.vscode("notebook.cell.changeToCode")
+insert chunk: 
+    user.vscode("notebook.cell.insertCodeCellBelowAndFocusContainer")
+    key(tab:4)
+insert markdown: user.vscode("notebook.cell.insertMarkdownCellBelow")
+dip: user.vscode("jupyter.runByLineNext")
+
+python console: user.vscode("python.startREPL")
+# user.vscode("")
+# user.vscode("")
 
 # install local: user.vscode("workbench.extensions.action.installVSIX")

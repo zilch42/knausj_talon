@@ -156,6 +156,7 @@ ctx.lists["user.python_exception"] = {
 }
 
 ctx.lists["user.code_libraries"] = {
+    "garbage collection": "gc", 
     "jason": "json",
     "logging": "logging",
     "numb pie": "numpy as np",
