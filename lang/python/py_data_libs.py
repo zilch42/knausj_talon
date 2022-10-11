@@ -112,7 +112,6 @@ ctx.lists["user.py_lib_pandas"] = {
     "as of": "asof",
     "as sign": "assign",
     "as type": "astype",
-    "at": "at",
     "at time": "at_time",
     "attrs": "attrs",
     "axes": "axes",

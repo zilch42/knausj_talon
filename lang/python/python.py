@@ -28,6 +28,7 @@ ctx.lists["user.code_common_function"] = {
     "max": "max",
     "maximum": "max",
     "delete variable": "del", 
+    "some": "sum", 
 }
 
 """a set of fields used in python docstrings that will follow the
@@ -159,6 +160,7 @@ ctx.lists["user.code_libraries"] = {
     "garbage collection": "gc", 
     "jason": "json",
     "logging": "logging",
+    "plots": "matplotlib.pyplot as plt", 
     "numb pie": "numpy as np",
     "O S": "os",
     "pandas": "pandas as pd",

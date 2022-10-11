@@ -91,19 +91,17 @@ logging basic config:
 
 # # OTHER PEOPLE S STUFF
 # # PANDAS
-# axis equal <number>$: "axis={number}"
+axis equals <number>$: "axis={number}"
 in place true: "inplace=True"
 in place false: "inplace=False"
 
 d f: "df"
 lambda ex: "lambda x: "
 
-# dot describe: ".describe()"
-# dot info: ".info()"
+dot describe: ".describe()"
+dot info: ".info()"
 
-# dot drop duplicates: ".drop_duplicates"
-# dot drop column in place: ".drop(columns='TO ADD', inplace=True)"
-# rename column: "df.rename({"colnm": "newcolnm"}, axis=1, inplace=True)
+dot drop column in place: ".drop(columns='TO ADD', inplace=True)"
 
 dot i lock: ".iloc["
 dot lock: ".loc[:, "
@@ -116,7 +114,8 @@ dot string split: ".str.split("
 # dot value counts: ".value_counts()"
 # dot value counts show missing: ".value_counts(dropna=False)"
 
-
+# MATPLOTLIB Stuff
+graph plot: "fig, ax = plt.subplots()"
 
 # # SYNTAX COMMON TO NP and TORCH
 # dee type: "dtype"
@@ -262,99 +261,3 @@ dot string split: ".str.split("
 
 # optimizer step: "optimizer.step()"
 
-
-
-
-# dataframes: "df"
-
-# import pandas: "import pandas as pd"
-# import geopandas: "import geopandas as gpd"
-# import numpy: "import numpy as np"
-
-# # Numpy/Pandas Methods
-# describe: ".describe()"
-# columns: ".columns"
-# head: ".head()"
-# mean: ".mean()"
-# copy: ".copy()"
-# all: ".all()"
-# any: ".any()"
-# not N/A: ".notna()"
-# is N/A: ".isna()"
-# hist: ".hist()"
-# drop:
-#     insert('.drop(columns=[""])')
-#     key(left:3)
-# rename:
-#     insert('.rename(columns={})')
-#     key(left:3)
-    
-# assert: "assert "
-# sort index: ".sort_index()"
-# sort values: 
-#     insert('.sort_values("")')
-#     edit.left()
-#     edit.left()
-
-# is in: 
-#     insert(".isin([])")
-#     edit.left()
-#     edit.left()
-
-# as type:
-#     insert('.astype("")')
-#     edit.left()
-#     edit.left()
-# sample one: ".sample().T"
-
-# # Pandas
-# group by: 
-#     insert('.groupby([""], as_index=False)')
-#     key(left:19)
-
-# join:
-#     insert('.merge(, how="outer", indicator=True, validate="1:1")')
-#     key(left:46)
-
-# merge: "merge"
-
-# value counts: ".value_counts()"
-# value counts missing: ".value_counts(dropna=False)"
-# value counts normalized: ".value_counts(normalize=True)"
-# value counts normalized missing: ".value_counts(normalize=True, dropna=False)"
-# value counts missing normalized: ".value_counts(dropna=False, normalize=True)"
-# underscore merge: "_merge"
-# cake:
-#     insert('[""]')
-#     edit.left()
-#     edit.left()
-
-# cake named <user.text>:
-#     insert('["{user.text}"]')
-
-# cake list:
-#     insert('[[""]]')  
-#     edit.left()
-#     edit.left()
-#     edit.left()    
-
-# location: 
-# b    insert(".loc[]")
-#     edit.left()
-
-# index location: 
-#     insert(".iloc[]")
-#     edit.left()
-
-# axis columns:'axis="columns"'
-
-# # Regular Python
-
-# false: "False"
-# true: "True"
-
-# not equals: " != "
-# double equals: " == "
-# greater equal: " >= "
-# less than equal: " <= "
-# gets: " = "
