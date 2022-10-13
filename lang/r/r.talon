@@ -1,9 +1,9 @@
 tag: user.r
 app: r_studio
 app: firefox
-and win.title: /RStudio Server Pro/
+and win.title: /RStudio Workbench/
 app: chrome
-and win.title: /RStudio Server Pro/
+and win.title: /RStudio Workbench/
 -
 tag(): user.code_imperative
 
