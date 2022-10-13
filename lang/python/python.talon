@@ -67,6 +67,15 @@ contained in: " in "
 collect garbage: 
     "gc.collect()"
     key(enter)
+
+# dictionary definitions where "word": "word", (for talon)
+^double <user.text>$: 
+    '"'
+    auto_insert(user.text)
+    '": "'
+    auto_insert(user.text)
+    '", '
+
 # date time now format: 'datetime.now().strftime("%Y-%m-%d %H:%M[|]")'
 
 # Libraries
@@ -78,6 +87,8 @@ numb pie {user.py_lib_numpy}: user.code_insert_function(py_lib_numpy, "")
 regex {user.py_lib_re}: user.code_insert_function(py_lib_re, "")
 system {user.py_lib_sys}: user.code_insert_function(py_lib_sys, "")
 OS {user.py_lib_os}: user.code_insert_function(py_lib_os, "")
+graph {user.py_lib_matplotlib}: user.code_insert_function(py_lib_matplotlib, "")
+seaborne {user.py_lib_seaborn}: user.code_insert_function(py_lib_seaborn, "")
 
 # Loggers
 logging get logger: "logger = logging.getLogger(__name__)"
@@ -115,7 +126,7 @@ dot string split: ".str.split("
 # dot value counts show missing: ".value_counts(dropna=False)"
 
 # MATPLOTLIB Stuff
-graph plot: "fig, ax = plt.subplots()"
+new plot: "fig, ax = plt.subplots()"
 
 # # SYNTAX COMMON TO NP and TORCH
 # dee type: "dtype"

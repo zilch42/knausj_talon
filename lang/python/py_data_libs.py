@@ -928,3 +928,18 @@ ctx.lists["user.py_lib_numpy"] = {
     "zeros": "np.zeros",
     "zeros like": "np.zeros_like",
 }
+
+
+mod.list("py_lib_matplotlib")
+ctx.lists["user.py_lib_matplotlib"] = {
+    "annotate": "annotate", 
+    "subplots": "subplots", 
+    "plot": "plot", 
+}
+
+
+mod.list("py_lib_seaborn")
+ctx.lists["user.py_lib_seaborn"] = {
+    "distribution plot": "sns.displot", 
+    "relation plot": "sns.relplot", 
+}

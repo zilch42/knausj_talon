@@ -73,6 +73,7 @@ help that: key(f1)
 show source: key(f2)
 complete: key(ctrl-space)
 redo: key(ctrl-shift-z)
+cue comment: "#| "
 
 # --------------CONSOLE----------------------------------
 see that: user.r_paste_into_console("View({{text}})")

@@ -170,6 +170,7 @@ ctx.lists["user.code_libraries"] = {
     "requests": "requests",
     "random": "random",
     "sis": "sys",
+    "seaborne": "seaborn as sns", 
     "time": "time",
     "tommel": "toml",
 }
