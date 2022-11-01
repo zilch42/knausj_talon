@@ -249,6 +249,7 @@ ctx.lists["user.code_libraries"] = {
     "shiny fluent": "shiny.fluent", 
     "shiny js": "shinyjs", 
     "shiny": "shiny", 
+    "test that": "testthat", 
     "tibble": "tibble", 
     "tidier": "tidyr",
     "tidy verse": "tidyverse",
