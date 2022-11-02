@@ -215,6 +215,9 @@ ctx.lists["user.code_common_function"] = {
     "title panel": "titlePanel",
     "ui output": "uiOutput",
 
+    # tadro
+    "get meta data": "get_metadata", 
+
 }
 
 ctx.lists["user.code_libraries"] = {
