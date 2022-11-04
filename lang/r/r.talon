@@ -68,6 +68,12 @@ state NA: insert("NA")
 boom: ", "
 page break: "<br>"
 NA remove: "na.rm = TRUE"
+sequence data frame: 
+    "seq_len(nrow())"
+    key(left:2)
+install bibliotecR: 
+    'remotes::install_local("W:/bibliotecR_0..tar.gz", dependencies = "Imports")'
+    key(left:35)
 
 # ggplot
 fill CSIRO: "scale_fill_manual(values = pal)"
