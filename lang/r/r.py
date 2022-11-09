@@ -225,6 +225,7 @@ ctx.lists["user.code_libraries"] = {
     "are laying": "rlang", 
     "bibliotecr": "bibliotecR",
     "cable": "kable",
+    "cable styling": "kable_styling",
     "csiro pallets": "CSIROpalettes",
     "D plier": "dpylr", 
     "dev tools": "devtools",
