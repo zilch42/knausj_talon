@@ -17,15 +17,15 @@ long pipe: " | "
 long equals: " = "
 long ampersand: " & "
 
-full stop: 
+(four|full) stop: 
     key(backspace . space)
-full comma:
+(four|full) comma:
     key(backspace , space)
-full questo:
+(four|full) questo:
     key(backspace ? space)
-full clamour:
+(four|full) clamour:
     key(backspace ! space)
-full semper:
+(four|full) semper:
     key(backspace ; space)
 
 arrow: "->"

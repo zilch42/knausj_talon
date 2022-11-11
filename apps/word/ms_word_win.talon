@@ -116,7 +116,7 @@ disable dragon add-in:
     sleep(200ms)
     key(space enter)
 
-# prose formatters
+# prose formatters (in symbols.talon)
 # full stop: 
 #     key(backspace . space)
 # full comma:

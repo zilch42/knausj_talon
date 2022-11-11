@@ -19,6 +19,7 @@ ctx.lists["user.code_common_function"] = {
     "as numeric": "as.numeric",
     "as vector": "as.vector", 
     "cable": "kable",
+    "cable styling": "kable_styling",
     "correlation": "cor",
     "count": "count",
     "create windows": "create_windows", 
@@ -218,14 +219,17 @@ ctx.lists["user.code_common_function"] = {
     # tadro
     "get meta data": "get_metadata", 
 
+    # miscellaneous
+    "tick": "tic", 
+    "tok": "toc", 
+
 }
 
 ctx.lists["user.code_libraries"] = {
     "altmetric data": "AltmetricData", 
     "are laying": "rlang", 
     "bibliotecr": "bibliotecR",
-    "cable": "kable",
-    "cable styling": "kable_styling",
+    "cable extra": "kableExtra",
     "csiro pallets": "CSIROpalettes",
     "D plier": "dpylr", 
     "dev tools": "devtools",
@@ -254,6 +258,7 @@ ctx.lists["user.code_libraries"] = {
     "shiny js": "shinyjs", 
     "shiny": "shiny", 
     "test that": "testthat", 
+    "tick-tock": "tictoc", 
     "tibble": "tibble", 
     "tidier": "tidyr",
     "tidy verse": "tidyverse",
