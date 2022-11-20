@@ -177,7 +177,7 @@ copy word:
     edit.select_word()
     edit.copy()
 
-copy word (left | lease):
+processed word (left | lease):
     edit.extend_word_left()
     edit.copy()
 
@@ -223,13 +223,4 @@ cut line:
     edit.select_line()
     edit.cut()
 
-# mouse copy paste command
-garb:
-    mouse_click(0)
-    edit.select_word()
-    edit.copy()
 
-drop:
-    mouse_click(0)
-    edit.select_word()
-    edit.paste()

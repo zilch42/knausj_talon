@@ -5,7 +5,7 @@ ctx.matches = r"""
 os: mac
 app: firefox
 """
-
+ 
 
 @ctx.action_class("browser")
 class BrowserActions:

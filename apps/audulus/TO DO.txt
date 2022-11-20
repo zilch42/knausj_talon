@@ -2,9 +2,6 @@ TO DO
 
 Mac Specific
 -----------------------
-Dredge
-Drag
-Check clicks 
 Figure out how to add words 
 Figure out how to remove words 
 
