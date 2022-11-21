@@ -122,6 +122,14 @@ figure reference:
     "Figure \\@ref(fig:)"
     key(left)
 
+# quarto functions
+cue {user.quarto_chunk_options} [{user.quarto_logical}]:
+    edit.delete_line()
+    "#| "
+    insert(quarto_chunk_options)
+    ": "
+    insert(quarto_logical)
+
 # Shiny
 import from: "@importFrom "
 are lang: "rlang"

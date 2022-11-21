@@ -76,6 +76,13 @@ collect garbage:
     auto_insert(user.text)
     '", '
 
+next quote: 
+    key(right)
+    ': "'
+    key(right)
+    ", "
+    key(left:3)
+
 # date time now format: 'datetime.now().strftime("%Y-%m-%d %H:%M[|]")'
 
 # Libraries

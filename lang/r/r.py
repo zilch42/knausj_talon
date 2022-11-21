@@ -1,5 +1,6 @@
-from talon import Context, actions, settings
+from talon import Context, actions, settings, Module
 
+mod = Module()
 ctx = Context()
 
 ctx.matches = r"""
@@ -304,6 +305,20 @@ ctx.lists["user.code_parameter_name"] = {
     "why limit": "ylim",
     "why max": "ymax",
     "why min": "ymin",
+}
+
+mod.list("quarto_chunk_options")
+ctx.lists["user.quarto_chunk_options"] = {
+    "evaluate": "eval", 
+    "include": "include", 
+    "figure width": "fig.width", 
+    "figure height": "fig.height", 
+}
+
+mod.list("quarto_logical")
+ctx.lists["user.quarto_logical"] = {
+    "true": "true", 
+    "false": "false", 
 }
 
 
