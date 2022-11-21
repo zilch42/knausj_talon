@@ -62,11 +62,11 @@ end drag | drag end:
 
 # mouse copy paste command
 garb:
-    mouse_click(0)
+    mouse_click()
     edit.select_word()
     edit.copy()
 
 drop:
-    mouse_click(0)
+    mouse_click()
     edit.select_word()
     edit.paste()
