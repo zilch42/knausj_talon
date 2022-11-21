@@ -7,14 +7,14 @@
 (bird | fly lease):
     edit.word_left()
 
-(firch | fly ross):
+(firch | fearch | fly ross):
     edit.word_right()
 
-fly (source | up):
-    user.word_up()
+fly source: 
+    key(ctrl-up)
 
-fly (dunce | down):
-    user.word_down()
+fly dunce: 
+    key(ctrl-down)
 
 lease:
     edit.left()
@@ -92,12 +92,6 @@ select all:
 
 (grab | select) bottom:
     edit.extend_file_end()
-    
-(grab | select) (up | source):
-    user.grab_up()
-
-(grab | select) (down | dunce):
-    user.grab_down()
 
 # editing
 indent [more]:
