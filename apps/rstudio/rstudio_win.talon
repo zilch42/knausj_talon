@@ -1,13 +1,15 @@
 os: windows
 app: RStudio
 app: firefox
-and win.title: /RStudio Server Pro/
+and win.title: /RStudio Workbench/
 app: chrome
-and win.title: /RStudio Server Pro/
+and win.title: /RStudio Workbench/
 -
 
 tag(): user.line_commands
 # tag(): user.find_and_replace
+# TO DO
+# multiple cursors
 
 # ---------------FILES---------------------------------
 new (file | tab): key(ctrl-shift-n)
@@ -15,8 +17,8 @@ open file: key(ctrl-o)
 go to file: key(ctrl-.)
 save all: key(ctrl-alt-s)
 select all: key(ctrl-a)
-find: key(ctrl-f)
-find that: key(ctrl-f3)
+^hunt$: key(ctrl-f)
+hunt that: key(ctrl-f3)
 align that: key(ctrl-i)
 (hunt all | RS find): key(ctrl-shift-f)
 
@@ -47,8 +49,8 @@ dip: key(ctrl-enter)
 (dips day | dip stay): key(alt-enter)
 run chunk: key(ctrl-shift-enter)
 (run document | build it): key(ctrl-alt-r)
-run all previous: key(ctrl-alt-b)
-run all after: key(ctrl-alt-e)
+run all above: key(ctrl-alt-b)
+run all below: key(ctrl-alt-e)
 run next chunk: key(ctrl-alt-n)
 knit (document | file): key(ctrl-shift-k)
 insert chunk: key(ctrl-alt-i)
@@ -64,13 +66,14 @@ unfold all: key(shift-alt-o)
 go to line: key(shift-alt-g)
 move up: key(alt-up)
 move down: key(alt-down)
-add cursor up: key(ctrl-alt-up)
-add cursor down: key(ctrl-alt-down)
+curse source: key(ctrl-alt-up)
+curse dunce: key(ctrl-alt-down)
 insert oxygen: key(ctrl-alt-shift-r)
 help that: key(f1)
 show source: key(f2)
 complete: key(ctrl-space)
 redo: key(ctrl-shift-z)
+cue comment: "#| "
 
 # --------------CONSOLE----------------------------------
 see that: user.r_paste_into_console("View({{text}})")
@@ -110,10 +113,14 @@ python console:
     key("ctrl-2")
     "repl_python()"
     key("enter")
-(our | are) console:
+(are console | python quit):
         key("ctrl-2")
         "exit"
         key("enter")
+        
+
+# ----------------BROWSER VERSION--------------------
+sign: ""
 
 
 # ----------------GIT CONSOLE--------------------

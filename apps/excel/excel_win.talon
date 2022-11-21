@@ -53,7 +53,7 @@ paste widths:
 go to special: key(alt-h f d s)
 go to visible: key(alt-h f d s y enter)
 
-find: key(ctrl-f)
+^hunt$: key(ctrl-f)
 replace: key(ctrl-h)
 
 

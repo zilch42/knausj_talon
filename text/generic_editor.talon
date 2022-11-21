@@ -1,20 +1,20 @@
-(find it | hunt word):
-    edit.find()
+# hunt (word | that):
+#     edit.find()
 
-(next one | hunt next):
-    edit.find_next()
+# (next one | hunt next):
+#     edit.find_next()
 
 (bird | fly lease):
     edit.word_left()
 
-(firch | fly ross):
+(firch | fearch | fly ross):
     edit.word_right()
 
-fly (source | up):
-    user.word_up()
+fly source: 
+    key(ctrl-up)
 
-fly (dunce | down):
-    user.word_down()
+fly dunce: 
+    key(ctrl-down)
 
 lease:
     edit.left()
@@ -92,12 +92,6 @@ select all:
 
 (grab | select) bottom:
     edit.extend_file_end()
-    
-(grab | select) (up | source):
-    user.grab_up()
-
-(grab | select) (down | dunce):
-    user.grab_down()
 
 # editing
 indent [more]:
@@ -124,10 +118,10 @@ clear (down | dunce):
     edit.extend_line_down()
     edit.delete()
 
-(splat | clear word):
-    edit.delete_word()
+# (splat | clear word):
+#     edit.delete_word()
 
-(splat | clear word) (left | lease):
+(splat | clear word) [left | lease]:
     edit.extend_word_left()
     edit.delete()
 
@@ -177,7 +171,7 @@ copy word:
     edit.select_word()
     edit.copy()
 
-copy word (left | lease):
+processed word (left | lease):
     edit.extend_word_left()
     edit.copy()
 
@@ -223,13 +217,4 @@ cut line:
     edit.select_line()
     edit.cut()
 
-# mouse copy paste command
-garb:
-    mouse_click(0)
-    edit.select_word()
-    edit.copy()
 
-drop:
-    mouse_click(0)
-    edit.select_word()
-    edit.paste()

@@ -1,6 +1,7 @@
 app: ms_word
 os: windows
 -
+# tag(): user.find_and_replace
 
 settings():
     key_wait = 10
@@ -13,7 +14,7 @@ close window: key(ctrl-w)
 new file: key(ctrl-n)
 open file: key(ctrl-o)
 save as: key(f12)
-find: key(ctrl-f)
+^hunt$: key(ctrl-f)
 replace: key(ctrl-h)
 
 # ribbon
@@ -115,15 +116,15 @@ disable dragon add-in:
     sleep(200ms)
     key(space enter)
 
-# prose formatters
-full stop: 
-    key(backspace . space)
-full comma:
-    key(backspace , space)
-full questo:
-    key(backspace ? space)
-full clamour:
-    key(backspace ! space)
-full semper:
-    key(backspace ; space)
+# prose formatters (in symbols.talon)
+# full stop: 
+#     key(backspace . space)
+# full comma:
+#     key(backspace , space)
+# full questo:
+#     key(backspace ? space)
+# full clamour:
+#     key(backspace ! space)
+# full semper:
+#     key(backspace ; space)
 

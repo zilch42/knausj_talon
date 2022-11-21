@@ -1,10 +1,4 @@
-import os
-import os.path
-import requests
-import time
-from pathlib import Path
-from talon import ctrl, ui, Module, Context, actions, clip
-import tempfile
+from talon import Module, actions
 
 mod = Module()
 
@@ -29,18 +23,17 @@ class Actions:
             actions.edit.extend_line_down()
         actions.edit.extend_line_end()
 
-    def extend_camel_left():
-        """Extends the selection by camel/subword to the left"""
+    # def extend_camel_left():
+    #     """Extends the selection by camel/subword to the left"""
 
-    def extend_camel_right():
-        """Extends the selection by camel/subword to the right"""
+    # def extend_camel_right():
+    #     """Extends the selection by camel/subword to the right"""
 
-    def camel_left():
-        """Moves cursor to the left by camel case/subword"""
+    # def camel_left():
+    #     """Moves cursor to the left by camel case/subword"""
 
-    def camel_right():
-        """Move cursor to the right by camel case/subword"""
+    # def camel_right():
+    #     """Move cursor to the right by camel case/subword"""
 
-    def line_clone(line: int):
-        """Clones specified line at current position"""
-
+    # def line_clone(line: int):
+    #     """Clones specified line at current position"""

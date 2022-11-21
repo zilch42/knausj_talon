@@ -3,8 +3,8 @@ from talon import Module, actions, clip, Context
 mod = Module()
 ctx = Context()
 
-apps = mod.apps
-apps.RStudio = """
+mod.apps.r_studio = "app.name: RStudio"
+mod.apps.r_studio = """
 os: windows
 and app.name: RStudio
 os: windows
@@ -12,7 +12,7 @@ and app.exe: rstudio.exe
 """
 
 ctx.matches = r"""
-app: RStudio
+app: r_studio
 """
 
 @mod.action_class
@@ -26,6 +26,10 @@ class Actions:
         actions.insert(pattern.replace("{text}", text))
         actions.key("enter ctrl-1")
 
+@ctx.action_class("code")
+class CodeActions:
+    def toggle_comment():
+        actions.key("ctrl-shift-c")
 @ctx.action_class('edit')
 class EditActions:
     def line_clone():

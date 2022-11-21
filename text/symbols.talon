@@ -1,24 +1,38 @@
 question mark: "?"
 (downscore | underscore): "_"
 double dash: "--"
-# (bracket | brack | left bracket): "{"
-# (rbrack | are bracket | right bracket): "}"
+
 triple quote: "'''"
-(triple grave | triple back tick | gravy):
+(triple ticky | triple back tick | gravy):
     insert("```")
 (dot dot | dotdot | double dot): ".."
 (ellipses | three dots): "..."
-(comma and | spamma): ", "
+(comma and | spamma | boom): ", "
+
 plus: "+"
+ampersand: "&"
 long plus: " + "
 long minus: " - "
 long pipe: " | "
 long equals: " = "
+long ampersand: " & "
+
+(four|full) stop: 
+    key(backspace . space)
+(four|full) comma:
+    key(backspace , space)
+(four|full) questo:
+    key(backspace ? space)
+(four|full) clamour:
+    key(backspace ! space)
+(four|full) semper:
+    key(backspace ; space)
+
 arrow: "->"
-ampersand: "&"
 dub arrow: "=>"
 slash: "/"
 new line: "\\n"
+
 # carriage return: "\\r"
 # line feed: "\\r\\n"
 # empty dubstring:
@@ -35,46 +49,48 @@ new line: "\\n"
 #     "\\'\\'"
 #     key(left)
 #     key(left)
-hug paren:
-	insert("()")
-	key(left)
-hug (square | square brackets):
-	insert("[]")
-	key(left)
-hug curly:
-	insert("{}")
-	key(left)
-hug percent:
-	insert("%%")
-	key(left)
-hug quote:
-	insert('""')
-	key(left)
-hug tick:
-	insert("``")
-	key(left)
-hug (angle | angles):
-        insert("<>")
-        key(left)
+
+# hug paren:
+# 	insert("()")
+# 	key(left)
+# hug (square | square brackets):
+# 	insert("[]")
+# 	key(left)
+# hug curly:
+# 	insert("{}")
+# 	key(left)
+# hug percent:
+# 	insert("%%")
+# 	key(left)
+# hug quote:
+# 	insert('""')
+# 	key(left)
+# hug tick:
+# 	insert("``")
+# 	key(left)
+# hug (angle | angles):
+#         insert("<>")
+#         key(left)
+
 # these might not copy paste properly
-angle that:
+(angle that | hug angle):
     text = edit.selected_text()
     user.paste("<{text}>")
-(square | square bracket) that:
+(square that | hug square):
     text = edit.selected_text()
     user.paste("[{text}]")
-curly that:
+(curly that | hug curly):
     text = edit.selected_text()
     user.paste("{{{text}}}")
-(paren | args) that:
+(paren that | hug paren):
     text = edit.selected_text()
     user.paste("({text})")
-percent that:
+(percent that | hug paren):
     text = edit.selected_text()
     user.paste("%{text}%")
-quote that:
+(quote that | hug quotes):
     text = edit.selected_text()
     user.paste('"{text}"')
-tick that:
+(ticky that | hug ticky):
     text = edit.selected_text()
     user.paste('`{text}`')

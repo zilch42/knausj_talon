@@ -1,0 +1,11 @@
+TO DO 
+
+Mac Specific
+-----------------------
+Figure out how to add words 
+Figure out how to remove words 
+
+Audulus
+------------------------
+Add nodes
+Click relative to bottom corner of window 

@@ -1,4 +1,4 @@
-from talon import Context, actions, ui, Module
+from talon import Context, Module, actions
 
 mod = Module()
 ctx = Context()
@@ -17,30 +17,41 @@ ctx.matches = r"""
 app: notepad_plus_plus
 """
 
-ctx.tags = ['user.find_and_replace', 'user.line_commands', 'user.tabs']
+ctx.tags = ["user.find_and_replace", "user.line_commands", "user.tabs"]
 
-@ctx.action_class('app')
+
+@ctx.action_class("app")
 class AppActions:
     def tab_previous():
-        actions.key('ctrl-pageup')
-    def tab_next():
-        actions.key('ctrl-pagedown')
+        actions.key("ctrl-pageup")
 
-@ctx.action_class('code')
+    def tab_next():
+        actions.key("ctrl-pagedown")
+
+
+@ctx.action_class("code")
 class CodeActions:
     def toggle_comment():
-        actions.key('ctrl-q')
+        actions.key("ctrl-q")
 
-@ctx.action_class('edit')
+
+@ctx.action_class("edit")
 class EditActions:
     def line_clone():
-        actions.key('ctrl-d')
+        actions.key("ctrl-d")
+
     def line_swap_up():
-        actions.key('ctrl-shift-up')
+        actions.key("ctrl-shift-up")
+
     def line_swap_down():
-        actions.key('ctrl-shift-down')
-    def indent_more(): actions.key('tab')
-    def indent_less(): actions.key('shift-tab')
+        actions.key("ctrl-shift-down")
+
+    def indent_more():
+        actions.key("tab")
+
+    def indent_less():
+        actions.key("shift-tab")
+
     def jump_line(n: int):
         actions.key("ctrl-g")
         actions.insert(str(n))
@@ -49,6 +60,7 @@ class EditActions:
     def find(text: str):
         actions.key("ctrl-f")
         actions.insert(text)
+
 
 @ctx.action_class("win")
 class win_actions:
@@ -60,7 +72,6 @@ class win_actions:
             return result.split("\\")[-1]
         return ""
 
-# find_and_replace.py support begin
 
 @ctx.action_class("user")
 class UserActions:
@@ -78,12 +89,14 @@ class UserActions:
 
     def tab_jump(number: int):
         if number < 10:
-            actions.key("ctrl-keypad_{}".format(number))
+            actions.key(f"ctrl-keypad_{number}")
 
     def tab_final():
         """Jumps to the final tab"""
         print("Notepad doesn't support this...")
         # actions.key("ctrl-numpad_0")
+
+    # find_and_replace.py support begin
 
     def find(text: str):
         """Triggers find in current editor"""
@@ -141,4 +154,3 @@ class UserActions:
         actions.key("alt-a")
 
     # find_and_replace.py support end
-
