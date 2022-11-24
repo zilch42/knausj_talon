@@ -13,7 +13,8 @@ settings():
     user.help_max_contexts_per_page = 20
 
     # The default amount used when scrolling continuously
-    user.mouse_continuous_scroll_amount = 80
+    # ZILCH CHANGE
+    user.mouse_continuous_scroll_amount = 120
 
     # Stop continuous scroll/gaze scroll with a pop
     user.mouse_enable_pop_stops_scroll = 1
@@ -34,7 +35,8 @@ settings():
     user.mouse_wheel_horizontal_amount = 40
 
     # Mouse grid and friends put the number one on the bottom left (vs on the top left)
-    user.grids_put_one_bottom_left = 1
+    # ZILCH CHANGE
+    user.grids_put_one_bottom_left = 0
 
     # The number of lines of command history to display by default
     user.command_history_display = 10
