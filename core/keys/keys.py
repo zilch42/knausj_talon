@@ -1,7 +1,7 @@
 # Completely replaces knausj_talon 
 from talon import Context, Module, actions, app
 
-default_alphabet = "arch brov char delta echo foxy goof hotel india julia kilo lima mike novakeen oscar prime quebec romeo sierra tango uniform victor whiskey exray yank zulu".split(
+default_alphabet = "arch brov char delta echo foxy goof hotel india julia kilo lima mike near oscar prime quebec romeo sierra tango uniform victor whiskey exray yank zebra".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -145,7 +145,6 @@ punctuation_words = {
     "hashtag": "#",
     "number sign": "#",
     "percent sign": "%",
-    "at sign": "@",
     "and sign": "&",
     "ampersand": "&",
 }
@@ -213,7 +212,7 @@ ctx.lists["self.arrow_key"] = {
 
 simple_keys = [
     "end",
-    "enter",
+    # "enter",
     "escape",
     "home",
     "insert",
