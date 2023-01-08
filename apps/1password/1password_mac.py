@@ -16,7 +16,7 @@ class UserActions:
         actions.key("cmd-\\")
 
     def password_show():
-        actions.key("cmd-alt-\\")
+        actions.key("cmd-shift-\\")
 
     def password_new():
         actions.key("cmd-i")
