@@ -170,9 +170,9 @@ class EditActions:
         # action(edit.select_sentence):
 
     def select_word():
-        actions.edit.right()
-        actions.edit.word_left()
-        actions.edit.extend_word_right()
+        actions.edit.left()
+        actions.edit.word_right()
+        actions.edit.extend_word_left()
 
     def undo():
         actions.key("ctrl-z")
