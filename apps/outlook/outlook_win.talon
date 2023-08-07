@@ -9,3 +9,5 @@ Reply: key(ctrl-r)
 Reply all: key(ctrl-shift-r)
 Forward: key(ctrl-f)
 accept: key(shift-f10 c c enter)
+send: ""
+mark all as red: key(alt-o m a)

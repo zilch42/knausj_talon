@@ -1,10 +1,10 @@
 tag: user.tabs
 -
-tab (open | new): app.tab_open()
-tab (last | previous): app.tab_previous()
-tab next: app.tab_next()
-tab close: user.tab_close_wrapper()
-tab (reopen | restore): app.tab_reopen()
+(open | new) tab: app.tab_open()
+(previous | left) tab: app.tab_previous()
+(next | right) tab: app.tab_next()
+close tab: user.tab_close_wrapper()
+(reopen|restore) tab: app.tab_reopen()
 go tab <number>: user.tab_jump(number)
-go tab final: user.tab_final()
-tab duplicate: user.tab_duplicate()
+go (tab final | last tab): user.tab_final()
+duplicate tab: user.tab_duplicate()

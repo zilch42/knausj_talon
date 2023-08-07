@@ -112,6 +112,7 @@ copy line end: user.copy_line_end()
 copy word: user.copy_word()
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
+(stoosh | stoush): edit.copy()
 
 #to do: do we want these variants, seem to conflict
 # copy left:
@@ -128,7 +129,7 @@ copy word right: user.copy_word_right()
 #     edit.copy()
 
 # Cut
-cut that: edit.cut()
+cut: edit.cut()
 cut all: user.cut_all()
 cut line: user.cut_line()
 cut line start: user.cut_line_start()
@@ -152,7 +153,7 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste) that: edit.paste()
+(pace | paste | spark) that: edit.paste()
 (pace | paste) enter:
     edit.paste()
     key(enter)
@@ -162,6 +163,14 @@ paste match: edit.paste_match_style()
 (pace | paste) line start: user.paste_line_start()
 (pace | paste) line end: user.paste_line_end()
 (pace | paste) word: user.paste_word()
+spark: edit.paste()
+replace all: 
+	edit.select_all()
+	edit.paste()
+shogo: 
+    edit.select_line()
+    edit.paste()
+    key("enter")
 
 # Duplication
 clone that: edit.selection_clone()
@@ -169,7 +178,8 @@ clone line: edit.line_clone()
 
 # Insert new line
 new line above: edit.line_insert_up()
-new line below | slap: edit.line_insert_down()
+new line below | slap | sink: edit.line_insert_down()
+
 
 # Insert padding with optional symbols
 (pad | padding): user.insert_between(" ", " ")
@@ -181,7 +191,16 @@ new line below | slap: edit.line_insert_down()
 # Undo/redo
 undo that: edit.undo()
 redo that: edit.redo()
+(undo|nope) [<number_small>]: 
+    n = number_small or 1
+    edit.undo()
+	repeat(n-1)
+redo [<number_small>]: 
+    n = number_small or 1
+    edit.redo()
+	repeat(n-1)
 
 # Save
 file save: edit.save()
 file save all: edit.save_all()
+(save|disk): edit.save()

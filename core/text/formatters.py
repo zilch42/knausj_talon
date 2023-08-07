@@ -132,6 +132,7 @@ def every_word(word_func):
 # All formatters (code and prose)
 formatters_dict = {
     "NOOP": (SEP, lambda i, word, _: word),
+    "SPACE_NOOP": (SEP, lambda i, word, is_end: word if not is_end else word + " "),
     "DOUBLE_UNDERSCORE": (NOSEP, first_vs_rest(lambda w: f"__{w}__")),
     "PRIVATE_CAMEL_CASE": (
         NOSEP,
@@ -161,18 +162,17 @@ formatters_dict = {
     "DOT_SEPARATED": words_with_joiner("."),
     "DOT_SNAKE": (NOSEP, lambda i, word, _: "." + word if i == 0 else "_" + word),
     "SLASH_SEPARATED": (NOSEP, every_word(lambda w: "/" + w)),
-    "CAPITALIZE_FIRST_WORD": (
-        SEP,
-        first_vs_rest(lambda w: title_case()(0, w, True)),
-    ),
+    "CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: word.capitalize() + " " if i == 0 else word + " "),
+    "SPACE_CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: " " + word.capitalize() + " " if i == 0 else word + " "),
     "CAPITALIZE_ALL_WORDS": (SEP, title_case()),
 }
 
 # Mapping from spoken phrases to formatter names
 code_formatter_names = {
-    "all cap": "ALL_CAPS",
-    "all down": "ALL_LOWERCASE",
+    "yell": "ALL_CAPS",
+    "lower": "ALL_LOWERCASE",
     "camel": "PRIVATE_CAMEL_CASE",
+    "gerrish": "PRIVATE_CAMEL_CASE",
     "dotted": "DOT_SEPARATED",
     "dub string": "DOUBLE_QUOTED_STRING",
     "dunder": "DOUBLE_UNDERSCORE",
@@ -183,13 +183,14 @@ code_formatter_names = {
     "slasher": "SLASH_SEPARATED",
     "smash": "NO_SPACES",
     "snake": "SNAKE_CASE",
-    "string": "SINGLE_QUOTED_STRING",
+    "chick string": "SINGLE_QUOTED_STRING",
+    "title": "CAPITALIZE_ALL_WORDS", 
 }
 prose_formatter_names = {
-    "say": "NOOP",
-    "speak": "NOOP",
-    "sentence": "CAPITALIZE_FIRST_WORD",
-    "title": "CAPITALIZE_ALL_WORDS",
+    "say": "SPACE_NOOP",
+    "spray": "SPACE_SURROUNDED_STRING",
+    "sing": "CAPITALIZE_FIRST_WORD",
+    "spring": "SPACE_CAPITALIZE_FIRST_WORD",
 }
 # Mapping from spoken phrases to formatters
 formatter_words = {

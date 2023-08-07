@@ -279,3 +279,53 @@ cell run: user.vscode("notebook.cell.execute")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
 preview markdown: user.vscode("markdown.showPreview")
+
+
+# ------------------------------------------------------------ #
+# Custom 
+
+reload window: user.vscode("workbench.action.reloadWindow")
+close window: user.vscode("workbench.action.closeWindow")
+
+comment (line | lines): user.vscode("editor.action.commentLine")
+
+# jupyter
+next (cell | chunk): user.vscode("notebook.focusNextEditor")
+previous (cell | chunk): user.vscode("notebook.focusPreviousEditor")
+run all above: user.vscode("notebook.cell.executeCellsAbove")
+run all below: user.vscode("notebook.cell.executeCellsBelow")
+run (cell | chunk): user.vscode("notebook.cell.execute")
+debug (cell | chunk): user.vscode("jupyter.runAndDebugCell")
+
+insert (cell | chunk): 
+    user.vscode("notebook.cell.insertCodeCellBelowAndFocusContainer")
+    key(tab:4)
+insert markdown: user.vscode("notebook.cell.insertMarkdownCellBelow")
+accept markdown: user.vscode("notebook.cell.quitEdit")
+change to markdown: user.vscode("notebook.cell.changeToMarkdown")
+change to code: user.vscode("notebook.cell.changeToCode")
+
+split (cell | chunk): user.vscode("notebook.cell.split")
+join with previous: user.vscode("notebook.cell.joinAbove")
+join with next: user.vscode("notebook.cell.joinBelow")
+
+run by line: user.vscode("jupyter.runByLine")
+dip: user.vscode("jupyter.runByLineNext")
+(exit cell | stop by line): user.vscode("jupyter.runByLineStop")
+
+(remove | clear) output: key(alt-del)
+clear all output: user.vscode("notebook.clearAllCellsOutputs")
+
+python console: user.vscode("python.startREPL")
+
+# quarto
+render document: key(ctrl-shift-k)
+import display markdown: 'from IPython.display import display, Markdown'
+display markdown: 
+    'display(Markdown("""'
+    key(enter:2)
+    '""".format()'
+    key(up)
+    '{}'
+    key(left:2)
+

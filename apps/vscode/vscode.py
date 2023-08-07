@@ -50,6 +50,7 @@ os: mac
 app: vscode
 """
 
+ctx.tags = ["user.anaconda", "terminal"]
 
 @ctx.action_class("app")
 class AppActions:

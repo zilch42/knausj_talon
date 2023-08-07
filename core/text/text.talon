@@ -25,3 +25,5 @@ select that: user.select_last_phrase()
 before that: user.before_last_phrase()
 nope that | scratch that: user.clear_last_phrase()
 nope that was <user.formatters>: user.formatters_reformat_last(formatters)
+
+^laws <user.text>$: user.reminder_show("Remember to use lower not laws!")

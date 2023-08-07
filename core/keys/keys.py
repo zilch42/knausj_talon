@@ -242,11 +242,12 @@ alternate_keys = {
     "delete": "delete",
     "delhi": "delete",
     "cancel": "escape",
-    #'junk': 'backspace',
+    'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
     # "ace": "space", 
     "clap": "enter",
+    "shock": "enter",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
