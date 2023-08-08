@@ -15,6 +15,8 @@ Rango https://github.com/david-tejada/rango
 Cursorless 
 Filetree https://github.com/paul-schaaf/talon-filetree
 
+cut down hud vocab
+
 
 TO CHECK
 Check RStudio mac commands
