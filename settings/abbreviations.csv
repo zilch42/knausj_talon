@@ -86,7 +86,6 @@ ctl,cuddle
 cur,current
 qt,cute
 db,database
-yyyy-mm-dd,date format
 deb,debian
 dbg,debug
 dec,decimal
@@ -154,7 +153,6 @@ ext,extension
 extern,external
 id,eye dent
 ioctl,eye octal
-i3,eye three
 feat,feature
 fs,file system
 fp,fingerprint
@@ -196,7 +194,6 @@ interp,interpreter
 int,interrupt
 iter,iterate
 json,jason
-json5,jason five
 jar,java archive
 js,javascript
 gif,jiff
@@ -356,7 +353,6 @@ sh,shell
 sc,shellcode
 sig,signal
 sz,size
-[...],snipped
 sum,some
 src,source
 srcs,sources
@@ -398,7 +394,6 @@ temp,temperature
 tmp,temporary
 term,terminal
 txt,text
-hh:mm:ss,time format
 toctou,time of check time of use
 ttl,time to live
 tok,token

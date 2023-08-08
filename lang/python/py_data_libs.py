@@ -814,7 +814,7 @@ ctx.lists["user.py_lib_numpy"] = {
     "roll": "np.roll",
     "rollaxis": "np.rollaxis",
     "roots": "np.roots",
-    "rot 9 zero": "np.rot90",
+    "rot nine zero": "np.rot90",
     "round": "np.round",
     "row stack": "np.row_stack",
     "safe eval": "np.safe_eval",
