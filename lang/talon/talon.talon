@@ -8,7 +8,7 @@ tag(): user.code_functions_common
 # Do not enable this tag with dragon, as it will be unusable.
 # with conformer, the latency increase may also be unacceptable depending on your cpu
 # see https://github.com/talonhub/community/issues/600
-# tag(): user.talon_populate_lists
+tag(): user.talon_populate_lists
 
 dot talon: insert(".talon")
 #defintion blocks for the context
@@ -51,3 +51,7 @@ funk cell <number>: user.code_select_function(number - 1, "")
 funk wrap <user.code_common_function>:
     user.code_insert_function(code_common_function, edit.selected_text())
 funk wrap <number>: user.code_select_function(number - 1, edit.selected_text())
+
+please command: 
+    'user.vscode("")'
+    key(left:2)

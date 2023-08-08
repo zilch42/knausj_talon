@@ -2,28 +2,30 @@ tag: user.code_operators_math
 -
 
 # math operators
-op (minus | subtract): user.code_operator_subtraction()
-op (plus | add): user.code_operator_addition()
-op (times | multiply): user.code_operator_multiplication()
-op divide: user.code_operator_division()
-op mod: user.code_operator_modulo()
-(op (power | exponent) | to the power [of]): user.code_operator_exponent()
+long minus: user.code_operator_subtraction()
+long plus: user.code_operator_addition()
+long mod: user.code_operator_modulo()
+long divide: user.code_operator_division()
+# (op (power | exponent) | to the power [of]): user.code_operator_exponent()
 
 # comparison operators
-(op | is) equal: user.code_operator_equal()
-(op | is) not equal: user.code_operator_not_equal()
-(op | is) (greater | more): user.code_operator_greater_than()
-(op | is) (less | below) [than]: user.code_operator_less_than()
-(op | is) greater [than] or equal: user.code_operator_greater_than_or_equal_to()
-(op | is) less [than] or equal: user.code_operator_less_than_or_equal_to()
+double equals: user.code_operator_equal()
+not equals: user.code_operator_not_equal()
+long grater than: user.code_operator_greater_than()
+long less than: user.code_operator_less_than()
+long greater [or] (equal | equals): user.code_operator_greater_than_or_equal_to()
+long less [or] (equal | equals): user.code_operator_less_than_or_equal_to()
 
 # logical operators
-(op | logical) and: user.code_operator_and()
-(op | logical) or: user.code_operator_or()
+(single | logical) and: user.code_operator_and()
+(single | logical) or: user.code_operator_or()
+element and: user.code_operator_bitwise_and()
+element or: user.code_operator_bitwise_or()
 
 # set operators
+# TO DO implement for R
 (op | is) in: user.code_operator_in()
 (op | is) not in: user.code_operator_not_in()
 
 # TODO: This operator should either be abstracted into a function or removed.
-(op | pad) colon: " : "
+long colon: " : "

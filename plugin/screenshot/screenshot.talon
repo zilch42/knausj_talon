@@ -1,9 +1,12 @@
-^grab screen$: user.screenshot()
-^grab screen <number_small>$: user.screenshot(number_small)
-^grab window$: user.screenshot_window()
-^grab selection$: user.screenshot_selection()
-^grab selection clip$: user.screenshot_selection_clip()
-^grab settings$: user.screenshot_settings()
-^grab screen clip$: user.screenshot_clipboard()
-^grab screen <number_small> clip$: user.screenshot_clipboard(number_small)
-^grab window clip$: user.screenshot_window_clipboard()
+# save to desktop
+^grab screen save$:                     user.screenshot()
+^grab screen <number_small> save$:      user.screenshot(number_small)
+^grab window save$:                     user.screenshot_window()
+^grab settings$:                        user.screenshot_settings()
+
+# copy to clipboard
+^grab screen$:                          user.screenshot_clipboard()
+^grab screen <number_small>$:           user.screenshot_clipboard(number_small)
+^grab selection$:                       user.screenshot_selection()
+^open snipping tool$:                   user.screenshot_selection()
+^grab window$:                          user.screenshot_window_clipboard()

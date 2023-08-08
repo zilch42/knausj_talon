@@ -1,11 +1,12 @@
 import re
-
 from talon import Context, Module, actions, settings
 
 mod = Module()
 ctx = Context()
 ctx.matches = r"""
 tag: user.python
+tag: user.jupyter
+mode: command
 """
 ctx.lists["user.code_common_function"] = {
     "enumerate": "enumerate",
@@ -18,6 +19,17 @@ ctx.lists["user.code_common_function"] = {
     "split": "split",
     "string": "str",
     "update": "update",
+    "hitter items": "iteritems",
+    "iter items": "iteritems",
+    "append": "append",
+    "apply": "apply",
+    "string to lower": "lower",
+    "min": "min",
+    "minimum": "min",
+    "max": "max",
+    "maximum": "max",
+    "delete variable": "del", 
+    "some": "sum", 
 }
 
 """a set of fields used in python docstrings that will follow the
@@ -143,6 +155,44 @@ mod.list("python_exception", desc="python exceptions")
 ctx.lists["user.python_exception"] = {
     " ".join(re.findall("[A-Z][^A-Z]*", exception)).lower(): exception
     for exception in exception_list
+}
+
+ctx.lists["user.code_libraries"] = {
+    "garbage collection": "gc", 
+    "glob": "glob", 
+    "jason": "json",
+    "logging": "logging",
+    "numb pie": "numpy as np",
+    "O S": "os",
+    "pandas": "pandas as pd",
+    "pickle": "pickle", 
+    "pie test": "pytest",
+    "plots": "matplotlib.pyplot as plt", 
+    "random": "random",
+    "regex": "re",
+    "requests": "requests",
+    "seaborne": "seaborn as sns", 
+    "sis": "sys",
+    "time": "time",
+    "tommel": "toml",
+}
+
+mod.list("quarto_chunk_options")
+ctx.lists["user.quarto_chunk_options"] = {
+    "evaluate": "eval", 
+    "include": "include", 
+    "figure width": "fig.width", 
+    "figure height": "fig.height", 
+    "echo": "echo", 
+    "output": "output", 
+    "warning": "warning", 
+    "error": "error", 
+}
+
+mod.list("quarto_logical")
+ctx.lists["user.quarto_logical"] = {
+    "true": "true", 
+    "false": "false", 
 }
 
 
@@ -346,3 +396,6 @@ class UserActions:
 
     def code_insert_return_type(type: str):
         actions.insert(f" -> {type}")
+
+    def code_insert_library(text: str, selection: str):
+        actions.user.paste(text)

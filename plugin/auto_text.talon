@@ -10,6 +10,7 @@ land & water: "Land & Water"
 space and astronomy: "Space & Astronomy"
 agriculture and food: "Agriculture & Food"
 yell sire: "CSIRO"
+O two D: "O2D"
 
 # ESI fields
 plant and animal science: "Plant & Animal Science"
@@ -65,4 +66,6 @@ country australia: 'CU="AUSTRALIA"'
 org not address: "OG not AD"
 address not org: "AD not OG"
 
-O two D: "O2D"
+possessive:
+    key(backspace:3)
+    "'s "

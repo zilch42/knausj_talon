@@ -6,3 +6,6 @@ __pycache__
 .vscode/settings.json
 .DS_Store
 system_command.py
+# local only
+personal.talon
+auto_text.talon
