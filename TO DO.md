@@ -1,12 +1,10 @@
 TO DO
-see what can come out of R and into generic code files
-see What can come out of Rstudio into generic stuff
 
 commands for opening specific files in VSCode 
 - homophones 
 - additional words (both places)
 
-Figure out best way to do additional words and pronunciation, abbreviations, etc
+Add additional words and abbreviations 
 
 Australian spelling replacements 
 
