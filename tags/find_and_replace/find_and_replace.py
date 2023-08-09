@@ -44,3 +44,6 @@ class Actions:
 
     def select_next_occurrence(text: str):
         """Selects the next occurrence of the text, and suppresses any find/replace dialogs."""
+
+    def find_close():
+        """Close the find dialogue"""

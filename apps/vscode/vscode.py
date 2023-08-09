@@ -303,6 +303,11 @@ class UserActions:
     def find_previous():
         actions.user.vscode("editor.action.previousMatchFindAction")
 
+    def find_close():
+        actions.edit.find("")
+        actions.sleep("100ms")
+        actions.key("esc")
+
     def find_everywhere(text: str):
         """Triggers find across project"""
         if is_mac:
