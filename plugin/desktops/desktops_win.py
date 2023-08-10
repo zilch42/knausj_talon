@@ -24,3 +24,6 @@ class Actions:
     # def window_move_desktop_right():
 
     # def window_move_desktop(desktop_number: int):
+
+    def desktop_show_base():
+        actions.key("win-d")

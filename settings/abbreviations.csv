@@ -1,5 +1,7 @@
 Abbreviation,Spoken Form
 jpg,J peg
+AAHL,AAHL
+AAHL,all
 abbr,abbreviate
 abrt,abort
 ack,acknowledge
@@ -116,6 +118,7 @@ dist,distance
 dist,distribution
 doc,document
 docs,documents
+DOI,DOI
 ing,doing
 deque,double ended queue
 dbl,double
@@ -241,6 +244,7 @@ mnt,mount
 multi,multiple
 musl,muscle
 mut,mutate
+NCI,NCI
 ns,nano second
 nvim,neo vim
 nb,new brunswick
@@ -350,6 +354,7 @@ seq,sequence
 sp,service pack
 sid,session id
 sh,shell
+SHER,cher
 sc,shellcode
 sig,signal
 sz,size

@@ -1,9 +1,9 @@
 tag: user.r
 app: r_studio
 app: firefox
-and win.title: /RStudio Workbench/
+and win.title: /RStudio Pro/
 app: chrome
-and win.title: /RStudio Workbench/
+and win.title: /RStudio Pro/
 mode: command
 -
 

@@ -32,3 +32,7 @@ class Actions:
     def window_move_desktop(desktop_number: int):
         """move the current window to a different desktop"""
         app.notify("Not supported on this operating system")
+    
+    def desktop_show_base():
+        """show the desktop by minimizing all windows"""
+        app.notify("Not supported on this operating system")
