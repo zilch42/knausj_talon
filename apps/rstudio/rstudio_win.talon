@@ -60,7 +60,7 @@ insert chunk: key(ctrl-alt-i)
 stop: key(alt-s i)
 restart (are | our): key(ctrl-shift-f10)
 # ---------------CODE---------------------------------
-comment (line | lines | selected | block): key(ctrl-shift-c)
+comment (line | lines | selected): key(ctrl-shift-c)
 fold that: key(alt-l)
 unfold that: key(alt-shift-l)
 fold all: key(alt-o)
