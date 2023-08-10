@@ -1,20 +1,22 @@
 TO DO
 
-commands for opening specific files in VSCode 
-- homophones 
-- additional words (both places)
+commands for opening specific files in VSCode or other apps
+- the workspace itself
+- cheat sheet
 
 Add additional words and abbreviations 
 
 Australian spelling replacements 
 
 TO TRY
-Rango https://github.com/david-tejada/rango
 Cursorless 
-Filetree https://github.com/paul-schaaf/talon-filetree
 
 cut down hud vocab
 
+Cheatsheet
+HUD
+filetree
+rango
+everything else
 
-TO CHECK
-Check RStudio mac commands
+Check RStudio mac commands to see what can come into windows
