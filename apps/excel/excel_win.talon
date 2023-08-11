@@ -234,3 +234,5 @@ split paste:
     key(e enter)
     key(right ctrl-shift-right)
     key(delete)
+
+close app: key(alt-f4)

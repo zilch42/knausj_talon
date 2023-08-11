@@ -8,7 +8,11 @@ Add additional words and abbreviations
 
 Australian spelling replacements 
 
+Word
+-add and accept comments 
 
+Excel
+-comma style
 
 TO TRY
 Cursorless 

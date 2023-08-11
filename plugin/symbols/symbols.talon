@@ -25,6 +25,7 @@ inside percent: user.insert_between("%", "%")
 inside (quotes | string): user.insert_between("'", "'")
 inside (double quotes | dub quotes): user.insert_between('"', '"')
 inside (graves | back ticks): user.insert_between("`", "`")
+inside angle: user.insert_between("<", ">")
 
 # sentence backspaces
 (four|full) stop: 
