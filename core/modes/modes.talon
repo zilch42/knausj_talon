@@ -9,6 +9,7 @@ not mode: sleep
 ^command mode$:
     mode.disable("sleep")
     mode.disable("dictation")
+    mode.disable("user.game")
     mode.enable("command")
 ^game mode$:
     mode.disable("sleep")

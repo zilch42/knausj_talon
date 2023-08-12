@@ -1,4 +1,8 @@
 # Windows specific commands based on left and right mouse customisation 
+mode: command
+mode: dictation
+mode: user.game
+-
 
 kick [<number_small>]: 
     n = number_small or 1
