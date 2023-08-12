@@ -25,6 +25,10 @@ class Actions:
         """Open the url in the address bar in a new tab"""
         actions.key("alt-enter")
 
+    def browser_find():
+        """Find on page"""
+        actions.key("ctrl-f")
+
 
 @ctx.action_class("user")
 class UserActions:
@@ -56,6 +60,8 @@ class UserActions:
             actions.app.tab_open()
             actions.user.paste(url_address)
             actions.key("enter")
+
+    
 
 
 @ctx.action_class("browser")

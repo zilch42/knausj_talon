@@ -10,3 +10,7 @@ not mode: sleep
     mode.disable("sleep")
     mode.disable("dictation")
     mode.enable("command")
+^game mode$:
+    mode.disable("sleep")
+    mode.disable("command")
+    mode.enable("user.game")

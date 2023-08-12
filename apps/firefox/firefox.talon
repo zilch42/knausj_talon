@@ -27,7 +27,6 @@ tab search <user.text>$:
 # duplicate tab: key(y t)
 
 
-^hunt$: key(ctrl-f)
 close tab: key(ctrl-w)
 
 # shiny stuff

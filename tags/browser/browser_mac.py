@@ -17,6 +17,9 @@ class UserActions:
     def tab_final():
         actions.key("cmd-9")
 
+    def browser_find():
+        actions.key("cmd-f")
+
 
 @ctx.action_class("browser")
 class BrowserActions:
