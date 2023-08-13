@@ -2,9 +2,9 @@ app: zeroAD
 mode: user.game
 -
 
-# settings():
-#     key_hold = 32
-#     insert_wait = 16
+settings():
+    key_hold = 32
+    insert_wait = 32
 
 # selecting units
 select that: mouse_click(0)
@@ -20,17 +20,24 @@ select (all|everywhere):
 	mouse_click(0)
 	mouse_click(0)
 	key(alt:up)
-idle worker: key(.)
-add worker: key(shift-.)
-all idle workers: key(alt-.)
+idle (worker|villager): key(.)
+add (worker|villager|idle): key(shift-.)
+all idle (workers|villagers): key(alt-.)
 idle fighter: key(/)
 add fighter: key(shift-/)
 all idle fighters: key(alt-/)
 idle unit: key(\)
 add unit: key(shift-\)
-all idle units: key(alt-\)
-select guarded: key(pageup)
-select defenders: key(pagedown)
+all idle : key(alt-\)
+# select guarded: key(pgup)
+# select defenders: key(pgdown)
+add visible: user.select_all_on_screen(1, "shift")
+select visible idle: user.select_all_on_screen(1, "i")
+select visible (units|all): user.select_all_on_screen()
+select visible military: user.select_all_on_screen(1, "alt")
+select visible (workers|villagers): user.select_all_on_screen(1, "alt", "y")
+select visible wounded: user.select_all_on_screen(1, "o")
+deselect: key(esc)
 
 # unit commands
 halt: key(h)
@@ -40,15 +47,15 @@ one go:
     key(alt:down)
     mouse_click(1)
     key(alt:up)
-repair: 
+repair this: 
     key(j:down)
     mouse_click(1)
     key(j:up)
-guard: 
+guard this: 
     key(g:down)
     mouse_click(1)
     key(g:up)
-patrol: 
+patrol here: 
     key(p:down)
     mouse_click(1)
     key(p:up)
@@ -57,6 +64,14 @@ cue|waypoint:
     mouse_click(1)
     key(shift:up)
 unload: key(u)
+
+# arrow keys
+<user.arrow_input> [<number_small>]: 
+    n = number_small or 1
+    user.arrow_press(user.arrow_input)
+    repeat(n-1)
+fly <user.arrow_input>: user.arrow_keydown(user.arrow_input)
+stop: user.stop_moving()
 
 # groups 
 (create|set) group <number_small>: key("ctrl-{number_small}")
@@ -79,12 +94,24 @@ batch:
     
 # building
 rotate: "["
-
-
+# align building: 
+#     key(ctrl:down)
 
 # mouse
 drag: user.mouse_drag(0)
 finish|done: user.mouse_drag_end()
+(set rally|go|move|do it): mouse_click(1)
+(garrison|attack move):
+    key(ctrl:down)
+    mouse_click(1)
+    key(ctrl:up)
+attack move units only:
+    key(ctrl:down)
+    key(q:down)
+    mouse_click(1)
+    key(ctrl:up)
+    key(q:up)
+spread out: user.mouse_drag(1)
 
 # camera
 set camera one: key(ctrl-f5)
@@ -97,7 +124,7 @@ camera three: key(f7)
 camera for: key(f8)
 zoom in: user.mouse_scroll_down()
 zoom out: user.mouse_scroll_up()
-camera low: 
+(camera low|zoom way in): 
     user.mouse_scroll_down()
     sleep(100ms)
     user.mouse_scroll_down()
@@ -107,7 +134,7 @@ camera low:
     user.mouse_scroll_down()
     sleep(100ms)
     user.mouse_scroll_down()
-camera high: 
+(camera high|zoom way out): 
     user.mouse_scroll_up()
     sleep(100ms)
     user.mouse_scroll_up()
@@ -122,11 +149,12 @@ camera rotate: key(q)
 camera reverse: key(e)
 follow: key(f)
 camera reset: key(r)
-
+alarm: key(space)
+centre mouse: user.mouse_move_center_active_window()
 
 # menus
 menu: key(f10)
-structures|tree: key(shift-alt-t)
+(structures|tech tree): key(shift-alt-t)
 civilizations|history: key(shift-alt-h)
 diplomacy: key(ctrl-h)
 trade: key(ctrl-b)
@@ -145,3 +173,5 @@ save game: key(shift-f5)
 load game: key(shift-f8)
 pause: key(shift-space)
 sleep all: ""
+
+
