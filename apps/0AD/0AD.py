@@ -36,19 +36,21 @@ class Actions:
         # hold modifier 
         if mod1 is not None: actions.key(f"{mod1}:down")
         if mod2 is not None: actions.key(f"{mod2}:down")
-        actions.sleep("50ms")
+        actions.sleep("16ms")
 
         # click and drag    
-        ctrl.mouse_move(40, 35)
-        actions.sleep("500ms")
+        ctrl.mouse_move(40, 40)
+        actions.sleep("16ms")
         ctrl.mouse_click(button=0, down=True)
-        actions.sleep("500ms")
-        ctrl.mouse_move(2500, 1400)      
-        actions.sleep("500ms")
+        actions.sleep("16ms")
+        ctrl.mouse_move(41, 40)
+        actions.sleep("16ms")
+        ctrl.mouse_move(2500, 1400)
+        actions.sleep("16ms")
         ctrl.mouse_click(button=0, up=True)
 
         # release modifier 
-        actions.sleep("50ms")
+        actions.sleep("16ms")
         if mod1 is not None: actions.key(f"{mod1}:up")
         if mod2 is not None: actions.key(f"{mod2}:up")
 
@@ -84,3 +86,14 @@ class Actions:
         actions.key("right:up")  
         actions.key("up:up")  
         actions.key("down:up")  
+
+    def click_position(x: int, y: int):
+        """Click coordinates on screen"""
+        initial_pos = ctrl.mouse_pos()
+
+        ctrl.mouse_move(x, y)
+        actions.sleep("16ms")
+        ctrl.mouse_click(button=0)
+
+        # return to initial position 
+        # ctrl.mouse_move(initial_pos[0], initial_pos[1])

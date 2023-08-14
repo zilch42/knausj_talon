@@ -96,6 +96,40 @@ batch:
 rotate: "["
 # align building: 
 #     key(ctrl:down)
+build more: 
+    key(shift:down)
+    mouse_click(0)
+    key(shift:up)
+build [a] (civic centre|town center): user.click_position(1415, 1298)
+build [a] (house|houses): user.click_position(1454, 1298)
+build [a] storehouse: user.click_position(1493, 1298)
+build [a] farmstead: user.click_position(1532, 1298)
+build [a] field: user.click_position(1571, 1298)
+build [a] coral: user.click_position(1610, 1298)
+build [a] dock: user.click_position(1649, 1298)
+build [a] barracks: user.click_position(1688, 1298)
+build [a] stable: user.click_position(1727, 1298)
+build [a] forge: user.click_position(1766, 1298)
+build [a] temple: user.click_position(1415, 1337)
+build [a] market: user.click_position(1454, 1337)
+build [a] outpost: user.click_position(1493, 1337)
+build [a] sentry: user.click_position(1532, 1337)
+build [a] stone tower: user.click_position(1571, 1337)
+build [a] arsenal: user.click_position(1610, 1337)
+build [a] (fortress|castle): user.click_position(1649, 1337)
+build [a] wall: user.click_position(1688, 1337)
+build [a] special one: user.click_position(1727, 1337)
+build [a] special too: user.click_position(1766, 1337)
+build [a] special three: user.click_position(1415, 1376)
+build [a] special four: user.click_position(1454, 1376)
+build [a] special five: user.click_position(1493, 1376)
+
+# unit stances 
+stance violent: user.click_position(986, 1409)
+stance aggressive: user.click_position(1024, 1414)
+stance defensive: user.click_position(1063, 1414)
+stance passive: user.click_position(1102, 1413)
+stance stand: user.click_position(1143, 1413)
 
 # mouse
 drag: user.mouse_drag(0)
@@ -112,6 +146,11 @@ attack move units only:
     key(ctrl:up)
     key(q:up)
 spread out: user.mouse_drag(1)
+
+# miscellaneous 
+flare: user.click_position(787, 1257)
+release bell: user.click_position(1102, 1413)
+ring bill: user.click_position(1143, 1413)
 
 # camera
 set camera one: key(ctrl-f5)
