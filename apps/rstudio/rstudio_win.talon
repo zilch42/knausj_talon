@@ -47,7 +47,10 @@ focus git: key(ctrl-f1)
 focus build: key(ctrl-f2)
 focus connections: key(ctrl-f5)
 # --------------RUNNING----------------------------------
-dip: key(ctrl-enter)
+dip [<number_small>]: 
+    n = number_small or 1
+    key(ctrl-enter)
+    repeat(n-1) 
 (dips day | dip stay): key(alt-enter)
 run chunk: key(ctrl-shift-enter)
 (run document | build it): key(ctrl-alt-r)
