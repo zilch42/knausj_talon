@@ -96,4 +96,4 @@ class Actions:
         ctrl.mouse_click(button=0)
 
         # return to initial position 
-        # ctrl.mouse_move(initial_pos[0], initial_pos[1])
+        ctrl.mouse_move(initial_pos[0], initial_pos[1])

@@ -124,6 +124,18 @@ build [a] special three: user.click_position(1415, 1376)
 build [a] special four: user.click_position(1454, 1376)
 build [a] special five: user.click_position(1493, 1376)
 
+# upgrades
+upgrade one: user.click_position(1415, 1413)
+upgrade too: user.click_position(1454, 1413)
+upgrade three: user.click_position(1493, 1413)
+upgrade four: user.click_position(1532, 1413)
+upgrade five: user.click_position(1571, 1413)
+upgrade six: user.click_position(1610, 1413)
+upgrade seven: user.click_position(1649, 1413)
+upgrade eight: user.click_position(1688, 1413)
+upgrade nine: user.click_position(1727, 1413)
+upgrade ten: user.click_position(1766, 1413)
+
 # unit stances 
 stance violent: user.click_position(986, 1409)
 stance aggressive: user.click_position(1024, 1414)
@@ -206,6 +218,9 @@ cancel: key(esc)
 developer: key(alt-d)
 show attack range: key(alt-c)
 speed up: key(space)
+game speed: 
+    user.click_position(2291, 18)
+    user.click_position(2291, 53)
 dredge: user.window_tab(1)
 
 save game: key(shift-f5)
