@@ -76,6 +76,7 @@ install bibliotecR:
 next quote: 
     key(right)
     ', "'
+dot data: ".data$"
 
 
 # ggplot

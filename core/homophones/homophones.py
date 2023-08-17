@@ -38,7 +38,7 @@ def update_homophones(name, flags):
     canonical_list = []
     with open(homophones_file) as f:
         for line in f:
-            words = line.rstrip().split(",")
+            words = line.rstrip().rstrip(",,").split(",")
             canonical_list.append(words[0])
             merged_words = set(words)
             for word in words:
@@ -138,7 +138,7 @@ def raise_homophones(word_to_find_homophones_for, forced=False, selection=False)
         else:
             new = active_word_list[0]
 
-        clip.set_text(new)
+        clip.set(new)
         actions.edit.paste()
 
         return
