@@ -41,18 +41,37 @@ class Actions:
         # click and drag    
         ctrl.mouse_move(40, 40)
         actions.sleep("16ms")
-        ctrl.mouse_click(button=0, down=True)
+        ctrl.mouse_click(button=button, down=True)
         actions.sleep("16ms")
         ctrl.mouse_move(41, 40)
         actions.sleep("16ms")
         ctrl.mouse_move(2500, 1400)
         actions.sleep("16ms")
-        ctrl.mouse_click(button=0, up=True)
+        ctrl.mouse_click(button=button, up=True)
 
         # release modifier 
         actions.sleep("16ms")
         if mod1 is not None: actions.key(f"{mod1}:up")
         if mod2 is not None: actions.key(f"{mod2}:up")
+
+        # return to initial position 
+        ctrl.mouse_move(initial_pos[0], initial_pos[1])
+
+    def select_small():
+        """Select everything in a 400x260px square around current mouse position"""
+        
+        initial_pos = ctrl.mouse_pos()
+
+        # click and drag    
+        ctrl.mouse_move(initial_pos[0], initial_pos[1], -200, -130)
+        actions.sleep("16ms")
+        ctrl.mouse_click(button=0, down=True)
+        actions.sleep("16ms")
+        ctrl.mouse_move(initial_pos[0]-201, initial_pos[1]-131)
+        actions.sleep("16ms")
+        ctrl.mouse_move(initial_pos[0], initial_pos[1], 200, 130)
+        actions.sleep("16ms")
+        ctrl.mouse_click(button=0, up=True)
 
         # return to initial position 
         ctrl.mouse_move(initial_pos[0], initial_pos[1])
