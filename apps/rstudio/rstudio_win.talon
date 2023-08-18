@@ -60,7 +60,10 @@ run next chunk: key(ctrl-alt-n)
 knit (document | file): key(ctrl-shift-k)
 insert chunk: key(ctrl-alt-i)
 
-stop: key(alt-s i)
+stop: 
+    key(alt-s)
+    sleep(100ms)
+    key(i)
 restart (are | our): key(ctrl-shift-f10)
 # ---------------CODE---------------------------------
 comment (line | lines | selected): key(ctrl-shift-c)
