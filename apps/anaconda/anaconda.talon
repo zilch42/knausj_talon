@@ -41,7 +41,7 @@ anaconda verify: "conda verify "
 
 # custom
 anaconda deactivate: "conda deactivate "
-ace: "aice"
+# ace: "aice"
 pip install: "pip install "
 
 activate horizon: "conda activate ./condaenv"
