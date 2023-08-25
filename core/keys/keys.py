@@ -238,7 +238,6 @@ alternate_keys = {
     "delete": "delete",
     "delhi": "delete",
     "cancel": "escape",
-    'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
     # "ace": "space", 
