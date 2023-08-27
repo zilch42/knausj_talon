@@ -296,6 +296,8 @@ run all above: user.vscode("notebook.cell.executeCellsAbove")
 run all below: user.vscode("notebook.cell.executeCellsBelow")
 run (cell | chunk): user.vscode("notebook.cell.execute")
 debug (cell | chunk): user.vscode("jupyter.runAndDebugCell")
+run document: user.vscode("notebook.execute")
+restart colonel: user.vscode("jupyter.restartkernel")
 
 insert (cell | chunk): 
     user.vscode("notebook.cell.insertCodeCellBelowAndFocusContainer")
