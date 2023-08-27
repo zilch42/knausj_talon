@@ -15,3 +15,7 @@ not mode: sleep
     mode.disable("sleep")
     mode.disable("command")
     mode.enable("user.game")
+^recording mode$:
+    mode.disable("sleep")
+    mode.disable("command")
+    mode.enable("user.recording")

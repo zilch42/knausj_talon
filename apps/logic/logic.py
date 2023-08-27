@@ -8,3 +8,4 @@ os: mac
 and app.bundle: com.apple.logic10
 """
 
+mod.mode("recording", desc="game commands only")

@@ -41,8 +41,8 @@ list {user.talon_lists}: "{{{talon_lists}}}"
 capture {user.talon_captures}: "<{talon_captures}>"
 
 #commands for dictating key combos
-key <user.keys> over: "{keys}"
-key <user.modifiers> over: "{modifiers}"
+# key <user.keys> over: "{keys}"
+# key <user.modifiers> over: "{modifiers}"
 
 # all actions (requires uncommenting user.talon_populate_lists tag above)
 funk {user.talon_actions}:
@@ -55,3 +55,10 @@ funk wrap <number>: user.code_select_function(number - 1, edit.selected_text())
 please command: 
     'user.vscode("")'
     key(left:2)
+
+#keys
+control: "ctrl-"
+command: "cmd-"
+shift: "shift-"
+alt: "alt-"
+option: "opt-"
