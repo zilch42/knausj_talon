@@ -43,6 +43,7 @@ anaconda verify: "conda verify "
 anaconda deactivate: "conda deactivate "
 # ace: "aice"
 pip install: "pip install "
+pip uninstall: "pip uninstall "
 
 activate horizon: "conda activate ./condaenv"
 go to project: "cd C:\\Users\\ABB064\\OneDrive - CSIRO\\R\\AiCE\\csiro-horizon-scanning"
@@ -52,7 +53,7 @@ create environment: "conda env create -f environment39.yml -p ./condaenv"
 
 source bash: "source ~/.bashrc"
 HS: "csiro-horizon-scanning"
-latest environment: "csiro-horizon-scanning39-15"
+latest environment: "csiro-horizon-scanning39"
 anaconda initialise: "conda init bash"
 run set up script: "source setup_env.sh"
 

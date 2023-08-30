@@ -132,7 +132,8 @@ copy end: user.copy_line_end()
 copy word: user.copy_word()
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
-(stoosh | stoush): edit.copy()
+copy: edit.copy()
+(stoosh | stoush): user.reminder_show("Remember to use copy not stoush!")
 
 # Cut
 cut: edit.cut()
