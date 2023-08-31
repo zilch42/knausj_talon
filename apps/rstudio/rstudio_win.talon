@@ -67,7 +67,7 @@ stop:
 restart (are | our): key(ctrl-shift-f10)
 # ---------------CODE---------------------------------
 comment (line | lines | selected): key(ctrl-shift-c)
-fold that: key(alt-l)
+# fold that: key(alt-l)
 unfold that: key(alt-shift-l)
 fold all: key(alt-o)
 unfold all: key(shift-alt-o)
