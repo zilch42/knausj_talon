@@ -46,7 +46,7 @@ tab line <number>:
 tab <number> until <number>:
     user.select_range(number_1, number_2)
     edit.indent_more()
-(shin tab | retab) that: edit.indent_less()
+(shin tab | retab): edit.indent_less()
 (shin tab | retab) line <number>:
     user.select_range(number, number)
     edit.indent_less()
