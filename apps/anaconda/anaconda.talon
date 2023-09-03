@@ -51,8 +51,8 @@ update environment: "conda env update --file environment39.yml"
 create environment: "conda env create -f environment39.yml -p ./condaenv"
 
 source bash: "source ~/.bashrc"
-HS: "csiro-horizon-scanning"
-latest environment: "csiro-horizon-scanning39-15"
+horizon scanning: "csiro-horizon-scanning"
+latest environment: "csiro-horizon-scanning39"
 anaconda initialise: "conda init bash"
 run set up script: "source setup_env.sh"
 
