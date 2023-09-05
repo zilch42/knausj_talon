@@ -58,4 +58,6 @@ latest environment: "csiro-horizon-scanning39"
 anaconda initialise: "conda init bash"
 setup environment: "source environments/setup_workbench_env.sh"
 
+video ram: "nvidia-smi"
+
 bit bucket HS: "https://bitbucket.csiro.au/scm/~abb064/csiro-horizon-scanning.git"
