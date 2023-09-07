@@ -18,3 +18,5 @@ High <user.text>:
     "Hi "
     user.insert_formatted(text, "title")
     key(, enter:2)
+
+add emoji: key(super-.)

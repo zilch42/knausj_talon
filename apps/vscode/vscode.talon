@@ -332,3 +332,7 @@ display markdown:
     '{}'
     key(left:2)
 
+get suggestions: key(alt-c)
+accept suggestion: key(tab)
+
+
