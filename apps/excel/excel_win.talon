@@ -236,3 +236,14 @@ split paste:
     key(delete)
 
 close app: key(alt-f4)
+
+color scale: 
+    key(ctrl-shift-down)
+    key(alt-h)
+    key(l s enter)
+    key(right)
+color reverse: 
+    key(ctrl-shift-down)
+    key(alt-h)
+    key(l s right enter)
+    key(right)

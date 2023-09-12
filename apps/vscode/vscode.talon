@@ -299,6 +299,7 @@ run (cell | chunk): user.vscode("notebook.cell.execute")
 debug (cell | chunk): user.vscode("jupyter.runAndDebugCell")
 run document: user.vscode("notebook.execute")
 restart colonel: user.vscode("jupyter.restartkernel")
+delete cell: user.vscode("notebook.cell.delete")
 
 insert (cell | chunk): 
     user.vscode("notebook.cell.insertCodeCellBelowAndFocusContainer")
@@ -316,7 +317,7 @@ run by line: user.vscode("jupyter.runByLine")
 dip: user.vscode("jupyter.runByLineNext")
 (exit cell | stop by line): user.vscode("jupyter.runByLineStop")
 
-(remove | clear) output: key(alt-del)
+clear output: key(alt-del)
 clear all output: user.vscode("notebook.clearAllCellsOutputs")
 
 python console: user.vscode("python.startREPL")
