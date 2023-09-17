@@ -14,12 +14,12 @@ comment line <user.text> over:
     user.code_comment_line_prefix()
 	insert(user.text)
     insert(" ")
-comment <user.text> over:
+# comment <user.text> over:
     #todo: this should probably be a single function once
     #.talon supports implementing actions with parameters?
 	user.code_comment_line_prefix()
     insert(user.text)
-comment <user.text>$:
+# comment <user.text>$:
     #todo: this should probably be a single function once
     #.talon supports implementing actions with parameters?
     user.code_comment_line_prefix()
