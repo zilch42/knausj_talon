@@ -876,6 +876,7 @@ ctx.lists["user.py_lib_numpy"] = {
     "testing": "np.testing!",
     "tile": "np.tile",
     "timedelta sixty four": "np.timedelta64",
+    "to list": "tolist", 
     "trace": "np.trace",
     "trace malloc domain": "np.tracemalloc_domain!",
     "transpose": "np.transpose",

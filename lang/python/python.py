@@ -32,12 +32,27 @@ ctx.lists["user.code_common_function"] = {
     "some": "sum", 
 }
 
+mod.list("dot_functions")
+ctx.lists["user.dot_functions"] = {
+    "format": "format", 
+    "split": "split", 
+    "strip": "strip", 
+    "get": "get", 
+    "sample": "sample", 
+    "remove prefix": "removeprefix", 
+    "remove suffix": "removessuffix", 
+    "count": "count", 
+    "append": "append", 
+    "extend": "extend", 
+    
+}
+
 """a set of fields used in python docstrings that will follow the
 reStructuredText format"""
 docstring_fields = {
     "class": ":class:",
     "function": ":func:",
-    "parameter": ":param:",
+    "parameter": ":param :",
     "raise": ":raise:",
     "returns": ":return:",
     "type": ":type:",
@@ -83,6 +98,9 @@ ctx.lists["user.code_keyword"] = {
     "false": "False",
     "yield": "yield ",
     "from": "from ",
+    "pass": "pass", 
+    "self": "self", 
+    
 }
 
 exception_list = [
@@ -158,6 +176,8 @@ ctx.lists["user.python_exception"] = {
 }
 
 ctx.lists["user.code_libraries"] = {
+    "bert topic": "bertopic", 
+    "dot env": "dotenv", 
     "garbage collection": "gc", 
     "glob": "glob", 
     "jason": "json",
@@ -166,6 +186,7 @@ ctx.lists["user.code_libraries"] = {
     "O S": "os",
     "pandas": "pandas as pd",
     "pickle": "pickle", 
+    "pie alex": "pyalex", 
     "pie test": "pytest",
     "plots": "matplotlib.pyplot as plt", 
     "random": "random",
@@ -175,6 +196,7 @@ ctx.lists["user.code_libraries"] = {
     "sis": "sys",
     "time": "time",
     "tommel": "toml",
+    "torch": "torch", 
 }
 
 mod.list("quarto_chunk_options")
