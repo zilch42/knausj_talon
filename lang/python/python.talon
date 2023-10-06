@@ -85,6 +85,12 @@ pandas {user.py_lib_pandas}: user.code_insert_function(py_lib_pandas, "")
 dot pandas {user.py_lib_pandas}: 
     "."
     user.code_insert_function(py_lib_pandas, "")
+polars {user.py_lib_polars}: 
+    "pl."
+    user.code_insert_function(py_lib_polars, "")
+dot polars {user.py_lib_polars}: 
+    "."
+    user.code_insert_function(py_lib_polars, "")
 dot {user.dot_functions}: 
     "."
     user.code_insert_function(dot_functions, "")

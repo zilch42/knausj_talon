@@ -46,11 +46,11 @@ tab line <number>:
 tab <number> until <number>:
     user.select_range(number_1, number_2)
     edit.indent_more()
-(shin tab | retab): edit.indent_less()
-(shin tab | retab) line <number>:
+shin tab: edit.indent_less()
+shin tab line <number>:
     user.select_range(number, number)
     edit.indent_less()
-(shin tab | retab) <number> until <number>:
+shin tab <number> until <number>:
     user.select_range(number_1, number_2)
     edit.indent_less()
 drag [line] down: edit.line_swap_down()

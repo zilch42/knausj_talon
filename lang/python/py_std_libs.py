@@ -4,6 +4,7 @@ mod = Module()
 ctx = Context("python")
 ctx.matches = r"""
 tag: user.python
+tag: user.jupyter
 """
 
 mod.list("py_lib_re")

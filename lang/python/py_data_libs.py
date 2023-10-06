@@ -4,7 +4,78 @@ mod = Module()
 ctx = Context("python")
 ctx.matches = r"""
 tag: user.python
+tag: user.jupyter
 """
+
+mod.list("py_lib_polars")
+ctx.lists["user.py_lib_polars"] = {
+    "select": "select", 
+    "filter": "filter", 
+    "group by": "group_by", 
+    "column": "col", 
+    "alias": "alias", 
+    "count": "count", 
+    "sum": "sum", 
+    "suffix": "suffix", 
+    "prefix": "prefix", 
+    "agg": "aggregate", 
+    "reverse": "reverse", 
+    "is not null": "is_not_null", 
+    "with columns": "with_columns", 
+    "series": "series", 
+    "DataFrame": "dataframe", 
+    "head": "head", 
+    "tail": "tail", 
+    "sample": "sample", 
+    "describe": "describe", 
+    "sort": "sort", 
+    "sort by": "sort_by", 
+    "collect": "collect", 
+    "all": "all", 
+    "exclude": "exclude", 
+    "count unique": "n_unique", 
+    "map alias": "map_alias", 
+    "when": "when", 
+    "then": "then", 
+    "otherwise": "otherwise", 
+    "cast": "cast", 
+    "string length": "str.lengths", 
+    "string characters": "str.n_chars", 
+    "string contains": "str.contains", 
+    "string starts with": "str.starts_with", 
+    "string ends with": "str.ends_with", 
+    "string extract": "str.extract", 
+    "string replace": "str.replace", 
+    "string extract all": "str.extract_all", 
+    "string replace all": "str.replace_all", 
+    "lazy": "lazy", 
+    "first": "first", 
+    "limit": "limit", 
+    "last": "last", 
+    "literal": "lit", 
+    "fill null": "fill_null", 
+    "fill not a number": "fill_nan", 
+    "interpolate": "interpolate", 
+    "over": "over", 
+    "read csv": "read_csv", 
+    "write csv": "write_csv", 
+    "scan csv": "scan_csv", 
+    
+    # datatypes
+    "string": "Utf8", 
+    "integer eight": "Int8", 
+    "integer sixteen": "Int16", 
+    "integer thirty two": "Int32", 
+    "integer sixty four": "Int64", 
+    "float thirty two": "Float32", 
+    "float sixty four": "Float64", 
+    "List": "List", 
+    "boolean": "Boolean", 
+    "factor": "Categorical", 
+    
+
+}
+
 
 mod.list("py_lib_pandas")
 ctx.lists["user.py_lib_pandas"] = {
@@ -172,7 +243,7 @@ ctx.lists["user.py_lib_pandas"] = {
     "info": "info",
     "insert": "insert",
     "interpolate": "interpolate",
-    "is in": "isin",
+    # "is in": "isin",
     "is NA": "isna",
     "is null": "isnull",
     "items": "items",
