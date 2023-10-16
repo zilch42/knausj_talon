@@ -16,6 +16,8 @@ please [<user.text>]:
     user.vscode("workbench.action.showCommands")
     insert(user.text or "")
 
+run app: user.vscode("python.execInTerminal")
+
 # Sidebar
 bar explore: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
@@ -293,7 +295,7 @@ comment (line | lines): user.vscode("editor.action.commentLine")
 # jupyter
 next (cell | chunk): user.vscode("notebook.focusNextEditor")
 previous (cell | chunk): user.vscode("notebook.focusPreviousEditor")
-run cells above: user.vscode("notebook.cell.executeCellAndAbove")
+run cells above: user.vscode("notebook.cell.executeCellsAbove")
 run cells below: user.vscode("notebook.cell.executeCellAndBelow")
 run (cell | chunk): user.vscode("notebook.cell.execute")
 debug (cell | chunk): user.vscode("jupyter.runAndDebugCell")

@@ -101,6 +101,16 @@ OS {user.py_lib_os}: user.code_insert_function(py_lib_os, "")
 graph {user.py_lib_matplotlib}: user.code_insert_function(py_lib_matplotlib, "")
 seaborne {user.py_lib_seaborn}: user.code_insert_function(py_lib_seaborn, "")
 
+# niceGUI
+nice {user.py_lib_nicegui}: user.code_insert_function(py_lib_nicegui, "")
+you I {user.py_lib_nicegui}: 
+    "ui."
+    user.code_insert_function(py_lib_nicegui, "")
+nice dot {user.py_lib_nicegui}: 
+    "."
+    user.code_insert_function(py_lib_nicegui, "")
+nice on click: "on_click=lambda: "
+
 # pickle 
 pickle (dump|save):
     "with open('', 'wb') as f:"

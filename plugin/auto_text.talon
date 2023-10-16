@@ -8,7 +8,9 @@ standard wos filters: 'AND PY=2018-2022 AND DT=(Article OR Review OR Proceedings
 
 # CSIRO strings
 A and F: "A&F"
+ag and food: "Ag & Food"
 O and A: "O&A"
 L and W: "L&W"
 H and B: "H&B"
 A A H L: "AAHL"
+data sixty one: "Data61"
