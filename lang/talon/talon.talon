@@ -63,7 +63,7 @@ shift: "shift-"
 alt: "alt-"
 
 # functions
-key: 
+funtion key: 
     "key()"
     key(left)
 sleep: 

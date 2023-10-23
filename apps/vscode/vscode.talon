@@ -16,8 +16,6 @@ please [<user.text>]:
     user.vscode("workbench.action.showCommands")
     insert(user.text or "")
 
-run app: user.vscode("python.execInTerminal")
-
 # Sidebar
 bar explore: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
@@ -338,4 +336,16 @@ display markdown:
 get suggestions: key(alt-c)
 accept suggestion: key(tab)
 
+# niceGUI running
+run dashboard: 
+    key(ctrl-shift-`)
+    sleep(50ms)
+    key(enter)
+    sleep(1s)
+    "uvicorn dashboard_main:FastApp --reload"
+    key(enter)
+stop dashboard:
+    user.vscode("workbench.action.terminal.focus")
+    sleep(50ms)
+    key(ctrl-c)
 

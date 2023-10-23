@@ -105,4 +105,7 @@ ctx.lists["user.py_lib_nicegui"] = {
     "page": "page", 
     "header": "header", 
     
+    # decorators
+    "refresh able": "refreshable", 
+    
 }
