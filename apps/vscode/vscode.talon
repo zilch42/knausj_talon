@@ -342,10 +342,11 @@ run dashboard:
     sleep(50ms)
     key(enter)
     sleep(1s)
-    "uvicorn dashboard_main:FastApp --reload"
+    "uvicorn dashboard_main:FastApp --reload --log-level info --port 8000 --reload-exclude dev/"
     key(enter)
 stop dashboard:
     user.vscode("workbench.action.terminal.focus")
     sleep(50ms)
     key(ctrl-c)
 
+unicorn: "uvicorn main:FastApp --reload --log-level info --port 8000"

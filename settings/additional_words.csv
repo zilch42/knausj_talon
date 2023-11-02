@@ -23,7 +23,7 @@ Ident,I dent
 Altmetric,
 Altmetrics,
 aquaponic,
-BERTopic,
+BERTopic, bert topic
 Betweenness,
 shogo,show go
 knausj,nous jay
@@ -35,3 +35,5 @@ cuda,
 tokenizer,
 umap,you map
 ePublish,E publish
+nicegui,nice gooey
+

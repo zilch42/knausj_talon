@@ -363,6 +363,9 @@ class UserActions:
 
     def code_state_while():
         actions.user.insert_between("while ", ":")
+        
+    def code_state_with():
+        actions.user.insert_between("with ", ":")
 
     def code_define_class():
         actions.auto_insert("class ")

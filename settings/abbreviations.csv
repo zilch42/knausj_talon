@@ -274,6 +274,7 @@ pkts,packets
 param,parameter
 params,parameters
 passwd,password
+PDF,PDF
 perf,performance
 phys,physical
 paddr,physical address
