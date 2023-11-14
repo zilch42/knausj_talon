@@ -125,18 +125,6 @@ python console:
         key("ctrl-2")
         "exit"
         key("enter")
-environment status:
-    key("ctrl-2")
-    "renv::status()"
-    key("enter")
-environment snapshot:
-    key("ctrl-2")
-    "renv::snapshot()"
-    key("enter")
-environment restore:
-    key("ctrl-2")
-    "renv::restore()"
-    key("enter")
         
 
 # ----------------BROWSER VERSION--------------------

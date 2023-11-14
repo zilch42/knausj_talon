@@ -77,6 +77,7 @@ next quote:
     key(right)
     ', "'
 dot data: ".data$"
+line break: "<br />"
 
 
 # ggplot

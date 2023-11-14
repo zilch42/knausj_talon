@@ -231,12 +231,20 @@ ctx.lists["user.code_common_function"] = {
 
     # OpenAlex
     "oa fetch": "oa_fetch", 
+    
+    # renv
+    "environment status": "status", 
+    "environment restore": "restore", 
+    "environment snapshot": "snapshot", 
+    "environment install": "install", 
+    "environment update": "update", 
 
 }
 
 ctx.lists["user.code_libraries"] = {
     "altmetric data": "AltmetricData", 
     "are laying": "rlang", 
+    "are environment": "renv",
     "bibliotecr": "bibliotecR",
     "bibliometrics": "bibliometrix", 
     "cable extra": "kableExtra",
