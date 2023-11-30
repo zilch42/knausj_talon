@@ -44,6 +44,7 @@ anaconda deactivate: "conda deactivate "
 # ace: "aice"
 pip install: "pip install "
 pip uninstall: "pip uninstall "
+pip list: "pip list"
 
 activate horizon: "conda activate ./condaenv"
 go to project: "cd C:\\Users\\ABB064\\OneDrive - CSIRO\\R\\AiCE\\csiro-horizon-scanning"

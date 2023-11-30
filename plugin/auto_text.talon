@@ -20,6 +20,7 @@ be use: "BUs"
 
 E P number <user.number_string>: "EP2023-{number_string}"
 you tee: "UT"
+wos: "WoS"
 
 year of publication: "YearPub"
 document type: "DocType"

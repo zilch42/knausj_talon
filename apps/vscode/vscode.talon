@@ -290,6 +290,8 @@ close window: user.vscode("workbench.action.closeWindow")
 
 comment (line | lines): user.vscode("editor.action.commentLine")
 
+sort imports: key(alt-shift-o)
+
 # jupyter
 next (cell | chunk): user.vscode("notebook.focusNextEditor")
 previous (cell | chunk): user.vscode("notebook.focusPreviousEditor")
