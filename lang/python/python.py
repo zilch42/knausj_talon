@@ -178,6 +178,7 @@ ctx.lists["user.python_exception"] = {
 ctx.lists["user.code_libraries"] = {
     "bert topic": "bertopic", 
     "dot env": "dotenv", 
+    "date time": "datetime", 
     "garbage collection": "gc", 
     "glob": "glob", 
     "jason": "json",
@@ -190,6 +191,7 @@ ctx.lists["user.code_libraries"] = {
     "pie test": "pytest",
     "plots": "matplotlib.pyplot as plt", 
     "polars": "polars as pl", 
+    "platform": "platform", 
     "random": "random",
     "regex": "re",
     "requests": "requests",

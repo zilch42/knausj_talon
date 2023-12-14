@@ -30,3 +30,8 @@ res be use: "resBUs"
 NCI: "NCI"
 ESI cat: "ESICat"
 WoS cat: "WoSCat"
+
+twenty nineteen to twenty three: "2019-23"
+twenty eighteen to twenty two: "2018-22"
+twenty seventeen to twenty one: "2017-21"
+twenty sixteen to twenty: "2016-20"

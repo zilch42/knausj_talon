@@ -126,13 +126,13 @@ pickle load:
 
 # logger levels 
 logger info: 
-    'logger.info("".format())'
+    'logger.info()'
 logger warning: 
-    'logger.warning("".format())'
+    'logger.warning()'
 logger error: 
-    'logger.error("".format())'
+    'logger.error()'
 logger debug: 
-    'logger.debug("".format())'
+    'logger.debug()'
 
 # quarto functions
 cue comment: "#| "

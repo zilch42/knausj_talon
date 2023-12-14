@@ -120,6 +120,9 @@ process ordinals:
     key(ctrl-a)
     sleep(200ms)
     key(ctrl-shift-o)
+# macro code
+# Options.AutoFormatReplaceOrdinals = True 
+# Selection.Range.AutoFormat
 
 # prose formatters (in symbols.talon)
 # full stop: 
