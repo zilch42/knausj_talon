@@ -27,7 +27,7 @@ tab search <user.text>$:
 # duplicate tab: key(y t)
 
 
-close tab: key(ctrl-w)
+close tab: user.tab_close_wrapper()
 
 # shiny stuff
 react log: key(ctrl-f3)

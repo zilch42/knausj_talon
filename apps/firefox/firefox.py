@@ -54,3 +54,4 @@ class BrowserActions:
 
     def go_home():
         actions.key("alt-home")
+        
