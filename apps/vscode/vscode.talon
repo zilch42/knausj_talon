@@ -339,13 +339,14 @@ get suggestions: key(alt-c)
 accept suggestion: key(tab)
 
 # niceGUI running
-run dashboard: 
+run unicorn: 
     key(ctrl-shift-`)
     sleep(50ms)
     key(enter)
     sleep(1s)
     "uvicorn dashboard_main:FastApp --reload --log-level info --port 8000 --reload-exclude dev/"
     key(enter)
+run dashboard: user.vscode("python.execInTerminal")
 stop dashboard:
     user.vscode("workbench.action.terminal.focus")
     sleep(50ms)
