@@ -28,6 +28,8 @@ go forward: user.file_manager_go_forward()
 ^(select | cell) file {user.file_manager_files}$:
     user.file_manager_select_file(file_manager_files)
 
+rename: key(f2)
+
 #new folder
 folder new <user.text>: user.file_manager_new_folder(text)
 

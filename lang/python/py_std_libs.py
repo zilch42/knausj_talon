@@ -201,6 +201,8 @@ ctx.lists["user.py_lib_os"] = {
     "open": "os.open",
     "par dir": "os.pardir!",
     "path": "os.path!",
+    "path exists": "os.path.exists",
+    "path join": "os.path.join",
     "path sep": "os.pathsep!",
     "pipe": "os.pipe",
     "P open": "os.popen",

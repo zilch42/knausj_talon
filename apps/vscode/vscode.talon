@@ -353,3 +353,12 @@ stop dashboard:
     key(ctrl-c)
 
 unicorn: "uvicorn main:FastApp --reload --log-level info --port 8000"
+
+create standard yamal: 
+    """
+    ---
+    metadata:
+    save_path: 
+    title: 
+    description: 
+    """

@@ -36,6 +36,8 @@ state raise: "raise "
 self taught: "self."
 state todo: "# TODO: "
 pie test: "pytest"
+state await: "await "
+state async: "async "
 
 raise {user.python_exception}: user.insert_between("raise {python_exception}(", ")")
 except {user.python_exception}: "except {python_exception}:"

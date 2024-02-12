@@ -6,7 +6,7 @@ anaconda help: "conda --help\n"
 anaconda version: "conda --version\n"
 
 anaconda environment list: "conda env list\n"
-anaconda environment create: "conda env create -f "
+anaconda environment create: "conda create -n "
 anaconda environment remove: "conda env remove -n "
 
 anaconda activate: "conda activate "
@@ -58,6 +58,7 @@ horizon scanning: "csiro-horizon-scanning"
 latest environment: "csiro-horizon-scanning39"
 anaconda initialise: "conda init bash"
 setup environment: "source environments/setup_workbench_env.sh"
+deploy dashboard: "rsconnect-python\deploy.bat"
 
 video ram: "nvidia-smi"
 
