@@ -38,6 +38,7 @@ state todo: "# TODO: "
 pie test: "pytest"
 state await: "await "
 state async: "async "
+state is none: " is None"
 
 raise {user.python_exception}: user.insert_between("raise {python_exception}(", ")")
 except {user.python_exception}: "except {python_exception}:"
@@ -81,6 +82,11 @@ quote pair:
     key(left:7)
 double <user.text>$: '"{text}": "{text}", '
 dot foxy: "df"
+close to end: 
+    edit.extend_right()
+    edit.cut()
+    key(end)
+    edit.paste()
 
 # Libraries
 pandas {user.py_lib_pandas}: user.code_insert_function(py_lib_pandas, "")

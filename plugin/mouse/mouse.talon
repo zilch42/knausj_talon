@@ -4,7 +4,7 @@ mode: dictation
 mode: user.game
 -
 
-kick [<number_small>]: 
+kick [that] [<number_small>]: 
     n = number_small or 1
     mouse_click(0)
     repeat(n-1) 
