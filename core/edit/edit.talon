@@ -163,7 +163,7 @@ spark:
 replace all: 
 	edit.select_all()
 	edit.paste()
-shogo: 
+shogo|show go: 
     edit.select_line()
     edit.paste()
     key("enter")
@@ -198,4 +198,4 @@ redo [<number_small>]:
 # Save
 file save: edit.save()
 file save all: edit.save_all()
-(save|disk): edit.save()
+disk: edit.save()

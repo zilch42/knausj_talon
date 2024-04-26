@@ -47,7 +47,7 @@ pip uninstall: "pip uninstall "
 pip list: "pip list"
 
 activate horizon: "conda activate ./condaenv"
-go to project: "cd C:\\Users\\ABB064\\OneDrive - CSIRO\\R\\AiCE\\csiro-horizon-scanning"
+go to project: "cd 'C:\\Users\\ABB064\\OneDrive - CSIRO\\R\\AiCE\\csiro-horizon-scanning'"
 go to workbench project: "cd datasets/sip-bibliomet/work/csiro-horizon-scanning"
 go to linux project: "cd csiro-horizon-scanning"
 update environment: "conda env update --file environment310.yml"

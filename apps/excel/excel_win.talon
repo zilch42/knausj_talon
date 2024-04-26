@@ -114,9 +114,9 @@ auto some: key(alt-=)
 fix that: key("f4")
 
 add filter: key(alt-h s f)
-open filter: key(ctrl-up alt-down tab:8)
-clear filter: key(alt-h s c ctrl-up down ctrl-up alt-down tab:8)
-clear left filter: key(left up alt-h s c ctrl-up down ctrl-up alt-down tab:8)
+open filter: key(ctrl-up alt-down down:8)
+clear filter: key(alt-h s c ctrl-up down ctrl-up alt-down down:8)
+clear left filter: key(left up alt-h s c ctrl-up down ctrl-up alt-down down:8)
 sort by largest: key(alt-h s o)
 sort by smallest: key(alt-h s s)
 

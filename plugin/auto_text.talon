@@ -32,6 +32,8 @@ NCI: "NCI"
 ESI cat: "ESICat"
 WoS cat: "WoSCat"
 
+uni vee: "univ "
+
 twenty nineteen to twenty three: "2019-23"
 twenty eighteen to twenty two: "2018-22"
 twenty seventeen to twenty one: "2017-21"

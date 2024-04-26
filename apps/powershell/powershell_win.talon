@@ -2,6 +2,10 @@ os: windows
 and app.name: Windows PowerShell
 os: windows
 and app.exe: powershell.exe
+os: windows
+and app.name: Console Window Host
+os: windows
+and app.exe: conhost.exe
 -
 # makes the commands in terminal.talon available
 tag(): terminal
@@ -13,4 +17,7 @@ tag(): user.generic_windows_shell
 # you can deactivate them if you do not use the application
 tag(): user.git
 tag(): user.anaconda
-# tag(): user.kubectl
+tag(): user.kubectl
+
+
+
