@@ -54,7 +54,7 @@ inner chain: " %>% "
 # about the new pipes 
 # https://r4ds.hadley.nz/workflow-pipes.html
 
-re chain: 
+china: 
     key(end)
     " %<>% "
 tee pipe:

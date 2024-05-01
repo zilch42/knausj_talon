@@ -24,4 +24,4 @@ op mod equals: user.code_operator_modulo_assignment()
 [(op | logical | bitwise)] (right shift | shift right) equals:
     user.code_operator_bitwise_right_shift_assignment()
 
-assign: user.code_operator_assignment() 
+sign|assign: user.code_operator_assignment() 
