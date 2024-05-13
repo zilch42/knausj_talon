@@ -135,3 +135,14 @@
 #     sleep(1000ms)
 #     mimic("download data")
 #     sleep(1000ms)
+
+next journal:
+    user.switcher_focus("excel")    
+    key(down ctrl-c)
+    sleep(1000ms)
+    key(alt-tab)
+    sleep(1000ms)
+    key(ctrl-v)
+    sleep(3000ms)
+    key(enter)
+    sleep(1000ms)

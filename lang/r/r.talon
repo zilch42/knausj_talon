@@ -122,6 +122,9 @@ get categories: 'get_data("categories")'
 get author address link: 'get_data("author_address_link")'
 get author keywords: 'get_data("author_keywords")'
 
+# RiseData
+get rise: 'get_rise_data("risePeers")'
+
 # Rmarkdown
 figure caption: "fig.cap='"
 figure ID: "fig.id='"

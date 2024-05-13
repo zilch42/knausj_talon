@@ -247,3 +247,4 @@ color reverse:
     key(alt-h)
     key(l s right enter)
     key(right)
+
