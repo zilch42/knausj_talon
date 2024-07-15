@@ -38,6 +38,8 @@ inside angle: user.insert_between("<", ">")
     key(backspace ! space)
 (four|full) semper:
     key(backspace ; space)
+(four|full) deckle:
+    key(backspace : space)
 
 # hugs
 # these might not copy paste properly
