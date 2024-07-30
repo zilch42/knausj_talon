@@ -2,7 +2,7 @@
 settings():
     # ZILCH CHANGE
     # Speech timeout
-    speech.timeout = 0.400
+    speech.timeout = 0.500
 
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3

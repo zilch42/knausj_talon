@@ -63,3 +63,6 @@ deploy dashboard: "rsconnect-python\deploy.bat"
 video ram: "nvidia-smi"
 
 bit bucket HS: "https://bitbucket.csiro.au/scm/~abb064/csiro-horizon-scanning.git"
+
+run open web UI: "open-webui serve"
+run pipelines: "start.bat"

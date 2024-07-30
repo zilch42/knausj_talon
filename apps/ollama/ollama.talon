@@ -29,12 +29,10 @@ llama show help:
     key(enter)
 
 llama show info:
-    "/sure"
+    "/show info"
     key(enter)
 
-llama multiline:
-    '""""""'
-    key(left:3)
+llama multi line: '"""'
 
 llama exit:
     "/bye"

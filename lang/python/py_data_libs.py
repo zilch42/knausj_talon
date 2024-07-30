@@ -332,7 +332,7 @@ ctx.lists["user.py_lib_pandas"] = {
     "tail": "tail",
     "take": "take",
     "to clipboard": "to_clipboard",
-    "to CSV": "to_csv([|], index=False)",
+    "to CSV": "to_csv(, index=False)",
     "to dict": "to_dict",
     "to excel": "to_excel",
     "to feather": "to_feather",
