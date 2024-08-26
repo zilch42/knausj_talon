@@ -363,3 +363,13 @@ create standard yamal:
     title: 
     description: 
     """
+
+# sidebar width
+bar increase: user.vscode("workbench.action.decreaseViewWidth")
+bar decrease: user.vscode("workbench.action.increaseViewWidth")
+bar wide: 
+    user.vscode("workbench.action.decreaseViewWidth")
+    repeat(5)
+bar narrow: 
+    user.vscode("workbench.action.increaseViewWidth")
+    repeat(5)

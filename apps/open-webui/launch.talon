@@ -8,7 +8,7 @@ launch open webui:
     key(enter)
     "start.bat"
     key(enter)
-    sleep(15000ms)
+    sleep(5000ms)
     mimic("launch anaconda prompt")
     sleep(1000ms)
     "conda activate openwebui"
