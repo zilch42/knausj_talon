@@ -123,10 +123,16 @@ def title_case():
 
     return title_case_word
 
-
 def every_word(word_func):
     """Apply one function to every word."""
     return lambda i, word, _: word_func(word)
+
+# zilch
+def all_caps_snake_case():
+    return lambda i, word, _: word.upper() if i == 0 else "_" + word.upper()
+
+def title_snake_case():
+    return lambda i, word, _: word.capitalize() if i == 0 else "_" + word.capitalize()
 
 
 # All formatters (code and prose)
@@ -165,6 +171,8 @@ formatters_dict = {
     "CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: word.capitalize() + " " if i == 0 else word + " "),
     "SPACE_CAPITALIZE_FIRST_WORD": (NOSEP, lambda i, word, _: " " + word.capitalize() + " " if i == 0 else word + " "),
     "CAPITALIZE_ALL_WORDS": (SEP, title_case()),
+    "ALL_CAPS_SNAKE_CASE": (NOSEP, all_caps_snake_case()), 
+    "TITLE_SNAKE_CASE": (NOSEP, title_snake_case()), 
 }
 
 # Mapping from spoken phrases to formatter names
@@ -185,6 +193,8 @@ code_formatter_names = {
     "snake": "SNAKE_CASE",
     "chick string": "SINGLE_QUOTED_STRING",
     "title": "CAPITALIZE_ALL_WORDS", 
+    "yell snake": "ALL_CAPS_SNAKE_CASE", 
+    "title snake": "TITLE_SNAKE_CASE", 
 }
 prose_formatter_names = {
     "say": "SPACE_NOOP",

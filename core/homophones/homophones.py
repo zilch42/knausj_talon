@@ -138,6 +138,7 @@ def raise_homophones(word_to_find_homophones_for, forced=False, selection=False)
         else:
             new = active_word_list[0]
 
+        new += " "
         clip.set(new)
         actions.edit.paste()
 

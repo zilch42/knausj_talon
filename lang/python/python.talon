@@ -29,6 +29,7 @@ settings():
 
 #python-specific grammars
 dunder in it: "__init__"
+dunder school: "_"
 state (def | deaf | deft): "def "
 state try: "try:\n"
 state except: "except "
@@ -145,7 +146,7 @@ logger debug:
 # quarto functions
 cue comment: "#| "
 cue {user.quarto_chunk_options} [{user.quarto_logical}]:
-    edit.select_line()
+edit.select_line():
     "#| "
     insert(quarto_chunk_options)
     ": "
@@ -156,6 +157,8 @@ cue {user.quarto_chunk_options} [{user.quarto_logical}]:
 axis [equals] <number>$: "axis={number}"
 in place true: "inplace=True"
 in place false: "inplace=False"
+dot lock: ".loc[]"
+dot i lock: ".iloc[]"
 
 d f: "df"
 lambda ex: "lambda x: "

@@ -293,6 +293,8 @@ comment (line | lines): user.vscode("editor.action.commentLine")
 
 sort imports: key(alt-shift-o)
 
+generate dock string: key(ctrl-shift-2)
+
 # jupyter
 next (cell | chunk): user.vscode("notebook.focusNextEditor")
 previous (cell | chunk): user.vscode("notebook.focusPreviousEditor")
