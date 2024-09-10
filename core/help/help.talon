@@ -14,3 +14,5 @@ help search <user.text>$: user.help_search(text)
 help context {user.help_contexts}$: user.help_selected_context(help_contexts)
 help help: user.help_search("help")
 help scope$: user.help_scope_toggle()
+
+# log <user.text>: user.log_to_console(text)

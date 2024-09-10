@@ -13,15 +13,6 @@ llama mistral:
 llama open orca: 
     "ollama run mistral-openorca"
     key(enter)
-llama wizard: 
-    "ollama run wizardlm2 "
-    key(enter)
-llama mistral: 
-    "ollama run mistral"
-    key(enter)
-llama open orca: 
-    "ollama run mistral-openorca"
-    key(enter)
 
 
 llama show help:

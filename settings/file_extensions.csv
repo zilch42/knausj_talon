@@ -13,7 +13,6 @@ File extension,Name
 .org,dot org
 .us,dot us
 .us,dot U S
-.exe,dot exe
 .bin,dot bin
 .bin,dot bend
 .json,dot jason
@@ -29,3 +28,4 @@ File extension,Name
 .txt,dot text
 .R,dot are
 .R,dot R
+.xlsx, dot excel

@@ -281,7 +281,7 @@ ctx.lists["user.code_libraries"] = {
     "shiny": "shiny", 
     "site data": "SciteData", 
     "test that": "testthat", 
-    "tick-tock": "tictoc", 
+    "tick tock": "tictoc", 
     "tibble": "tibble", 
     "tidier": "tidyr",
     "tidy verse": "tidyverse",

@@ -56,6 +56,7 @@ show settings workspace json: user.vscode("workbench.action.openWorkspaceSetting
 show shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
 show shortcuts json: user.vscode("workbench.action.openGlobalKeybindingsFile")
 show snippets: user.vscode("workbench.action.openSnippets")
+copy command id: user.copy_command_id()
 
 # Display
 centered switch: user.vscode("workbench.action.toggleCenteredLayout")
@@ -107,7 +108,7 @@ hierarchy peek: user.vscode("editor.showCallHierarchy")
 references find: user.vscode("references-view.find")
 format that: user.vscode("editor.action.formatDocument")
 format selection: user.vscode("editor.action.formatSelection")
-imports fix: user.vscode("editor.action.organizeImports")
+# imports fix: user.vscode("editor.action.organizeImports")
 problem next: user.vscode("editor.action.marker.nextInFiles")
 problem last: user.vscode("editor.action.marker.prevInFiles")
 problem fix: user.vscode("problems.action.showQuickFixes")
@@ -282,6 +283,13 @@ cell run: user.vscode("notebook.cell.execute")
 install local: user.vscode("workbench.extensions.action.installVSIX")
 preview markdown: user.vscode("markdown.showPreview")
 
+# Imports
+imports organize:           user.vscode("editor.action.organizeImports")
+imports add:                user.vscode_add_missing_imports()
+imports fix:
+    user.vscode_add_missing_imports()
+    sleep(100ms)
+    user.vscode("editor.action.organizeImports")
 
 # ------------------------------------------------------------ #
 # Custom 
