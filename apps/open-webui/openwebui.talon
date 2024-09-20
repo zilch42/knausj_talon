@@ -1,4 +1,4 @@
-launch open webui:
+start open webui:
     mimic("launch anaconda prompt")
     sleep(1000ms)
     "conda activate openwebui"

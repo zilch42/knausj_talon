@@ -4,6 +4,8 @@ app: firefox
 and win.title: /RStudio Pro/
 app: chrome
 and win.title: /RStudio Pro/
+app: microsoft_edge
+and win.title: /RStudio Pro/
 -
 
 # Replacing knausj_talon 

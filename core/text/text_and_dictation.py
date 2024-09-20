@@ -74,11 +74,6 @@ def word(m) -> str:
         )
 
 
-@mod.capture(rule="({user.vocabulary} | <phrase>)+")
-def text(m) -> str:
-    """A sequence of words, including user-defined vocabulary."""
-    return format_phrase(m)
-
 
 @mod.capture(
     rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <phrase> | <user.prose_number> | <user.prose_modifier>)+"
@@ -95,6 +90,31 @@ def prose(m) -> str:
 def raw_prose(m) -> str:
     """Mixed words and punctuation, auto-spaced & capitalized, without quote straightening and commands (for use in dictation mode)."""
     return apply_formatting(m)
+
+@mod.capture(rule="({user.vocabulary} | <phrase>)+")
+def text(m) -> str:
+    """A sequence of words, including user-defined vocabulary."""
+    return format_phrase(m)
+
+# from Andreas Talon
+# TODO get this working
+# text_rule_parts = [
+#     "{user.vocabulary}",
+#     "{user.key_punctuation}",
+#     "<user.abbreviation>",
+#     "<user.spell>",
+#     "<user.number_dd>",
+#     "<user.number_prefix>",
+#     "<phrase>",
+# ]
+
+# text_rule = f"({'|'.join(text_rule_parts)})+"
+
+
+# @mod.capture(rule=text_rule)
+# def text(m) -> str:
+#     """Mixed words, numbers and punctuation, including user-defined vocabulary, abbreviations and spelling."""
+#     return format_phrase(m)
 
 
 # ---------- FORMATTING ---------- #

@@ -1,10 +1,12 @@
 tag: user.r
+mode: command
 app: r_studio
 app: firefox
 and win.title: /RStudio Pro/
 app: chrome
 and win.title: /RStudio Pro/
-mode: command
+app: microsoft_edge
+and win.title: /RStudio Pro/
 -
 
 tag(): user.code_imperative
