@@ -76,30 +76,16 @@ drop:
     edit.select_word()
     edit.paste()
 
-wheel down: user.mouse_scroll_down()
+    (wheel down|downer): user.mouse_scroll_down()
 wheel down here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_down()
 wheel tiny [down]: user.mouse_scroll_down(0.2)
-wheel tiny [down] here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_down(0.2)
-wheel downer: user.mouse_scroll_down_continuous()
-wheel downer here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_down_continuous()
-wheel up: user.mouse_scroll_up()
+    (wheel up|upper): user.mouse_scroll_up()
 wheel up here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_up()
 wheel tiny up: user.mouse_scroll_up(0.2)
-wheel tiny up here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_up(0.2)
-wheel upper: user.mouse_scroll_up_continuous()
-wheel upper here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_up_continuous()
 wheel gaze: user.mouse_gaze_scroll()
 wheel gaze here:
     user.mouse_move_center_active_window()

@@ -29,7 +29,7 @@ biochemistry and molecular biology: "Biochemistry & Molecular Biology"
 
 E P number <user.number_string>: "EP2023-{number_string}"
 you tee: "UT"
-wos: "WoS"
+# wos: "WoS"
 india dent: "Ident"
 
 year of publication: "YearPub"
