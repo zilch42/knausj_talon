@@ -9,14 +9,6 @@ os: windows
 and app.exe: cmd.exe
 and title: /Anaconda Prompt/
 os: windows
-and app.name: Windows PowerShell
-os: windows
-and app.exe: conhost.exe
-and title: /Anaconda Powershell Prompt/
-os: windows
-and app.exe: powershell.exe
-and title: /Anaconda Powershell Prompt/
-os: windows
 and app.name: Firefox
 os: windows
 and app.exe: firefox.exe

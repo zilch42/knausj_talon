@@ -15,6 +15,7 @@ not mode: user.game
     speech.disable()
     user.engine_sleep()
 ^talon sleep [<phrase>]$: speech.disable()
+drowse: speech.disable()
 ^(talon wake)+$: speech.enable()
 
 key(ctrl-\): speech.toggle()
