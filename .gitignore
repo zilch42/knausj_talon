@@ -1,10 +1,6 @@
 # Dev stuff
 __pycache__
 *.sw?
-.idea/
 # Locally generated
-.vscode/settings.json
-.DS_Store
-system_command.py
-# local only
+/settings
 personal.talon
