@@ -1,11 +1,7 @@
 tag: user.find_and_replace
 -
-^hunt: user.find("")
-hunt this (pace | paste):
-    user.find("")
-    sleep(25ms)
-    edit.paste()
-^hunt (this|text) <user.text>: user.find(text)
+tag(): user.find
+
 hunt all$: user.find_everywhere("")
 hunt all (pace | paste):
     user.find_everywhere("")
@@ -15,8 +11,6 @@ hunt all <user.text>: user.find_everywhere(text)
 hunt case: user.find_toggle_match_by_case()
 hunt whole: user.find_toggle_match_by_word()
 hunt expression: user.find_toggle_match_by_regex()
-hunt next: user.find_next()
-hunt previous: user.find_previous()
 hunt close: user.find_close()
 replace (this|text) [<user.text>]: user.replace(text or "")
 hunt replace: user.replace("")

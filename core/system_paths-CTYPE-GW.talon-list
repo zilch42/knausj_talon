@@ -1,0 +1,20 @@
+list: user.system_paths
+hostname: CTYPE-GW
+-
+user: C:\Users\ABB064
+profile: C:\Users\ABB064
+desktop: C:\Users\ABB064\Desktop
+desk: C:\Users\ABB064\Desktop
+documents: C:\Users\ABB064\Documents
+docks: C:\Users\ABB064\Documents
+downloads: C:\Users\ABB064\Downloads
+music: C:\Users\ABB064\Music
+pictures: C:\Users\ABB064\Pictures
+videos: C:\Users\ABB064\Videos
+talon home: C:\Users\ABB064\AppData\Roaming\talon
+talon user: C:\Users\ABB064\AppData\Roaming\talon\user
+are projects: C:\Users\abb064\OneDrive - CSIRO\R
+tadro: C:\Users\abb064\OneDrive - CSIRO\Tadro
+onedrive: C:\Users\abb064\OneDrive - CSIRO
+bowen: W:\
+shared drive: S:\Science Performance

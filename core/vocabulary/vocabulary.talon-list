@@ -1,11 +1,48 @@
 list: user.vocabulary
 -
-N map: nmap
 under documented: under-documented
-nmap
 admin
 Cisco
 Citrix
 VPN
 DNS
 Minecraft
+params
+sigh row: CSIRO
+Clarivate
+args
+tadroh: Tadro
+magrittare: magrittr
+dee ply are: dplyr
+devtools
+enrow: nrow
+tibble
+tribble
+audulus
+Incites
+I dent: Ident
+Altmetric
+Altmetrics
+aquaponic
+bert topic: BERTopic
+Betweenness
+show go: shogo
+nous jay: knausj
+WoS
+WoS data: wosdata
+PS: Preshith
+biblio metric: bibliometric
+cuda
+tokenizer
+you map: umap
+E publish: ePublish
+nice gooey: nicegui
+para text: paratext
+mistral
+vectorizer
+chat GPT: ChatGPT
+uni vee: univ
+buy oh: bio
+tek: tech
+genie
+nano
