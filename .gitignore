@@ -1,2 +1,6 @@
-macros.txt
+# Dev stuff
+__pycache__
+*.sw?
+# Locally generated
+/settings
 personal.talon
