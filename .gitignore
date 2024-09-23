@@ -4,3 +4,6 @@ __pycache__
 # Locally generated
 /settings
 personal.talon
+.vscode/settings.json
+.DS_Store
+.bak

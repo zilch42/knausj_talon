@@ -6,8 +6,7 @@ mod = Module()
 ctx = Context()
 
 ctx.matches = r"""
-tag: user.r
-mode: command
+code.language: r
 """
 
 ctx.lists["user.code_common_function"] = {

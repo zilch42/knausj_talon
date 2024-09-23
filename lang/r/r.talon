@@ -1,5 +1,4 @@
-tag: user.r
-mode: command
+code.language: r
 app: r_studio
 app: firefox
 and win.title: /RStudio Pro/

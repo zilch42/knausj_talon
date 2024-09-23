@@ -1,3 +1,7 @@
+# Compound of action(select, clear, copy, cut, paste, etc.) and modifier(word, line, etc.) commands for editing text.
+# eg: "select line", "clear all"
+<user.edit_action> <user.edit_modifier>: user.edit_command(edit_action, edit_modifier)
+
 # Zoom
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
@@ -14,6 +18,17 @@ scroll down: edit.page_down()
 go home: edit.line_start()
 go end: edit.line_end()
 go way home:
+    edit.line_start()
+    edit.line_start()
+
+# go left, go left left down, go 5 left 2 down
+# go word left, go 2 words right
+go <user.navigation_step>+: user.perform_navigation_steps(navigation_step_list)
+
+go line start | head: edit.line_start()
+go line end | tail: edit.line_end()
+
+go way left:
     edit.line_start()
     edit.line_start()
 go way end: edit.line_end()
@@ -101,10 +116,6 @@ indent [more]: edit.indent_more()
 (indent less | out dent): edit.indent_less()
 
 # Delete
-clear all: user.delete_all()
-clear line: edit.delete_line()
-clear line start: user.delete_line_start()
-clear line end: user.delete_line_end()
 clear left: edit.delete()
 clear right: user.delete_right()
 clear to:
@@ -199,3 +210,5 @@ redo [<number_small>]:
 file save: edit.save()
 file save all: edit.save_all()
 disk: edit.save()
+
+[go] line mid: user.line_middle()

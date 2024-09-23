@@ -1,3 +1,5 @@
+not tag: user.screenshot_disabled
+-
 # save to desktop
 ^grab screen save$:                     user.screenshot()
 ^grab screen <number_small> save$:      user.screenshot(number_small)
@@ -10,3 +12,5 @@
 ^grab selection$:                       user.screenshot_selection()
 ^open snipping tool$:                   user.screenshot_selection()
 ^grab window$:                          user.screenshot_window_clipboard()
+
+

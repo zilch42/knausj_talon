@@ -1,4 +1,4 @@
-tag: user.talon
+code.language: talon
 -
 tag(): user.code_operators_math
 tag(): user.code_operators_assignment
@@ -10,9 +10,7 @@ tag(): user.code_functions_common
 # see https://github.com/talonhub/community/issues/600
 tag(): user.talon_populate_lists
 
-dot talon: insert(".talon")
 #defintion blocks for the context
-action block: user.insert_between("action(", "):")
 setting block: insert("settings():\n\t")
 setting {user.talon_settings}: user.paste("{talon_settings} = ")
 #context requirements

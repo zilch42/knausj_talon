@@ -4,8 +4,8 @@ from talon import Context, Module, actions, settings
 mod = Module()
 ctx = Context()
 ctx.matches = r"""
-tag: user.python
-tag: user.jupyter
+code.language: python
+code.language: jupyter
 mode: command
 """
 ctx.lists["user.code_common_function"] = {
@@ -428,3 +428,8 @@ class UserActions:
 
     def code_insert_library(text: str, selection: str):
         actions.user.paste(text)
+    def code_break():
+        actions.insert("break")
+
+    def code_next():
+        actions.insert("continue")
