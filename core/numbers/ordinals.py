@@ -69,9 +69,11 @@ for n in range(1, 100):
 mod = Module()
 ctx = Context()
 mod.list("ordinals", desc="list of ordinals")
+mod.list("ordinal_names", desc="list of ordinals names (5th)")
 mod.list("ordinals_small", desc="list of ordinals small (1-20)")
 
 ctx.lists["self.ordinals"] = ordinal_numbers.keys()
+ctx.lists["self.ordinal_names"] = ordinal_numbers.keys()
 ctx.lists["self.ordinals_small"] = ordinal_small.keys()
 
 
@@ -80,8 +82,12 @@ def ordinals(m) -> int:
     """Returns a single ordinal as a digit"""
     return int(ordinal_numbers[m[0]])
 
-
 @mod.capture(rule="{self.ordinals_small}")
 def ordinals_small(m) -> int:
     """Returns a single ordinal as a digit"""
     return int(ordinal_numbers[m[0]])
+
+@mod.capture(rule="{self.ordinal_names}")
+def ordinal_names(m) -> int:
+    """Returns a single ordinal as a digit"""
+    return ordinal(int(ordinal_numbers[m[0]]))

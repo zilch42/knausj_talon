@@ -17,7 +17,7 @@ tag(): user.readline
 ^test <phrase>$:
     insert("sim('{phrase}')")
     key(enter)
-^test numb <number_small>$:
+^test number <number_small>$:
     phrase = user.history_get(number_small)
     command = "sim('{phrase}')"
     #to do: shouldn't this work?
