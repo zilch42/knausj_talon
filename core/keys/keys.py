@@ -202,6 +202,8 @@ ctx.lists["self.arrow_key"] = {
     "lease": "left",
     "ross": "right",
     "sauce": "up",
+    "north": "up", 
+    "south": "down", 
 }
 
 simple_keys = [

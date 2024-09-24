@@ -1,7 +1,7 @@
 list: user.edit_action
 -
 
-select: select
+select|grab: select
 go before: goBefore
 go after: goAfter
 

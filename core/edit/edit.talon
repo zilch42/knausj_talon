@@ -7,35 +7,20 @@ zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
 zoom reset: edit.zoom_reset()
 
-# Searching
-find it: edit.find()
-next one: edit.find_next()
-
-# Navigation
-scroll up: edit.page_up()
-scroll down: edit.page_down()
-
-go home: edit.line_start()
-go end: edit.line_end()
-go way home:
-    edit.line_start()
-    edit.line_start()
-
 # go left, go left left down, go 5 left 2 down
 # go word left, go 2 words right
 go <user.navigation_step>+: user.perform_navigation_steps(navigation_step_list)
 
+go home: edit.line_start()
+go end: edit.line_end()
 go line start | head: edit.line_start()
+go way (left|home):
+    edit.line_start()
+    edit.line_start()
+    go way end: edit.line_end()
 go line end | tail: edit.line_end()
-
-go way left:
-    edit.line_start()
-    edit.line_start()
-go way end: edit.line_end()
 go bottom: edit.file_end()
 go top: edit.file_start()
-go page down:edit.page_down()
-go page up: edit.page_up()
 
 (bird | fly (lease|west)) [<number_small>]: 
     n = number_small or 1
@@ -86,10 +71,10 @@ grab end: edit.extend_line_end()
 grab top: edit.extend_file_start()
 grab bottom: edit.extend_file_end()
 
-grab inside:
-    key(del)
-    edit.word_right()
-    ")"
+# grab inside:
+#     key(del)
+#     edit.word_right()
+#     ")"
 
 shin (lease|west) [<number_small>]: 
     n = number_small or 1
@@ -135,16 +120,13 @@ splat (ross|east) [<number_small>]:
     edit.delete()
 
 # Copy
+copy: edit.copy()
 copy that: edit.copy()
 copy all: user.copy_all()
 copy line: user.copy_line()
-copy home: user.copy_line_start()
-copy end: user.copy_line_end()
 copy word: user.copy_word()
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
-copy: edit.copy()
-(stoosh | stoush): user.reminder_show("Remember to use copy not stoush!")
 
 # Cut
 cut: edit.cut()
@@ -179,13 +161,9 @@ shogo|show go:
     edit.paste()
     key("enter")
 
-# Duplication
-(clone|duplicate) that: edit.selection_clone()
-(clone|duplicate): edit.line_clone()
-
 # Insert new line
 new line above: edit.line_insert_up()
-new line below | slap | sink: edit.line_insert_down()
+new line below | sink: edit.line_insert_down()
 
 # Insert padding with optional symbols
 (pad | padding): user.insert_between(" ", " ")
