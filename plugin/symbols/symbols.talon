@@ -5,6 +5,7 @@ plus: "+"
 ampersand: "&"
 question mark: "?"
 slash: "/"
+arrow: " -> "
 
 # long
 long plus: " + "
@@ -26,7 +27,12 @@ inside (quotes | string): user.insert_between("'", "'")
 inside (double quotes | dub quotes | dub string): user.insert_between('"', '"')
 inside (graves | back ticks): user.insert_between("`", "`")
 inside angle: user.insert_between("<", ">")
-inside fences: user.insert_between("```\n", "\n```")
+inside fences: 
+    "```"
+    key(shift-enter)
+    key(shift-enter)
+    "```"
+    key(up)
 
 # sentence backspaces
 (four|full) stop: 
