@@ -86,7 +86,8 @@ insert table reference:
     key(tab down:2 enter tab:2)
 
 # comments
-add comment: key(alt-r c)
+add comment: key(alt-r c 2)
+accept comment: key(ctrl-enter)
 delete comment: key(alt-r d d)
 next comment: key(alt-r n)
 next change: key(alt-r h 1)
