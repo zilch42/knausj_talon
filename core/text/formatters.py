@@ -188,6 +188,8 @@ def capitalize(text: str) -> str:
 def lower(text: str) -> str:
     return text.lower()
 
+def upper(text: str) -> str:
+    return text.upper()
 
 def unformat_upper(text: str) -> str:
     return text.lower() if text.isupper() else text
@@ -220,6 +222,12 @@ def de_camel(text: str) -> str:
         text,
     )
 
+def quote_list(text: str):
+    # Replace one or more whitespace characters with ", "
+    modified_text = re.sub(r'\s+', '", "', text.strip(" "))
+    # Add quotes at the beginning and end of the string
+    return f'"{modified_text}"'
+
 
 formatter_list = [
     CustomFormatter("NOOP", lambda text: text),
@@ -227,9 +235,11 @@ formatter_list = [
     CustomFormatter("DOUBLE_QUOTED_STRING", lambda text: f'"{text}"'),
     CustomFormatter("SINGLE_QUOTED_STRING", lambda text: f"'{text}'"),
     CustomFormatter("SPACE_SURROUNDED_STRING", lambda text: f" {text} "),
+    CustomFormatter("SPACE_CAPITALIZE_FIRST_WORD", lambda text: f" {text.capitalize()} "),
     CustomFormatter("ALL_CAPS", lambda text: text.upper()),
     CustomFormatter("ALL_LOWERCASE", lambda text: text.lower()),
     CustomFormatter("COMMA_SEPARATED", lambda text: re.sub(r"\s+", ", ", text)),
+    CustomFormatter("QUOTED_LIST", quote_list),
     CustomFormatter("REMOVE_FORMATTING", remove_code_formatting),
     TitleFormatter("CAPITALIZE_ALL_WORDS"),
     # The sentence formatter being called `CAPITALIZE_FIRST_WORD` is a bit of a misnomer, but kept for backward compatibility.
@@ -246,6 +256,8 @@ formatter_list = [
     CodeFormatter("ALL_SLASHES", "/", lambda text: f"/{text.lower()}", lower),
     CodeFormatter("DOUBLE_UNDERSCORE", "__", lower, lower),
     CodeFormatter("DOUBLE_COLON_SEPARATED", "::", lower, lower),
+    CodeFormatter("TITLE_SNAKE_CASE", "_", capitalize, capitalize),
+    CodeFormatter("ALL_CAPS_SNAKE_CASE", "_", upper, upper),
 ]
 
 formatters_dict = {f.id: f for f in formatter_list}
@@ -274,7 +286,7 @@ code_formatter_names = {
     "title snake": "TITLE_SNAKE_CASE", 
 }
 prose_formatter_names = {
-    "say": "SPACE_NOOP",
+    "say": "TRAILING_SPACE",
     "spray": "SPACE_SURROUNDED_STRING",
     "sing": "CAPITALIZE_FIRST_WORD",
     "spring": "SPACE_CAPITALIZE_FIRST_WORD",
@@ -282,6 +294,7 @@ prose_formatter_names = {
 reformatter_names = {
     "cap": "CAPITALIZE",
     "list": "COMMA_SEPARATED",
+    "quote list": "QUOTED_LIST", 
     "unformat": "REMOVE_FORMATTING",
 }
 word_formatter_names = {
