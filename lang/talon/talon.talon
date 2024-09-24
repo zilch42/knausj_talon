@@ -59,6 +59,7 @@ control: "ctrl-"
 command: "cmd-"
 shift: "shift-"
 alt: "alt-"
+enter: "enter"
 
 # functions
 funtion key: 
