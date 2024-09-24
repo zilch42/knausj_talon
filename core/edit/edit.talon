@@ -185,8 +185,7 @@ redo [<number_small>]:
 	repeat(n-1)
 
 # Save
-file save: edit.save()
+file save | disk: edit.save()
 file save all: edit.save_all()
-disk: edit.save()
 
 [go] line mid: user.line_middle()

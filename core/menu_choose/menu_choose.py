@@ -23,3 +23,4 @@ class Actions:
 class Actions:
     def menu_open():
         actions.key("shift-f10")
+        
