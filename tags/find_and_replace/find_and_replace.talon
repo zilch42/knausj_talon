@@ -16,7 +16,7 @@ replace (this|text) [<user.text>]: user.replace(text or "")
 hunt replace: user.replace("")
 replace all$: user.replace_everywhere("")
 replace <user.text> all: user.replace_everywhere(text)
-replace confirm that: user.replace_confirm()
+replace confirm: user.replace_confirm()
 replace confirm all: user.replace_confirm_all()
 
 #quick replace commands, modeled after jetbrains
