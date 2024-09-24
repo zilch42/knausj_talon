@@ -13,3 +13,6 @@ new window:
     sleep(300ms)
     key(n)
 
+copy path:
+    key(shift-f10)
+    key(x)

@@ -83,6 +83,11 @@ if app.platform == "windows":
         "Program Manager",
     ]
 
+@mod.action_class
+class UserActions:
+    def open_from_path(path: str):
+        """open a file in the default program"""
+        os.startfile(path)
 
 @ctx.action_class("user")
 class UserActions:
@@ -141,3 +146,4 @@ class UserActions:
     def file_manager_open_volume(volume: str):
         """file_manager_open_volume"""
         actions.user.file_manager_open_directory(volume)
+
