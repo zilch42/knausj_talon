@@ -24,7 +24,7 @@ select all: key(ctrl-a)
 ^hunt$: key(ctrl-f)
 hunt that: key(ctrl-f3)
 align that: key(ctrl-i)
-(hunt all | RS find): key(ctrl-shift-f)
+(hunt everywhere | RS find| hunt everywhere): key(ctrl-shift-f)
 
 # ---------------TABS---------------------------------
 (right | next) tab [<number_small>]: key(ctrl-f12)
