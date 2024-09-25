@@ -8,3 +8,5 @@ open project pipelines:
 
 # random files
 talon cheatsheet: user.open_from_path("C:/Users/abb064/AppData/Roaming/talon/user/knausj_talon/Talon Cheatsheet v4.docx")
+
+customize project log: user.edit_text_file("C:/Users/abb064/OneDrive - CSIRO/Tadro/APA/Project Log.xlsx")
