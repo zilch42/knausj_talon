@@ -171,7 +171,7 @@ class SentenceFormatter(Formatter):
         words = [x for x in re.split(r"(\s+)", text) if x]
         if words and words[0].islower():
             words[0] = words[0].capitalize()
-        return "".join(words)
+        return "".join(words) + " "
 
     def unformat(self, text: str) -> str:
         return unformat_upper(text)
