@@ -1,14 +1,17 @@
 # TODO
 
-Excel
+## Excel
 -comma style
 
-Check RStudio mac commands to see what can come into windows
+## RStudio
+-Check mac commands to see what can come into windows
 
+## Mixbus
+-Test
+
+## General
+smart homophones
 Andreas formatter
 
-Test mixbus
-
-smart homophones
-
+## AI-tools
 Better UI for GPT. Ditch notify.py
