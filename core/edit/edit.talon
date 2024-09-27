@@ -17,7 +17,7 @@ go line start | head: edit.line_start()
 go way (left|home):
     edit.line_start()
     edit.line_start()
-    go way end: edit.line_end()
+go way end: edit.line_end()
 go line end | tail: edit.line_end()
 go bottom: edit.file_end()
 go top: edit.file_start()
