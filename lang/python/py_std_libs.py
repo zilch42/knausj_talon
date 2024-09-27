@@ -3,8 +3,8 @@ from talon import Context, Module
 mod = Module()
 ctx = Context("python")
 ctx.matches = r"""
-tag: user.python
-tag: user.jupyter
+code.language: python
+code.language: jupyter
 """
 
 mod.list("py_lib_re")
@@ -19,7 +19,6 @@ ctx.lists["user.py_lib_re"] = {
     "pattern": "re.Pattern",
     "regex flag": "re.RegexFlag",
     "scanner": "re.Scanner",
-    "template": "re.TEMPLATE!",
     "unicode": "re.UNICODE!",
     "verbose": "re.VERBOSE!",
     "compile": "re.compile",
@@ -31,7 +30,6 @@ ctx.lists["user.py_lib_re"] = {
     "find iter": "re.finditer",
     "full match": "re.fullmatch",
     "func tools": "re.functools!",
-    "match": "re.match",
     "purge": "re.purge",
     "search": "re.search",
     "split": "re.split",
@@ -158,12 +156,12 @@ ctx.lists["user.py_lib_os"] = {
     "defpath": "os.defpath!",
     "device encoding": "os.device_encoding",
     "devnull": "os.devnull!",
-    "dup": "os.dup",
+    "dup": "os.dup", 
     "dup two": "os.dup2",
     "environ": "os.environ!",
     "error": "os.error",
     "execl": "os.execl",
-    "execle": "os.execle",
+    "execle": "os.execle", 
     "execlp": "os.execlp",
     "execlpe": "os.execlpe",
     "execv": "os.execv",

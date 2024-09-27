@@ -3,8 +3,8 @@ from talon import Context, Module
 mod = Module()
 ctx = Context("python")
 ctx.matches = r"""
-tag: user.python
-tag: user.jupyter
+code.language: python
+code.language: jupyter
 """
 
 mod.list("py_lib_nicegui")
