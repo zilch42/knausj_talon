@@ -2,13 +2,17 @@ app: Mixbus
 os: mac
 -
 
+settings():
+    key_hold = 32
+    insert_wait = 32
+
 # Session and File Handling
-new session: key(cmd-n)
+start new session: key(cmd-n)
 open session: key(cmd-o)
 open recent session: key(cmd-shift-o)
 save session: key(cmd-s)
 save session snapshot: key(cmd-shift-s)
-add track or bus: key(cmd-shift-n)
+add track bus: key(cmd-shift-n)
 import files: key(cmd-i)
 export audio: key(ctrl-e)
 quick export audio: key(cmd-e)
@@ -18,6 +22,7 @@ quit: key(cmd-q)
 copy: key(cmd-c)
 cut: key(cmd-x)
 delete: key(delete)
+delete backspace: key(backspace)
 paste: key(cmd-v)
 redo: key(cmd-r)
 undo: key(cmd-z)
@@ -25,30 +30,30 @@ undo: key(cmd-z)
 # Transport and Recording Control
 roll playhead: key(space)
 play selection: key(ctrl-space)
-play from edit point and return: key(cmd-shift-space)
+play from edit point: key(cmd-shift-space)
 roll record: key(shift-space)
-toggle roll and forget capture: key(cmd-space)
+toggle roll capture: key(cmd-space)
 rewind: key(shift-left)
 fast forward: key(shift-right)
-transition to reverse: key(shift-down)
-transition to play: key(shift-up)
+transition reverse: key(shift-down)
+transition play: key(shift-up)
 toggle auto play: key(5)
 toggle auto return: key(6)
 toggle click: key(7)
 set tempo from region: key(9)
 toggle follow playhead: key(cmd-f)
 toggle follow edits: key(shift-f)
-toggle track rec enable: key(shift-b)
-toggle master rec enable: key(shift-r)
+toggle track rec-enable: key(shift-b)
+toggle master rec-enable: key(shift-r)
 set playhead to cursor: key(p)
-play selected regions: key(h)
+play selected region: key(h)
 loop play: key(l)
-key focus main clock: key(keypad-/)
+focus main clock: key(keypad_divide)
 midi panic: key(cmd-ctrl-p)
 
-# Changing What's Visible
+# Changing What’s Visible
 show virtual keyboard: key(ctrl-k)
-fit selected tracks vertically: key(f)
+fit selected tracks: key(f)
 tracks page down: key(pagedown)
 scroll tracks down: key(down)
 select next track down: key(ctrl-down)
@@ -60,16 +65,14 @@ show editor mixer: key(shift-e)
 toggle maximized editor: key(cmd-ctrl-f)
 toggle maximized mixer: key(cmd-shift-f)
 toggle zoom: key(shift-z)
-toggle audio connection manager: key(ctrl-n)
-toggle midi connection manager: key(ctrl-shift-m)
-zoom to selected regions: key(z)
-zoom in: key(=)
-zoom out: key(-)
+toggle audio connection: key(ctrl-n)
+toggle midi connection: key(ctrl-shift-m)
+zoom to region: key(z)
+zoom in: key(equal)
+zoom out: key(minus)
 zoom to session: key(_)
-
-# Save and recall visual states
-save visual state <number_small>: key("cmd-f{number_small}")
-go to visual state <number_small>: key("f{number_small}")
+save visual state <user.number_string>: key("cmd-f{number_string}")
+go to visual state <user.number_string>: key("f{number_string}")
 
 # Window Visibility
 toggle marker locations: key(ctrl-l)
@@ -79,7 +82,7 @@ toggle rhythm ferret: key(ctrl-f)
 toggle session properties: key(ctrl-o)
 toggle export window: key(ctrl-e)
 toggle import window: key(cmd-i)
-add new track or bus: key(shift-cmd-n)
+add new track bus: key(shift-cmd-n)
 
 # Mouse Modes
 range mode: key(r)
@@ -91,10 +94,10 @@ zoom to selection mode: key(z)
 edit contents mode: key(e)
 
 # Moving The Playhead
-playhead to start: key(home)
-playhead to end: key(end)
-move backward: key(ctrl-left)
-move forward: key(ctrl-right)
+to start marker: key(home)
+to end marker: key(end)
+nudge backward: key(ctrl-left)
+nudge forward: key(ctrl-right)
 to previous region edge: key(left)
 to next region edge: key(right)
 step playhead previous grid: key(shift-ctrl-left)
@@ -121,19 +124,19 @@ cycle zoom focus: key(1)
 cycle snap mode: key(2)
 previous snap choice: key(3)
 cycle edit point: key(`)
-cycle edit point with marker: key(cmd-`)
+cycle edit point marker: key(cmd-`)
 trim back: key(k)
 trim front: key(j)
 trim to previous region: key(cmd-j)
 trim to next region: key(cmd-k)
 edit mode: key(e)
-cursor to transient backwards: key(cmd-left)
+cursor to transient backward: key(cmd-left)
 cursor to transient forward: key(cmd-right)
-nudge forward: key(cmd-keypad_plus)
-nudge backwards: key(cmd-keypad_minus)
+nudge forward: key(cmd-kp_plus)
+nudge backward: key(cmd-kp_minus)
 
 # Region Operations
-mute unmute region: key(ctrl-1)
+mute region: key(ctrl-1)
 reverse region: key(ctrl-4)
 naturalize region: key(ctrl-2)
 boost region gain: key(ctrl-6)
@@ -146,21 +149,21 @@ align regions sync point: key(shift-a)
 align regions end point: key(ctrl-a)
 align regions start point: key(cmd-ctrl-a)
 align regions start point relative: key(cmd-shift-a)
-duplicate region once: key(d)
+duplicate region: key(d)
 duplicate region multi: key(shift-d)
-export selected regions: key(shift-ctrl-e)
+export selected region: key(shift-ctrl-e)
 insert region from list: key(i)
-split region: key(s)
-crop region: key(ctrl-c)
+split separate: key(s)
+crop: key(ctrl-c)
 set region sync point: key(v)
-nudge region backward: key(ctrl-left)
-nudge region forward: key(ctrl-right)
-set fade in length: key(cmd-/)
-set fade out length: key(cmd-\)
+nudge backward: key(ctrl-left)
+nudge forward: key(ctrl-right)
+set fade-in length: key(cmd-/)
+set fade-out length: key(cmd-\)
 edit fade range: key(/)
 
 # Track Operations
-rec enable selected tracks: key(shift-b)
+rec-enable selected tracks: key(shift-b)
 solo selected tracks: key(ctrl-s)
 select all track bus: key(cmd-t)
 select next track bus: key(ctrl-down)
@@ -175,53 +178,118 @@ finish edit range: key(.)
 loop start: key(ctrl-,)
 loop end: key(ctrl-.)
 set loop range from edit range: key(])
-set loop range from regions: key(ctrl-])
+set loop range from region: key(ctrl-])
 select all within punch range: key(cmd-d)
-set punch range from edit range: key([)
+set punch range from edit range: key([bracketleft])
 
-# Mouse actions are not included as voice commands, but can be referenced in the comments below
+# Mouse Object Mode
+add control point: mouse_click(0)
+add remove selection: 
+    key(cmd:down)
+    mouse_click(0)
+    key(cmd:up)
+adjust region edges: user.mouse_drag(0)
+copy move regions: 
+    key(cmd:down)
+    user.mouse_drag(0)
+    key(cmd:up)
+extend selection: 
+    key(shift:down)
+    mouse_click(0)
+    key(shift:up)
+fixed time adjust: user.mouse_drag(2)
+fixed time copy move: 
+    key(cmd:down)
+    user.mouse_drag(2)
+    key(cmd:up)
+fixed time move: user.mouse_drag(2)
+fixed time move point: 
+    key(cmd:down)
+    user.mouse_drag(2)
+    key(cmd:up)
+lower region: 
+    key(ctrl:down shift:down)
+    user.mouse_drag(2)
+    key(ctrl:up shift:up)
+move control point: user.mouse_drag(0)
+move line segment: user.mouse_drag(0)
+move point later points: 
+    key(cmd:down)
+    user.mouse_drag(0)
+    key(cmd:up)
+move regions: user.mouse_drag(0)
+raise region: 
+    key(shift:down)
+    user.mouse_drag(2)
+    key(shift:up)
+rubber band select: 
+    key(cmd:down ctrl:down)
+    user.mouse_drag(0)
+    key(cmd:up ctrl:up)
+rubber band select empty: user.mouse_drag(0)
+rubber band select auto: user.mouse_drag(0)
+select: mouse_click(0)
+set region end: mouse_click(2)
+set region start: mouse_click(0)
+slip audio in region: 
+    key(cmd:down)
+    user.mouse_drag(0)
+    key(cmd:up)
 
-# Mouse Object Mode Operations:
-# - Add control point: left-click in auto track
-# - Add/remove selection: cmd-left-click on body
-# - Adjust region edges: left-drag near ends of trim bar
-# - Copy+move region(s): cmd-left-drag on body
-# - Extend selection: shift-left-click on body
-# - Fixed time adjust: middle-drag on point
-# - Fixed time copy+move: cmd-middle-drag on body
-# - Fixed time move: middle-drag on body or cmd-middle-drag on point
-# - Lower region: ctrl-shift-middle on body
-# - Move control point: left-drag on point
-# - Move line segment: left-drag on line segment
-# - Move point+later points: cmd-left-drag on point
-# - Move region(s): left-drag on body
-# - Raise region: shift-middle on body
-# - Rubber-band select: cmd-ctrl-left-drag on regions or left-drag on empty space or in auto track
-# - Select: left-click on body
-# - Set region end: middle in trim bar
-# - Set region start: left-click in trim bar
-# - Slip audio in region: cmd-left-drag in trim bar
+# Mouse Zoom Mode
+define new visible area: user.mouse_drag(0)
+zoom in: mouse_click(0)
+zoom out: mouse_click(2)
+zoom to session: 
+    key(cmd:down)
+    mouse_click(2)
+    key(cmd:up)
 
-# Mouse Zoom Mode Operations:
-# - Define new visible area: left-drag
-# - Zoom in: left-click
-# - Zoom out: middle-click
-# - Zoom to session: cmd-middle
+# Mouse Ops on Solo/Mute/Rec-enable
+apply to all tracks busses: 
+    key(cmd:down shift:down)
+    mouse_click(0)
+    key(cmd:up shift:up)
+apply to group: 
+    key(cmd:down)
+    mouse_click(0)
+    key(cmd:up)
+apply to track active group: mouse_click(0)
+learn MIDI control: 
+    key(cmd:down)
+    mouse_click(2)
+    key(cmd:up)
+momentary switch: mouse_click(2)
 
-# Mouse Operations on Solo/Mute/Rec-enable:
-# - Apply to all tracks/busses: cmd-shift-left-click
-# - Apply to group: cmd-left-click
-# - Apply to track or active group: left-click
-# - Learn MIDI control: cmd-middle-click
-# - Momentary switch: middle-click
+# Mouse Ops on Solo Buttons Only
+exclusive solo: 
+    key(cmd:down ctrl:down)
+    mouse_click(0)
+    key(cmd:up ctrl:up)
+temporary latched solo: 
+    key(shift:down)
+    mouse_click(0)
+    key(shift:up)
 
-# Mouse Operations on Solo Buttons Only:
-# - Exclusive solo: cmd-ctrl-left-click
-# - Temporary latched solo: shift-left-click
+# Mouse Ops on Faders & Plug-in Controls
+adjust: user.mouse_drag(0)
+fine drag control: 
+    key(cmd:down)
+    user.mouse_drag(0)
+    key(cmd:up)
+finest drag control: 
+    key(cmd:down ctrl:down)
+    user.mouse_drag(0)
+    key(cmd:up ctrl:up)
+learn MIDI control fader: 
+    key(cmd:down)
+    mouse_click(2)
+    key(cmd:up)
+reset to default: 
+    key(shift:down)
+    mouse_click(0)
+    key(shift:up)
 
-# Mouse Operations on Faders & Plug-in Controls:
-# - Adjust: left-drag
-# - Fine-drag control: cmd-left-drag
-# - Finest-drag control: cmd-ctrl-left-drag
-# - Learn MIDI control: cmd-middle-click
-# - Reset to default: shift-left-click
+drag end:
+    user.mouse_drag_end()
+    key(shift:up ctrl:up super:up alt:up cmd:up)
