@@ -59,7 +59,10 @@ show settings workspace json: user.vscode("workbench.action.openWorkspaceSetting
 show shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
 show shortcuts json: user.vscode("workbench.action.openGlobalKeybindingsFile")
 show snippets: user.vscode("workbench.action.openSnippets")
-copy command id: user.copy_command_id()
+copy command id: 
+    key(shift-f10)
+    sleep(100ms)
+    key(down:2 enter)
 
 # VSCode Snippets
 snip (last | previous): user.vscode("jumpToPrevSnippetPlaceholder")
@@ -386,6 +389,10 @@ create standard yamal:
     description: 
     """
 
+(new|code) command: 
+    'user.vscode("")'
+    key(left:2)
+
 # sidebar width
 bar increase: user.vscode("workbench.action.decreaseViewWidth")
 bar decrease: user.vscode("workbench.action.increaseViewWidth")
@@ -395,3 +402,6 @@ bar wide:
 bar narrow: 
     user.vscode("workbench.action.increaseViewWidth")
     repeat(5)
+
+# Claude
+show claude: user.vscode("claude-dev.openInNewTab")
