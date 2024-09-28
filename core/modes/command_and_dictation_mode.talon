@@ -1,7 +1,7 @@
 mode: command
 mode: dictation
-mode: game
-mode: recording
+mode: user.game
+mode: user.recording
 -
 ^dictation mode$:
     mode.disable("sleep")
