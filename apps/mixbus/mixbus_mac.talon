@@ -135,8 +135,8 @@ trim to next region: key(cmd-k)
 edit mode: key(e)
 cursor to transient backward: key(cmd-left)
 cursor to transient forward: key(cmd-right)
-nudge forward: key(cmd-kp_plus)
-nudge backward: key(cmd-kp_minus)
+# nudge forward: key(cmd-kp_plus)
+# nudge backward: key(cmd-kp_minus)
 
 # Region Operations
 mute region: key(ctrl-1)
@@ -159,8 +159,8 @@ insert region from list: key(i)
 split separate: key(s)
 crop: key(ctrl-c)
 set region sync point: key(v)
-nudge backward: key(ctrl-left)
-nudge forward: key(ctrl-right)
+# nudge backward: key(ctrl-left)
+# nudge forward: key(ctrl-right)
 set fade-in length: key(cmd-/)
 set fade-out length: key(cmd-\)
 edit fade range: key(/)
@@ -241,12 +241,12 @@ slip audio in region:
 
 # Mouse Zoom Mode
 define new visible area: user.mouse_drag(0)
-zoom in: mouse_click(0)
-zoom out: mouse_click(2)
-zoom to session: 
-    key(cmd:down)
-    mouse_click(2)
-    key(cmd:up)
+# zoom in: mouse_click(0)
+# zoom out: mouse_click(2)
+# zoom to session: 
+#     key(cmd:down)
+#     mouse_click(2)
+#     key(cmd:up)
 
 # Mouse Ops on Solo/Mute/Rec-enable
 apply to all tracks busses: 
