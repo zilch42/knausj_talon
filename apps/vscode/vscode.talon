@@ -405,3 +405,7 @@ bar narrow:
 
 # Claude
 show claude: user.vscode("claude-dev.openInNewTab")
+
+# cursorless
+hats on:  user.run_rpc_command("cursorless.toggleDecorations", true)
+hats off: user.run_rpc_command("cursorless.toggleDecorations", false)
