@@ -1,6 +1,8 @@
 mode: command
 mode: dictation
 mode: sleep
+mode: user.game
+mode: user.recording
 not speech.engine: dragon
 -
 # The optional <phrase> afterwards allows these to match even if you say arbitrary text

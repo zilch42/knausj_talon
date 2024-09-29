@@ -3,7 +3,7 @@ from talon import Module, Context, ctrl, actions
 mod = Module()
 
 apps = mod.apps
-apps.zeroAD = """
+apps.mixbus = """
 os: mac
-and app.bundle: com.horrison.mixbus
+and app.bundle: com.harrisonconsoles.Mixbus10
 """

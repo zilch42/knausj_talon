@@ -1,34 +1,37 @@
-app: Mixbus
+app: mixbus
 os: mac
+mode: user.recording
 -
 
 settings():
     key_hold = 32
     insert_wait = 32
 
+dredge: user.window_tab(1)
+
 # Session and File Handling
-start new session: key(cmd-n)
-open session: key(cmd-o)
+# new session: key(cmd-n)
+# open session: key(cmd-o)
 open recent session: key(cmd-shift-o)
-save session: key(cmd-s)
-save session snapshot: key(cmd-shift-s)
+disk: key(cmd-s)
+save snapshot: key(cmd-shift-s)
 add track bus: key(cmd-shift-n)
 import files: key(cmd-i)
 export audio: key(ctrl-e)
 quick export audio: key(cmd-e)
-quit: key(cmd-q)
+quit up: key(cmd-q)
 
 # Common Functions
 copy: key(cmd-c)
 cut: key(cmd-x)
 delete: key(delete)
-delete backspace: key(backspace)
-paste: key(cmd-v)
+# delete backspace: key(backspace)
+spark: key(cmd-v)
 redo: key(cmd-r)
 undo: key(cmd-z)
 
 # Transport and Recording Control
-roll playhead: key(space)
+play|pause: key(space)
 play selection: key(ctrl-space)
 play from edit point: key(cmd-shift-space)
 roll record: key(shift-space)
@@ -46,8 +49,8 @@ toggle follow edits: key(shift-f)
 toggle track rec-enable: key(shift-b)
 toggle master rec-enable: key(shift-r)
 set playhead to cursor: key(p)
-play selected region: key(h)
-loop play: key(l)
+play region: key(h)
+loop: key(l)
 focus main clock: key(keypad_divide)
 midi panic: key(cmd-ctrl-p)
 
@@ -60,7 +63,7 @@ select next track down: key(ctrl-down)
 select next track up: key(ctrl-up)
 tracks page up: key(pageup)
 scroll tracks up: key(up)
-toggle edit mix window: key(ctrl-m)
+change view: key(ctrl-m)
 show editor mixer: key(shift-e)
 toggle maximized editor: key(cmd-ctrl-f)
 toggle maximized mixer: key(cmd-shift-f)
@@ -89,8 +92,8 @@ range mode: key(r)
 grid mode: key(y)
 grab mode: key(g)
 draw mode: key(d)
-timefx mode: key(t)
-zoom to selection mode: key(z)
+stretch mode: key(t)
+zoom: key(z)
 edit contents mode: key(e)
 
 # Moving The Playhead
@@ -177,7 +180,7 @@ start edit range: key(,)
 finish edit range: key(.)
 loop start: key(ctrl-,)
 loop end: key(ctrl-.)
-set loop range from edit range: key(])
+loop region: key(])
 set loop range from region: key(ctrl-])
 select all within punch range: key(cmd-d)
 set punch range from edit range: key([bracketleft])
