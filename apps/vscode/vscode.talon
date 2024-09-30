@@ -28,7 +28,8 @@ bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
-bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
+bar switch: user.vscode("workbench.action.toggleSide.barVisibility")
+collapse files: user.vscode("workbench.files.action.collapseExplorerFolders")
 
 # Symbol search
 symbol hunt [<user.text>]:
@@ -43,7 +44,7 @@ symbol hunt all [<user.text>]:
 
 # Panels
 panel control: user.vscode("workbench.panel.repl.view.focus")
-panel output: user.vscode("workbench.panel.output.focus")
+red output: user.vscode("workbench.panel.output.focus")
 panel problems: user.vscode("workbench.panel.markers.view.focus")
 panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
