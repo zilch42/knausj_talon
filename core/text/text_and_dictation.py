@@ -97,25 +97,29 @@ def text(m) -> str:
     """A sequence of words, including user-defined vocabulary."""
     return format_phrase(m)
 
+@mod.capture(rule="(spell | {user.letter}) {user.letter}+")
+def spell(m) -> str:
+    """Spell word phoneticly"""
+    return "".join(m.letter_list)
+
 # from Andreas Talon
 # TODO get this working
-# text_rule_parts = [
-#     "{user.vocabulary}",
-#     "{user.key_punctuation}",
-#     "<user.abbreviation>",
-#     "<user.spell>",
-#     "<user.number_dd>",
-#     "<user.number_prefix>",
-#     "<phrase>",
-# ]
+text_rule_parts = [
+    "{user.vocabulary}",
+    "{user.punctuation}",
+    "<user.spell>",
+    "<user.number_string>",
+    "<user.percent>",
+    "<phrase>",
+]
 
-# text_rule = f"({'|'.join(text_rule_parts)})+"
+text_rule = f"({'|'.join(text_rule_parts)})+"
 
 
-# @mod.capture(rule=text_rule)
-# def text(m) -> str:
-#     """Mixed words, numbers and punctuation, including user-defined vocabulary, abbreviations and spelling."""
-#     return format_phrase(m)
+@mod.capture(rule=text_rule)
+def text(m) -> str:
+    """Mixed words, numbers and punctuation, including user-defined vocabulary, abbreviations and spelling."""
+    return format_phrase(m)
 
 
 # ---------- FORMATTING ---------- #

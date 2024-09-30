@@ -266,7 +266,7 @@ formatters_dict = {f.id: f for f in formatter_list}
 # Mapping from spoken phrases to formatter names
 code_formatter_names = {
     "yell": "ALL_CAPS",
-    "lower": "ALL_LOWERCASE",
+    "low": "ALL_LOWERCASE",
     "camel": "PRIVATE_CAMEL_CASE",
     "gerrish": "PRIVATE_CAMEL_CASE",
     "dotted": "DOT_SEPARATED",
