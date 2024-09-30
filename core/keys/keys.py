@@ -127,7 +127,7 @@ punctuation_words = {
     # "full stop": ".",
     "semicolon": ";",
     "colon": ":",
-    "[forward] slash": "/",
+    "slash": "/",
     "exclamation mark": "!",
     "dollar sign": "$",
     "asterisk": "*",
