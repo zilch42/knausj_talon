@@ -221,3 +221,12 @@ def number_signed_small(m) -> int:
     """Parses an integer between -99 and 99."""
     number = m[-1]
     return -number if (m[0] in ["negative", "minus"]) else number
+
+@mod.capture(rule="({user.number_small} | one hundred) percent")
+def percent(m) -> str:
+    """Percentages"""
+    try:
+        number = number_small_map[m.number_small]
+    except AttributeError:
+        number = 100
+    return f"{number}%"
