@@ -40,7 +40,7 @@ class ConfirmationState:
 confirmation = ConfirmationState()
 
 
-@imgui.open(y=0)
+@imgui.open(y=1280, x=2400)
 def gui(gui: imgui.GUI):
     gui.text(confirmation.get_message())
     gui.line()
