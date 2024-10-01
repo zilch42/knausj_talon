@@ -7,3 +7,8 @@ personal.talon
 .vscode/settings.json
 .DS_Store
 .bak
+open_files.talon
+system_paths*.talon-list
+custom_paths.talon
+openwebui.talon
+auto_text.talon
