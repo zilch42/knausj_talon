@@ -9,6 +9,6 @@ personal.talon
 .bak
 open_files.talon
 system_paths*.talon-list
-custom_paths.talon
+custom_shell_paths.talon
 openwebui.talon
 auto_text.talon
