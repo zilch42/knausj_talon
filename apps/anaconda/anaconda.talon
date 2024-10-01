@@ -48,23 +48,7 @@ pip uninstall: "pip uninstall "
 pip list: "pip list"
 pip show: "pip show "
 
-activate horizon: "conda activate ./condaenv"
-go to project: "cd 'C:\\Users\\ABB064\\OneDrive - CSIRO\\R\\AiCE\\csiro-horizon-scanning'"
-go to workbench project: "cd datasets/sip-bibliomet/work/csiro-horizon-scanning"
-go to linux project: "cd csiro-horizon-scanning"
-update environment: "conda env update --file environment310.yml"
-create environment: "conda env create -f environment310.yml -p ./condaenv"
-
-source bash: "source ~/.bashrc"
-horizon scanning: "csiro-horizon-scanning"
-latest environment: "csiro-horizon-scanning310"
-anaconda initialise: "conda init bash"
-setup environment: "source environments/setup_workbench_env.sh"
-deploy dashboard: "rsconnect-python\deploy.bat"
-
 video ram: "nvidia-smi"
-
-bit bucket HS: "https://bitbucket.csiro.au/scm/~abb064/csiro-horizon-scanning.git"
 
 run open web UI: "open-webui serve"
 run pipelines: "start.bat"

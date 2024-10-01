@@ -101,7 +101,7 @@ load publications:
     key("ctrl-2")
     sleep(1000ms)
     key(esc esc)
-    "load('C:/Users/abb064/OneDrive - CSIRO/R/budashboard/data/publications.rda')"
+    "load('data/publications.rda')"
     key("enter ctrl-1")
 dev tools check:
     key("ctrl-2")
@@ -134,17 +134,12 @@ sign: ""
 
 
 # ----------------GIT CONSOLE--------------------
-identify CSIRO:
-    "git config --global user.name 'Abbott, Tadro (Science Impact & Policy)'"
-    key("enter")
-    "git config --global user.email 'tadro.abbott@csiro.au'"
-    key("enter")
 identify github :
-    "git config --global user.name 'Tadro Abbott'"
+    "git config --global user.name ''"
     key("enter")
-    "git config --global user.email 'zilch42@hotmail.com'"
+    "git config --global user.email ''"
     key("enter")
 new SSH key:
-    "ssh-keygen -t rsa -C 'tadro.abbott@csiro.au' -b 4096"
+    "ssh-keygen -t rsa -C 'email' -b 4096"
 SSH run agent: "eval '$(ssh-agent -s)'"
 SSH add key: "ssh-add ~/.ssh/id_rsa"

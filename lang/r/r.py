@@ -220,7 +220,7 @@ ctx.lists["user.code_common_function"] = {
     "title panel": "titlePanel",
     "ui output": "uiOutput",
 
-    # tadro
+    # custom packages
     "get meta data": "get_metadata", 
     "get data": "get_data", 
 

@@ -14,7 +14,7 @@ phrase <user.text> {user.phrase_ender}:
     user.insert_many(format_code_list)
     insert(phrase_ender)
 <user.formatters> that: user.formatters_reformat_selection(user.formatters)
-{user.word_formatter} <user.word>: user.insert_formatted(word, word_formatter)
+# {user.word_formatter} <user.word>: user.insert_formatted(word, word_formatter)
 <user.formatters> (pace | paste): user.insert_formatted(clip.text(), formatters)
 word <user.word>:
     user.add_phrase_to_history(word)
