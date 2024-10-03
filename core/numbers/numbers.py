@@ -230,3 +230,5 @@ def percent(m) -> str:
     except AttributeError:
         number = 100
     return f"{number}%"
+
+

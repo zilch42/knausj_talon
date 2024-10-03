@@ -1,11 +1,12 @@
 #provide both anchored and unachored commands via 'over'
-phrase <user.text>$:
-    user.add_phrase_to_history(text)
-    insert(text)
-phrase <user.text> {user.phrase_ender}:
-    user.add_phrase_to_history(text)
-    insert("{text}{phrase_ender}")
+phrase <user.prose>$:
+    user.add_phrase_to_history(prose)
+    insert(prose)
+phrase <user.prose> {user.phrase_ender}:
+    user.add_phrase_to_history(prose)
+    insert("{prose}{phrase_ender}")
 {user.prose_formatter} <user.prose>$: user.insert_formatted(prose, prose_formatter)
+low [er] <user.prose>$: user.insert_formatted(prose, "ALL_LOWERCASE")
 {user.prose_formatter} <user.prose> {user.phrase_ender}:
     user.insert_formatted(prose, prose_formatter)
     insert(phrase_ender)

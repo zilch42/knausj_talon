@@ -63,6 +63,15 @@ def prose_number_with_colon(m) -> str:
 def prose_number(m) -> str:
     return str(m)
 
+@mod.capture(rule="(numb | numeral) <number_signed>")
+def prose_number_signed(m) -> str:
+    """Print a number inside a dictation with prefix numb"""
+    return " " + str(m.number_signed)
+
+@mod.capture(rule="rank <user.ordinal_names>")
+def prose_ordinal(m) -> str:
+    """Print an ordinal inside a dictation with prefix ordinal"""
+    return m.ordinal_names
 
 @mod.capture(rule="({user.vocabulary} | <word>)")
 def word(m) -> str:
@@ -76,13 +85,13 @@ def word(m) -> str:
 
 
 
-@mod.capture(
-    rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <phrase> | <user.prose_number> | <user.prose_modifier>)+"
-)
-def prose(m) -> str:
-    """Mixed words and punctuation, auto-spaced & capitalized."""
-    # Straighten curly quotes that were introduced to obtain proper spacing.
-    return apply_formatting(m).replace("“", '"').replace("”", '"')
+# @mod.capture(
+#     rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <phrase> | <user.prose_number> | <user.prose_modifier>)+"
+# )
+# def prose(m) -> str:
+#     """Mixed words and punctuation, auto-spaced & capitalized."""
+#     # Straighten curly quotes that were introduced to obtain proper spacing.
+#     return apply_formatting(m).replace("“", '"').replace("”", '"')
 
 
 @mod.capture(
@@ -103,13 +112,15 @@ def spell(m) -> str:
     return "".join(m.letter_list)
 
 # from Andreas Talon
-# TODO get this working
 text_rule_parts = [
     "{user.vocabulary}",
     "{user.punctuation}",
+    "{user.prose_snippets}", 
     "<user.spell>",
-    "<user.number_string>",
+    "<user.prose_number_signed>",
     "<user.percent>",
+    "<user.prose_ordinal>", 
+    "<user.prose_modifier>", 
     "<phrase>",
 ]
 
@@ -117,9 +128,10 @@ text_rule = f"({'|'.join(text_rule_parts)})+"
 
 
 @mod.capture(rule=text_rule)
-def text(m) -> str:
-    """Mixed words, numbers and punctuation, including user-defined vocabulary, abbreviations and spelling."""
-    return format_phrase(m)
+def prose(m) -> str:
+    """Mixed words and punctuation, auto-spaced & capitalized, abbreviations, etc."""
+    # Straighten curly quotes that were introduced to obtain proper spacing.
+    return apply_formatting(m).replace("“", '"').replace("”", '"')
 
 
 # ---------- FORMATTING ---------- #

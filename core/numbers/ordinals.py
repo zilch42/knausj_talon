@@ -88,6 +88,6 @@ def ordinals_small(m) -> int:
     return int(ordinal_numbers[m[0]])
 
 @mod.capture(rule="{self.ordinal_names}")
-def ordinal_names(m) -> int:
-    """Returns a single ordinal as a digit"""
+def ordinal_names(m) -> str:
+    """Returns a single ordinal as a str"""
     return ordinal(int(ordinal_numbers[m[0]]))
