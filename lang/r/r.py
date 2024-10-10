@@ -77,7 +77,6 @@ ctx.lists["user.code_common_function"] = {
     "tidy": "tidy",
     "trim white space": "trimws",
     "type": "typeof",
-    "un nest": "unnest",
     "unique": "unique",
     "unlist": "unlist", 
     "vector": "c",
@@ -182,10 +181,10 @@ ctx.lists["user.code_common_function"] = {
     "un nest": "unnest",
 
     # readr, readxl, and other non-base R reading/writing
-    "read CSV": "read_csv",
+    # "read CSV": "read_csv",
     "read RDS": "read_rds",
     "read excel old": "read_excel",
-    "read excel": "read.xlsx",
+    # "read excel": "read.xlsx",
     # "write CSV": "write_csv",
     "write RDS": "write_rds",
 

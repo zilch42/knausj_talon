@@ -90,11 +90,18 @@ rotate axis labels: "theme(axis.text.x = element_text(angle = 90))"
 fix UTF-8: "fileEncoding = 'UTF-8-BOM'" 
 remove wos: "mutate(UT = sub('WOS:', '', UT))"
 add wos: "mutate(UT = paste0('WOS:', UT))"
-keep all: ".keep_all = TRUE"
+keep all: ", .keep_all = TRUE"
+drop groups: ', .groups = "drop"'
 shiny JS: "shinyjs"
 long else: " else "
 right assign: " -> "
 placeholder: "_"
+
+# joins
+join many to many: ', relationship = "many-to-many"'
+join one to one: ', relationship = "one-to-one"'
+join one to many: ', relationship = "one-to-many"'
+join many to one: ', relationship = "many-to-one"'
 
 pivot wider:
     "pivot_wider(names_from = , values_from = )"
