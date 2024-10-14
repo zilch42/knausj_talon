@@ -287,6 +287,7 @@ code_formatter_names = {
 }
 prose_formatter_names = {
     "say": "TRAILING_SPACE",
+    "speak": "TRAILING_SPACE",
     "spray": "SPACE_SURROUNDED_STRING",
     "sing": "CAPITALIZE_FIRST_WORD",
     "spring": "SPACE_CAPITALIZE_FIRST_WORD",

@@ -130,7 +130,7 @@ copy word right: user.copy_word_right()
 
 # Cut
 cut: edit.cut()
-cut all: user.cut_all()
+# cut all: user.cut_all()
 cut line: user.cut_line()
 cut line start: user.cut_line_start()
 cut line end: user.cut_line_end()
