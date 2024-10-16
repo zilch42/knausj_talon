@@ -1,7 +1,7 @@
 import webbrowser
 from urllib.parse import quote_plus
 
-from talon import Module
+from talon import Module, actions
 
 mod = Module()
 mod.list("website", desc="A website.")
@@ -15,9 +15,15 @@ mod.list(
 class Actions:
     def open_url(url: str):
         """Visit the given URL."""
-        webbrowser.open(url)
+        # TODO fix talon weird windows issues
+        # webbrowser.open(url)
+        actions.user.switcher_focus("Microsoft Edge")
+        actions.user.rango_command_without_target("focusOrCreateTabByUrl", url)
 
     def search_with_search_engine(search_template: str, search_text: str):
         """Search a search engine for given text"""
         url = search_template.replace("%s", quote_plus(search_text))
-        webbrowser.open(url)
+        # TODO fix talon weird windows issues
+        # webbrowser.open(url)
+        actions.user.switcher_focus("Microsoft Edge")
+        actions.user.rango_command_without_target("focusOrCreateTabByUrl", url)

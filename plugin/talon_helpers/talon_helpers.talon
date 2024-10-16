@@ -57,3 +57,9 @@ talon dump context:
 
 talon (bug report | report bug):
     user.open_url("https://github.com/talonhub/community/issues")
+
+
+talon print environment: user.log_environment()
+talon print executable: user.log_executable()
+talon print packages: user.log_packages()
+talon print location: user.log_package_location()

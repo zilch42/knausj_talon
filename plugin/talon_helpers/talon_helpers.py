@@ -2,8 +2,12 @@ import os
 import platform
 import pprint
 import re
+import sys
 from itertools import islice
 from typing import Union
+import webbrowser
+
+from importlib.metadata import packages_distributions
 
 from talon import Module, actions, app, clip, registry, scope, speech_system, ui
 from talon.grammar import Phrase
@@ -159,3 +163,25 @@ class Actions:
         apps = ui.apps(name=app, background=False)
         for app in apps:
             pp.pprint(app.windows())
+
+
+    # tadro debugging
+    def log_environment():
+        """Pretty prints the environment variables"""
+        pp.pprint(dict(os.environ))
+
+    def log_executable():
+        """prints the current python exe location"""
+        print(sys.executable)
+
+    def log_packages():
+        """Prints available packages in python environment"""
+        installed_packages = packages_distributions()
+        installed_packages = list(installed_packages.keys())
+        installed_packages.sort()
+        pp.pprint(installed_packages)
+
+    def log_package_location():
+        """Prints package location"""
+        print(webbrowser.__file__)
+
