@@ -68,6 +68,9 @@ inside fences:
 (quote that | hug quotes):
     text = edit.selected_text()
     user.paste('"{text}"')
-(ticky that | hug ticky):
+(tick that | hug ticks):
     text = edit.selected_text()
     user.paste('`{text}`')
+(chicky that | hug chicky):
+    text = edit.selected_text()
+    user.paste("'{text}'")
