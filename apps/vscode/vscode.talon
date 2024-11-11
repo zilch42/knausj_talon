@@ -1,12 +1,13 @@
 #custom vscode commands go here
 app: vscode
+app: cursor
 -
 tag(): user.find_and_replace
 tag(): user.line_commands
 tag(): user.multiple_cursors
 tag(): user.splits
 tag(): user.tabs
-tag(): user.anaconda
+tag(): user.python_environments
 
 window reload: user.vscode("workbench.action.reloadWindow")
 window close: user.vscode("workbench.action.closeWindow")

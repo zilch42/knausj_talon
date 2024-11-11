@@ -49,6 +49,10 @@ os: windows
 and app.name: Azure Data Studio
 os: windows
 and app.exe: azuredatastudio.exe
+os: windows
+and app: cursor
+os: windows
+and app.exe: /^cursor\.exe$/i
 """
 
 ctx.matches = r"""
@@ -59,7 +63,7 @@ os: mac
 app: vscode
 """
 
-ctx.tags = ["user.anaconda", "terminal"]
+ctx.tags = ["user.python_environments", "terminal"]
 
 @ctx.action_class("app")
 class AppActions:

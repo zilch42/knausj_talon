@@ -10,6 +10,7 @@ linux_ctx = Context()
 
 ctx.matches = r"""
 app: vscode
+app: cursor
 """
 linux_ctx.matches = r"""
 os: linux
