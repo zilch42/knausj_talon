@@ -18,6 +18,6 @@ and app.name: Console Window Host
 and title: /Anaconda Prompt/
 """
 
-ctx.tags = ["user.anaconda", "terminal"]
+ctx.tags = ["user.python_environments", "terminal"]
 
 
