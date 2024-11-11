@@ -149,7 +149,7 @@ paste match: edit.paste_match_style()
 (pace | paste) line: user.paste_line()
 (pace | paste) home: user.paste_line_start()
 (pace | paste) end: user.paste_line_end()
-(pace | paste) word: user.paste_word()
+(pace | paste) word: user.paste()
 spark: 
     edit.paste()
     sleep(100ms)
