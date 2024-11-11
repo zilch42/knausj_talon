@@ -159,6 +159,7 @@ in place true: "inplace=True"
 in place false: "inplace=False"
 dot lock: ".loc[]"
 dot i lock: ".iloc[]"
+dot to list: ".tolist()"
 
 d f: "df"
 lambda ex: "lambda x: "
