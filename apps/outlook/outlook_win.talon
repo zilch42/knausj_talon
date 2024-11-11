@@ -16,7 +16,8 @@ mark all as red: key(alt-o m a)
 
 High <user.text>:
     "Hi "
-    user.insert_formatted(text, "title")
+    sleep(100ms)
+    user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
     key(, enter:2)
 
 add emoji: key(super-.)
