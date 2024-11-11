@@ -31,4 +31,4 @@ show extensions: browser.show_extensions()
 show history: browser.show_history()
 show cache: browser.show_clear_cache()
 
-hunt|find: user.browser_find()
+hunt|find [here]: user.browser_find()

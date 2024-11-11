@@ -16,14 +16,17 @@ class Actions:
     def open_url(url: str):
         """Visit the given URL."""
         # TODO fix talon weird windows issues
-        # webbrowser.open(url)
-        actions.user.switcher_focus("Microsoft Edge")
-        actions.user.rango_command_without_target("focusOrCreateTabByUrl", url)
+        webbrowser.open(url)
+        # actions.user.switcher_focus("Microsoft Edge")
+        # actions.key("ctrl-t")
+        # actions.browser.go(url)
 
     def search_with_search_engine(search_template: str, search_text: str):
         """Search a search engine for given text"""
         url = search_template.replace("%s", quote_plus(search_text))
         # TODO fix talon weird windows issues
-        # webbrowser.open(url)
-        actions.user.switcher_focus("Microsoft Edge")
-        actions.user.rango_command_without_target("focusOrCreateTabByUrl", url)
+        webbrowser.open(url)
+        # actions.user.switcher_focus("Microsoft Edge")
+        # actions.key("ctrl-t")
+        # actions.browser.go(url)
+
