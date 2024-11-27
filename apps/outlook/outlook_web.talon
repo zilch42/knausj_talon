@@ -5,6 +5,7 @@ os: linux
 tag: browser
 win.title: /Outlook/
 -
+tag(): user.emoji
 
 # write email
 new message: key(n)

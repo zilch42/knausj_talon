@@ -16,5 +16,5 @@ tag: user.emoji
 path = Path(__file__).parents[0]
 
 mod.list("emoticon", desc="Western emoticons (ascii)")
-mod.list("emoji", desc="Emoji (unicode)")
+mod.list("unicode", desc="Emoji (unicode)")
 mod.list("kaomoji", desc="Eastern kaomoji (unicode)")

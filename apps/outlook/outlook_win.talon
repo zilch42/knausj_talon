@@ -3,6 +3,8 @@ and app: Outlook
 os: windows
 and app.name: Microsoft Outlook
 -
+tag(): user.emoji
+
 archive: key(alt h o 1)
 new mail: key(ctrl-n)
 calendar: key(ctrl-2)

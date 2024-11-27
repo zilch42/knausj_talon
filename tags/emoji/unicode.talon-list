@@ -1,4 +1,4 @@
-list: user.emoji
+list: user.unicode
 -
 angry: 😠
 blushing: 😊
@@ -28,3 +28,9 @@ thinking: 🤔
 thumbs down: 👎
 thumbs up: 👍
 worried: 😟
+tick: ✔️
+cross: ❌
+idea: 💡
+todo: ☑
+pick: ⛏
+bug: 🐞
