@@ -3,18 +3,21 @@ and tag: user.python_environments
 -
 
 # UV
-woozy ad: "uv add "
-woozy remove: "uv remove "
-woozy pip list: "uv pip list "
-woozy pip install: "uv pip install "
-woozy sink: "uv sync "
-woozy run: "uv run "
-woozy initialize: "uv init "
-woozy create lock file: "uv lock "
-woozy create environment: "uv venv "
-woozy install python: "uv python install "
+install [woozy|U V]: "curl -LsSf https://astral.sh/uv/install.sh | sh"
+[woozy|U V] ad: "uv add "
+[woozy|U V] remove: "uv remove "
+[woozy|U V] pip list: "uv pip list "
+[woozy|U V] pip install: "uv pip install "
+[woozy|U V] sink: "uv sync "
+[woozy|U V] run: "uv run "
+[woozy|U V] initialize: "uv init "
+[woozy|U V] create lock file: "uv lock "
+[woozy|U V] create environment: "uv venv "
+[woozy|U V] install python: "uv python install "
+[woozy|U V] ad colonel: "uv add ipykernel"
+[woozy|U V] ad widgets: "uv add ipywidgets"
 
-woozy run main: "uv run src/main.py"
+[woozy|U V] run main: "uv run src/main.py"
 
 # Pip
 pip install: "pip install "
@@ -69,3 +72,7 @@ anaconda verify: "conda verify "
 
 # custom
 anaconda deactivate: "conda deactivate "
+
+# git
+git add user name: 'git config --global user.name "Tadro Abbott"'
+git add email: 'git config --global user.email "tadro.abbott@csiro.au"'

@@ -32,3 +32,5 @@ llama exit:
 llama clear:
     "/clear"
     key(enter)
+
+upgrade [oh] llama: "curl -fsSL https://ollama.com/install.sh | sh"

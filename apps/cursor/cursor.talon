@@ -13,6 +13,7 @@ next: key(ctrl-right)
 
 # chat
 start chat: key(ctrl-l)
+add to chat: key(ctrl-shift-l)
 (clear|no) context: key(alt-enter)
 
 

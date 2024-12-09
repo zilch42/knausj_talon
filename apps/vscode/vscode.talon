@@ -1,6 +1,8 @@
 #custom vscode commands go here
 app: vscode
 app: cursor
+app: microsoft_edge
+and win.title: /kubeflow/
 -
 tag(): user.find_and_replace
 tag(): user.line_commands

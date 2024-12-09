@@ -53,6 +53,9 @@ os: windows
 and app: cursor
 os: windows
 and app.exe: /^cursor\.exe$/i
+os: windows
+and app.name: Microsoft Edge
+and win.title: /kubeflow/
 """
 
 ctx.matches = r"""

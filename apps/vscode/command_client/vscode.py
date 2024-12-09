@@ -14,7 +14,7 @@ app: cursor
 """
 linux_ctx.matches = r"""
 os: linux
-app: vscode
+and app: vscode
 """
 
 ctx.tags = ["user.command_client"]
