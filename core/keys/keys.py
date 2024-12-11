@@ -210,7 +210,7 @@ simple_keys = [
     "end",
     # "enter",
     "escape",
-    "home",
+    # "home",
     "insert",
     "pagedown",
     "pageup",

@@ -294,7 +294,7 @@ prose_formatter_names = {
 }
 reformatter_names = {
     "cap": "CAPITALIZE",
-    "list": "COMMA_SEPARATED",
+    "plain list": "COMMA_SEPARATED",
     "quote list": "QUOTED_LIST", 
     "unformat": "REMOVE_FORMATTING",
 }
