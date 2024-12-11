@@ -28,6 +28,7 @@ language_extensions = {
     # 'powershell': 'ps1',
     "python": "py",
     "jupyter": "ipynb",   
+    "quarto": "qmd", 
     "protobuf": "proto",
     "r": "r",
     # 'racket': 'rkt',

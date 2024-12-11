@@ -19,6 +19,10 @@ install [woozy|U V]: "curl -LsSf https://astral.sh/uv/install.sh | sh"
 
 [woozy|U V] run main: "uv run src/main.py"
 
+# template stuff
+poe lint: "poe alint"
+
+
 # Pip
 pip install: "pip install "
 pip (upgrade|update): "pip install -U "

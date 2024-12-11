@@ -1,5 +1,6 @@
 code.language: python
 code.language: jupyter
+code.language: quarto
 - 
 tag(): user.code_imperative
 tag(): user.code_object_oriented
