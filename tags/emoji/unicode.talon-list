@@ -1,7 +1,6 @@
 list: user.unicode
 -
 angry: 😠
-blushing: 😊
 broken heart: 💔
 clapping: 👏
 cool: 😎
@@ -23,6 +22,7 @@ roll eyes: 🙄
 sad: 🙁
 shrugging: 🤷
 shushing: 🤫
+smiling: 😊
 star eyes: 🤩
 thinking: 🤔
 thumbs down: 👎

@@ -5,6 +5,7 @@ ctx = Context("python")
 ctx.matches = r"""
 code.language: python
 code.language: jupyter
+code.language: quarto
 """
 
 mod.list("py_lib_re")

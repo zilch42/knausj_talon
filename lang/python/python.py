@@ -6,6 +6,7 @@ ctx = Context()
 ctx.matches = r"""
 code.language: python
 code.language: jupyter
+code.language: quarto
 mode: command
 """
 ctx.lists["user.code_common_function"] = {
