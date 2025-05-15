@@ -1,4 +1,5 @@
 code.language: markdown
+code.language: quarto
 -
 (level | heading | header) one:
     edit.line_start()

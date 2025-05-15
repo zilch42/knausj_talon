@@ -54,7 +54,6 @@ ctx.lists["user.py_lib_nicegui"] = {
     "editor": "editor", 
     "card": "card", 
     "Jason editor": "json_editor", 
-    "card": "card", 
     "column": "column", 
     "row": "row", 
     "expansion": "expansion", 
@@ -110,3 +109,4 @@ ctx.lists["user.py_lib_nicegui"] = {
     "refresh able": "refreshable", 
     
 }
+

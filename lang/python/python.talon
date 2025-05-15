@@ -152,6 +152,11 @@ cue {user.quarto_chunk_options} [{user.quarto_logical}]:
     insert(quarto_chunk_options)
     ": "
     insert(quarto_logical)
+cue chunk: 
+    """```{{python}}
+
+    ```"""
+    key(up)
 
 # # OTHER PEOPLE'S STUFF
 # # PANDAS

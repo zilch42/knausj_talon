@@ -347,7 +347,7 @@ join with previous: user.vscode("notebook.cell.joinAbove")
 join with next: user.vscode("notebook.cell.joinBelow")
 
 run by line: user.vscode("jupyter.runByLine")
-dip: user.vscode("jupyter.runByLineNext")
+# dip: user.vscode("jupyter.runByLineNext")
 (exit cell | stop by line): user.vscode("jupyter.runByLineStop")
 
 clear output: key(alt-del)
@@ -356,18 +356,18 @@ clear all output: user.vscode("notebook.clearAllCellsOutputs")
 python console: user.vscode("python.startREPL")
 
 # quarto
-render document: key(ctrl-shift-k)
-import display markdown: 'from IPython.display import display, Markdown'
-display markdown: 
-    'display(Markdown("""'
-    key(enter:2)
-    '""".format()'
-    key(up)
-    '{}'
-    key(left:2)
-
-get suggestions: key(alt-c)
-accept suggestion: key(tab)
+run chunk: user.vscode("quarto.runCurrentCell")
+run next: user.vscode("quarto.runNextCell")
+run all above: user.vscode("quarto.runCellsAbove")
+run all below: user.vscode("quarto.runCellsBelow")
+run document: user.vscode("quarto.runAllCells")
+next cell: user.vscode("quarto.goToNextCell")
+previous cell: user.vscode("quarto.goToPreviousCell")
+sauce mode: user.vscode("quarto.editInSourceMode")
+visual mode: user.vscode("quarto.editInVisualMode")
+(run line)|dip: 
+    user.vscode("quarto.runSelection")
+    key(down)
 
 # niceGUI running
 run unicorn: 
@@ -377,7 +377,7 @@ run unicorn:
     sleep(1s)
     "uvicorn dashboard_main:FastApp --reload --log-level info --port 8000 --reload-exclude dev/"
     key(enter)
-run dashboard: user.vscode("python.execInTerminal")
+run (dashboard|file): user.vscode("python.execInTerminal")
 stop dashboard:
     user.vscode("workbench.action.terminal.focus")
     sleep(50ms)
@@ -407,9 +407,6 @@ bar wide:
 bar narrow: 
     user.vscode("workbench.action.increaseViewWidth")
     repeat(5)
-
-# Claude
-show claude: user.vscode("claude-dev.openInNewTab")
 
 # cursorless
 hats on:  user.run_rpc_command("cursorless.toggleDecorations", true)

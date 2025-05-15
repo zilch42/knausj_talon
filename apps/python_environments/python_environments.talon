@@ -3,24 +3,33 @@ and tag: user.python_environments
 -
 
 # UV
-install [woozy|U V]: "curl -LsSf https://astral.sh/uv/install.sh | sh"
-[woozy|U V] ad: "uv add "
-[woozy|U V] remove: "uv remove "
-[woozy|U V] pip list: "uv pip list "
-[woozy|U V] pip install: "uv pip install "
-[woozy|U V] sink: "uv sync "
-[woozy|U V] run: "uv run "
-[woozy|U V] initialize: "uv init "
-[woozy|U V] create lock file: "uv lock "
-[woozy|U V] create environment: "uv venv "
-[woozy|U V] install python: "uv python install "
-[woozy|U V] ad colonel: "uv add ipykernel"
-[woozy|U V] ad widgets: "uv add ipywidgets"
+install (woozy|U V|word he): "curl -LsSf https://astral.sh/uv/install.sh | sh"
+(woozy|U V|word he) ad: "uv add "
+(woozy|U V|word he) remove: "uv remove "
+(woozy|U V|word he) pip list: "uv pip list "
+(woozy|U V|word he) pip install: "uv pip install "
+(woozy|U V|word he) sink: "uv sync "
+(woozy|U V|word he) run: "uv run "
+(woozy|U V|word he) initialize: "uv init "
+(woozy|U V|word he) create lock file: "uv lock "
+(woozy|U V|word he) create environment: "uv venv "
+(woozy|U V|word he) install python: "uv python install "
+(woozy|U V|word he) ad colonel: "uv add ipykernel"
+(woozy|U V|word he) ad widgets: "uv add ipywidgets"
 
-[woozy|U V] run main: "uv run src/main.py"
+(woozy|U V|word he) run main: "uv run src/main.py"
 
 # template stuff
 poe lint: "poe alint"
+
+# env
+environment variables: 
+    "set -a"
+    key(enter)
+    "source .env"
+    key(enter)
+    "set +a"
+    key(enter)
 
 
 # Pip

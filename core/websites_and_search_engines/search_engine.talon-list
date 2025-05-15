@@ -6,3 +6,4 @@ scholar: https://scholar.google.com/scholar?q=%s
 wiki: https://en.wikipedia.org/w/index.php?search=%s
 DOI: https://www.doi.org/%s
 repository: https://publications.csiro.au/publications/publication/PIcsiro:%s
+open alex: https://openalex.org/%s
