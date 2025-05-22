@@ -154,7 +154,8 @@ cue {user.quarto_chunk_options} [{user.quarto_logical}]:
     insert(quarto_logical)
 cue chunk: 
     """```{{python}}
-
+    %%time
+    
     ```"""
     key(up)
 

@@ -6,7 +6,7 @@ previous pane [<user.number_small>]: key("ctrl-shift-[:{number_small or 1}")
 replace: key("ctrl-shift-r")
 toggle cyber: key("ctrl-b")
 
-run chunk: key("ctrl-enter")
+# run chunk: key("ctrl-enter")
 run next: 
     key("down")
     sleep(300ms)
