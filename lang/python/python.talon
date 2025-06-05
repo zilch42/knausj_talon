@@ -110,6 +110,7 @@ system {user.py_lib_sys}: user.code_insert_function(py_lib_sys, "")
 OS {user.py_lib_os}: user.code_insert_function(py_lib_os, "")
 graph {user.py_lib_matplotlib}: user.code_insert_function(py_lib_matplotlib, "")
 seaborne {user.py_lib_seaborn}: user.code_insert_function(py_lib_seaborn, "")
+graph {user.py_plotnine}: user.code_insert_function(py_plotnine, "")
 
 # niceGUI
 nice {user.py_lib_nicegui}: user.code_insert_function(py_lib_nicegui, "")
@@ -152,12 +153,14 @@ cue {user.quarto_chunk_options} [{user.quarto_logical}]:
     insert(quarto_chunk_options)
     ": "
     insert(quarto_logical)
-cue chunk: 
+(cue|insert) chunk: 
     """```{{python}}
-    %%time
     
     ```"""
     key(up)
+time it: 
+    "%%time"
+    key(enter)
 
 # # OTHER PEOPLE'S STUFF
 # # PANDAS
