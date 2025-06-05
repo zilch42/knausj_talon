@@ -1,6 +1,10 @@
 app: pgAdmin 4
 -
 
+settings():
+    key_hold = 32
+    key_wait = 2
+    
 run (that|query): key(f5)
 explain analyse: key(shift-f7)
 

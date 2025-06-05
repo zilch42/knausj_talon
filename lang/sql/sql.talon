@@ -18,6 +18,8 @@ descending: " DESC"
 ascending: " ASC"
 limit: "LIMIT "
 dot i d: ".id"
+is null: "IS NULL"
+is not null: "IS NOT NULL"
 [inner] join: user.insert_between("INNER JOIN ", " ON ")
 [inner] join using: user.insert_between("INNER JOIN ", " USING ")
 left [outer] join: user.insert_between("LEFT OUTER JOIN ", " ON ")
