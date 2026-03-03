@@ -92,6 +92,7 @@ ctx.lists["user.code_common_function"] = {
     "as tibble": "as_tibble",
     "bind rows": "bind_rows",
     "case when": "case_when",
+    "count distinct": "n_distinct",
     "distinct": "distinct",
     "everything": "everything",
     "filter": "filter",

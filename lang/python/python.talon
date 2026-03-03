@@ -108,7 +108,7 @@ dot {user.dot_functions}:
 regex {user.py_lib_re}: user.code_insert_function(py_lib_re, "")
 system {user.py_lib_sys}: user.code_insert_function(py_lib_sys, "")
 OS {user.py_lib_os}: user.code_insert_function(py_lib_os, "")
-graph {user.py_lib_matplotlib}: user.code_insert_function(py_lib_matplotlib, "")
+# graph {user.py_lib_matplotlib}: user.code_insert_function(py_lib_matplotlib, "")
 seaborne {user.py_lib_seaborn}: user.code_insert_function(py_lib_seaborn, "")
 graph {user.py_plotnine}: user.code_insert_function(py_plotnine, "")
 

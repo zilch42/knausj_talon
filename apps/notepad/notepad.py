@@ -4,8 +4,10 @@ ctx = Context()
 mod = Module()
 
 mod.apps.notepad = r"""
-os: windows
-and app.exe: notepad.exe
+    os: windows
+    and app.name: Notepad.exe
+    os: windows
+    and app.exe: /^notepad\.exe$/i
 """
 
 ctx.matches = r"""

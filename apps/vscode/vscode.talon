@@ -355,6 +355,12 @@ generate dock string: key(ctrl-shift-2)
 
 python console: user.vscode("python.startREPL")
 
+(new|code) command: 
+    'user.vscode("")'
+    key(left:2)
+
+unicorn: "uvicorn main:FastApp --reload --log-level info --port 8000"
+
 # quarto
 run chunk: user.vscode("quarto.runCurrentCell")
 run next: user.vscode("quarto.runNextCell")
@@ -384,20 +390,26 @@ stop dashboard:
     sleep(50ms)
     key(ctrl-c)
 
-unicorn: "uvicorn main:FastApp --reload --log-level info --port 8000"
+split cell:
+    """```
+
+    ```{{python}}
+    """
 
 create standard yamal: 
-    """
+    """---
+    title: ""
+    format: html
+    jupyter: python3
     ---
-    metadata:
-    save_path: 
-    title: 
-    description: 
     """
 
-(new|code) command: 
-    'user.vscode("")'
-    key(left:2)
+
+
+with context: "with ibis_connection() as con:"
+
+
+
 
 # sidebar width
 bar increase: user.vscode("workbench.action.decreaseViewWidth")
